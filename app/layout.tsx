@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import CustomFont from "next/font/local";
+import "./globals.css"
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
@@ -12,12 +13,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+const customFont = CustomFont({
+    src: "/../public/fonts/matissePro.otf",
+    variable: "--font-custom",
+});
+
+export const metadata: Metadata = {
     title: 'Leonardo Becerril | Personal Website',
-    description: 'Whitouth description.',
+    description: 'Without description.',
     openGraph: {
         title: 'Personal Website',
-        description: 'Whitouth description.',
+        description: 'Without description.',
         url: "https://leonardobecerril.dev/",
         siteName: 'Leonardo Becerril | Personal Website',
         images: [
@@ -34,7 +40,7 @@ export const metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Personal Website',
-        description: 'Whitouth description.',
+        description: 'Without description.',
         images: ['https://example.com/images/blog-post.jpg'],
     },
 };
@@ -45,12 +51,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+      <html lang="es" className="dark" data-theme="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      {children}
       </body>
-    </html>
+      </html>
   );
 }

@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {ViewTransition} from 'react'
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
 import CustomFont from "next/font/local";
 import "./globals.css"
+import Navbar from "@/components/ui/navbar/Navbar";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -14,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 const customFont = CustomFont({
-    src: "/../public/fonts/matissePro.otf",
+    src: "/../public/fonts/NIS-JTC-Win-M9.ttf",
     variable: "--font-custom",
 });
 
@@ -53,9 +55,14 @@ export default function RootLayout({
   return (
       <html lang="es" className="dark" data-theme="dark">
       <body
-          className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
-      {children}
+      <ViewTransition>
+          <main className="flex min-h-screen items-center justify-center bg-background">
+              <Navbar/>
+              {children}
+          </main>
+      </ViewTransition>
       </body>
       </html>
   );

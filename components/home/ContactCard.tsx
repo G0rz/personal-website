@@ -1,12 +1,12 @@
 'use client'
 
 import {Button, Form, Input, Card, CardBody} from "@heroui/react";
-import React from "react";
+import  {useState} from "react";
 import {CardHeader} from "@heroui/card";
 
 const ContactCard = () => {
 
-    const [action, setAction] = React.useState(null);
+    const [action, setAction] = useState<string | null>(null);
 
     return (
         <Card className="col-span-full lg:col-span-2 ">

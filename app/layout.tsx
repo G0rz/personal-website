@@ -4,6 +4,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import CustomFont from "next/font/local";
 import "./globals.css"
 import Navbar from "@/components/ui/navbar/Navbar";
+import {Providers} from "@/app/providers";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -53,16 +54,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="es" className="dark" data-theme="dark">
+      <html lang="es" className="dark">
       <body
           className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
-      <ViewTransition>
-          <main className="flex min-h-screen items-center justify-center bg-background">
-              <Navbar/>
-              {children}
-          </main>
-      </ViewTransition>
+     <Providers>
+         <ViewTransition>
+             <main className="flex min-h-screen items-center justify-center bg-background">
+                 {children}
+             </main>
+         </ViewTransition>
+     </Providers>
       </body>
       </html>
   );

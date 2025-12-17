@@ -1,36 +1,8 @@
 @import "tailwindcss";
-
-:root {
-    --background: #fffefa;
-    --foreground: #181818;
-    --card-background: #f7f7f7;
-    --primary: #4f46e5;
-    --secondary: #14b8a6;
-}
-
-@theme inline {
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --color-card-background: var(--card-background);
-    --color-primary: var(--primary);
-    --color-secondary: var(--secondary);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
-    --font-custom: var(--font-custom)
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-      --background: #181818;
-      --foreground: #fffefa;
-      --card-background: #262626;
-      --primary: #818cf8;
-      --secondary: #5eead4;
-  }
-}
+@plugin './hero.ts';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
 
 body {
-  background: var(--background);
-  color: var(--foreground);
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }

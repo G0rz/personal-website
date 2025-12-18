@@ -17,6 +17,7 @@ const ExternalLinksCard = () => {
                     height={35}
                     width={35}
                     src="/images/victini.gif"
+                    unoptimized
                 />
             </Card>
             <Card isFooterBlurred

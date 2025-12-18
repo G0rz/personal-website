@@ -9,7 +9,7 @@ const ResumeCard = () => {
     return (
         <Card className="md:col-span-2 md:row-span-2 p-4">
               <CardBody className="relative flex flex-wrap justify-around items-start gap-4">
-                  <p className="absolute top-0 right-0 px-3 py-1 border-1 border-success rounded-2xl md:text-sm text-[0.50rem] font-bold text-success">
+                  <p className="absolute top-0 right-0 px-3 py-1 border-1 border-success rounded-2xl text-sm font-bold text-success">
                       <span className="animate-pulse size-2 inline-block bg-success rounded-full mr-2"></span>AVALIBLE FOR
                       WORK</p>
                   <Image

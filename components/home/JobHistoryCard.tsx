@@ -17,7 +17,7 @@ const JobHistoryCard = () => {
                 <DrawerContent>
                     {(onClose) => (
                         <>
-                            <DrawerHeader className="flex flex-col gap-1">Log in</DrawerHeader>
+                            <DrawerHeader className="flex flex-col gap-1"></DrawerHeader>
                             <DrawerBody>
 
                             </DrawerBody>

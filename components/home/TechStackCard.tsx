@@ -6,7 +6,7 @@ import Image from "next/image";
 import useMeasure from 'react-use-measure'
 import {useEffect} from "react";
 
-const images = [
+export const techStackImages = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
@@ -48,7 +48,7 @@ const TechStackCard = () => {
             </CardHeader>
             <CardBody className="relative overflow-hidden min-h-[70px]">
                 <motion.div className="absolute left-0 gap-4 flex" ref={ref} style={{x:xTranslation}}>
-                    {[...images, ...images].map((item, index) => {
+                    {[...techStackImages, ...techStackImages].map((item, index) => {
                         return <motion.div  key={index} className="min-w-[50px] flex justify-center items-center ">
                             <Image alt="Tech Stack Item" width={50} height={50} loading="eager" className="object-cover" src={item}/>
                         </motion.div>

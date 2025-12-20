@@ -7,19 +7,21 @@ import EducationCard from "@/components/home/EducationCard";
 import LatestProjectCard from "@/components/home/LatestProjectCard";
 import ContactCard from "@/components/home/ContactCard";
 import OtherProjectsCard from "@/components/home/OtherProjectsCard";
+import AttachmentsCard from "@/components/home/AttachmentsCard";
 
 export default function Home() {
-  return (
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6 p-4">
-          <ResumeCard/>
-          <ExternalLinksCard/>
-          <TechStackCard/>
-          <AboutMeCard/>
-          <JobHistoryCard/>
-          <EducationCard/>
-          <LatestProjectCard/>
-          <ContactCard/>
-          <OtherProjectsCard/>
-    </div>
-  );
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6 p-4">
+            <ResumeCard/>
+            <ExternalLinksCard/>
+            <TechStackCard/>
+            <AboutMeCard/>
+            <JobHistoryCard/>
+            <EducationCard/>
+            <AttachmentsCard/>
+            <LatestProjectCard/>
+            <ContactCard/>
+            <OtherProjectsCard/>
+        </div>
+    );
 }

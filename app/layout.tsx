@@ -1,9 +1,8 @@
 import {ViewTransition} from 'react'
-import type {Metadata} from "next";
+import {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import CustomFont from "next/font/local";
 import "./globals.css"
-import Navbar from "@/components/ui/navbar/Navbar";
 import {Providers} from "@/app/providers";
 
 const geistSans = Geist({
@@ -12,8 +11,8 @@ const geistSans = Geist({
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 const customFont = CustomFont({
@@ -49,23 +48,23 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-      <html lang="es" className="dark">
-      <body
-          className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
-      >
-     <Providers>
-         <ViewTransition>
-             <main className="flex min-h-screen items-center justify-center bg-background">
-                 {children}
-             </main>
-         </ViewTransition>
-     </Providers>
-      </body>
-      </html>
-  );
+    return (
+        <html lang="es" className="dark">
+        <body
+            className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
+        >
+        <Providers>
+            <ViewTransition>
+                <main className="flex min-h-screen items-center justify-center text-foreground bg-background">
+                    {children}
+                </main>
+            </ViewTransition>
+        </Providers>
+        </body>
+        </html>
+    );
 }

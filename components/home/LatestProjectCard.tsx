@@ -51,7 +51,7 @@ const LatestProjectCard = () => {
             <Card
                 className="col-span-full lg:col-span-2 row-span-1 bg-[url('/images/latest_project.png')] bg-cover bg-top bg-no-repeat">
                 <CardHeader className="bg-black/40">
-                    <h3 className="text-2xl font-bold">Latest Project</h3>
+                    <h3 className="text-2xl font-bold text-white">Latest Project</h3>
                 </CardHeader>
                 <CardBody className="h-[20vh]">
 
@@ -60,6 +60,7 @@ const LatestProjectCard = () => {
                     <Tooltip content="Details">
                         <Button
                             variant="flat"
+                            className="text-white font-bold"
                             isIconOnly
                             aria-label="Details"
                             onPress={() => onOpen()}
@@ -74,6 +75,7 @@ const LatestProjectCard = () => {
                             target="_blank"
                             rel="noreferrer"
                             variant="flat"
+                            className="text-white font-bold"
                             isIconOnly
                             aria-label="Preview"
                         >

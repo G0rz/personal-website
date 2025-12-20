@@ -43,7 +43,7 @@ const JobHistoryCard = () => {
                         className="capitalize"
                         color="primary"
                         variant="flat"
-                        onPress={() => onOpen()}
+                        onPress={onOpen}
                     >
                         Abrir
                     </Button>

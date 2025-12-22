@@ -17,10 +17,12 @@ import {
 } from "@heroui/react";
 import React from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const LatestProjectCard = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
+    const {t} = useTranslation();
 
     return (
         <>
@@ -38,7 +40,7 @@ const LatestProjectCard = () => {
                             </DrawerBody>
                             <DrawerFooter>
                                 <Button color="danger" variant="flat" onPress={onClose}>
-                                    Close
+                                    {t("Close Button")}
                                 </Button>
                                 <Button color="primary" onPress={onClose}>
                                     Sign in

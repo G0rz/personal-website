@@ -1,10 +1,10 @@
 'use client'
 
 import {useTheme} from "next-themes";
-import {Card} from "@heroui/card";
 import Image from "next/image";
-import {FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 import Link from "next/link";
+import {FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+import {Card} from "@heroui/react";
 
 const ExternalLinksCard = () => {
 

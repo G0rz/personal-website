@@ -5,6 +5,7 @@ import {motion, animate, useMotionValue} from "framer-motion";
 import Image from "next/image";
 import useMeasure from 'react-use-measure'
 import {useEffect} from "react";
+import {useTranslation} from "react-i18next";
 
 export const techStackImages = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
@@ -26,6 +27,7 @@ const TechStackCard = () => {
 
     const [ref, { width }] = useMeasure();
     const xTranslation = useMotionValue(0);
+    const {t} = useTranslation();
 
     useEffect(() => {
         let controls;
@@ -44,7 +46,7 @@ const TechStackCard = () => {
     return (
         <Card className="lg:col-span-3 p-4">
             <CardHeader>
-                <h3 className="text-2xl font-bold">Tech Stack</h3>
+                <h3 className="text-2xl font-bold">{t("Tech Stack Title")}</h3>
             </CardHeader>
             <CardBody className="relative overflow-hidden min-h-[70px]">
                 <motion.div className="absolute left-0 gap-4 flex" ref={ref} style={{x:xTranslation}}>

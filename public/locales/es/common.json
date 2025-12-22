@@ -1,4 +1,102 @@
 {
+  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web developer",
+  "Download Button": "DOWNLOAD RESUME",
+  "Close Button": "Cerrar",
+  "Details Button": "Detalles",
+  "Availability": "DISPONIBLE PARA TRABAJAR",
+  "Tech Stack Title": "Habilidades Técnicas",
+  "About Me Title": "Acerca de mí",
   "About Me": "Ingeniero en Sistemas Computacionales y Desarrollador Full Stack con 7 años de experiencia construyendo aplicaciones robustas y escalables. Experto en Front End con React, me apasiona crear interfaces de usuario fluidas y de alto rendimiento. Busco trasladar mi sólida base en arquitectura de componentes y gestión de estado hacia el Desarrollo Mobile, aprovechando tecnologías transversales para crear experiencias nativas impactantes.",
-  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web developer"
+  "Education Title": "Educación",
+  "Education Array": [
+    {
+      "id": 4,
+      "school": "Google Developer Groups - Lerma de Villada",
+      "degree": "Organizador en GDG Lerma",
+      "timeframe": "Agosto 2021 - Enero 2024",
+      "awards": [
+        {
+          "title": " Ponente / Charla Técnica ",
+          "role": "Participante",
+          "description": "Devfest 2021 - Flutter/Dart"
+        },
+        {
+          "title": " Participante",
+          "role": "Participante",
+          "description": "Hashcode 2022"
+        },
+        {
+          "title": " Taller / Charla Técnica ",
+          "role": "Participante",
+          "description": "Devfest 2022 - Diseño web UX-UI/mobile first and responsive design/ creating a real-time chat example with ReactJS and Firebase simulating the interface of whatsapp.  / prenderemos un poco sobre Firebase y algunas de las herrmientas que nos ofrece para la creacion de proyectos profesionales"
+        },
+        {
+          "title": " Organizador / Charla Técnica ",
+          "role": "Participante",
+          "description": "Google I/O : charla sobre las novedades de android, google AI y google cloud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "school": "Instituto Tecnológico de Toluca - CLE",
+      "degree": "TOEFL ITP Certification - CEFR Level B1",
+      "timeframe": "Mayo 2023",
+      "awards": []
+    },
+    {
+      "id": 2,
+      "school": "Think-e English Courses",
+      "degree": "Idioma Inglés",
+      "timeframe": "Julio 2021 - Noviembre 2022",
+      "awards": []
+    },
+    {
+      "id": 1,
+      "school": "Instituto Tecnológico de Toluca",
+      "degree": "Computer Systems Engineering",
+      "timeframe": "Agosto 2015 - Junio 2021",
+      "awards": [
+        {
+          "title": "School Project",
+          "role": "Participante",
+          "description": "Collaborated in the research and development of the theoretical framework for a web application to create a virtual newspaper archive and a tutoring platform, reducing the failure rate of students in the program by 30%."
+        },
+        {
+          "title": "School Project",
+          "role": "Participante",
+          "description": ""
+        },
+        {
+          "title": "Staff member | FLISOL 2019",
+          "role": "Participante",
+          "description": "Participated in the “Installfest,” promoting the use of free software and assisting with the installation of various Linux distributions."
+        }
+      ]
+    }
+  ],
+  "Attachments Title": "Adjuntos",
+  "Attachments Array": [
+    {
+      "id": 3,
+      "name": "Google Ads para Principiantes",
+      "type": "Certificado de Proyecto",
+      "timeframe": "",
+      "assets": "/files/Coursera OVV770NV260F.pdf"
+    },
+    {
+      "id": 2,
+      "name": "Introducción al análisis de datos en AWS",
+      "type": "Certificado de Proyecto",
+      "timeframe": "",
+      "assets": "/files/Coursera IBXJRQDIYF4B.pdf"
+    },
+    {
+      "id": 1,
+      "name": "TOEFL ITP Certificación - CEFR Level B1",
+      "type": "Certificado",
+      "timeframe": "",
+      "assets": "/files/CertificationB1.pdf"
+    }
+  ]
 }

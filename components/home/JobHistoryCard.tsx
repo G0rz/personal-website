@@ -4,13 +4,16 @@ import {Card, CardBody, CardHeader} from "@heroui/card";
 import {Drawer, DrawerBody, DrawerContent, DrawerFooter, DrawerHeader, useDisclosure} from "@heroui/react";
 import React from "react";
 import {Button} from "@heroui/button";
+import {useTranslation} from "react-i18next";
 
 interface DrawerType {
     backdrop: "opaque" | "blur" | "transparent";
 }
 
 const JobHistoryCard = () => {
+
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
+    const {t} = useTranslation();
 
     return (<>
             <Drawer backdrop="opaque" placement="left" isOpen={isOpen} onOpenChange={onOpenChange}>
@@ -23,7 +26,7 @@ const JobHistoryCard = () => {
                             </DrawerBody>
                             <DrawerFooter>
                                 <Button color="danger" variant="flat" onPress={onClose}>
-                                    Close
+                                    {t("Close Button")}
                                 </Button>
                                 <Button color="primary" onPress={onClose}>
                                     Sign in

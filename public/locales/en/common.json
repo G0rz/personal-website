@@ -1,4 +1,102 @@
 {
+  "Personal Title": "Computer Systems Engineer | Full-Stack Web developer",
+  "Download Button": "DOWNLOAD RESUME",
+  "Close Button": "Close",
+  "Details Button": "Details",
+  "Availability": "AVALIBLE FOR WORK",
+  "Tech Stack Title": "Tech Stack",
+  "About Me Title": "Tech Stack",
   "About Me": "Computer Systems Engineer and Full Stack Developer with 7 years of experience building robust and scalable applications. Front-End specialist with strong expertise in React, passionate about creating high-performance, smooth, and intuitive user interfaces. Seeking to leverage a solid foundation in component architecture and state management to transition into Mobile Development, utilizing cross-platform technologies to deliver impactful native experiences.",
-  "Personal Title": "Computer Systems Engineer | Full-Stack Web developer"
+  "Education Title": "Education",
+  "Education Array": [
+    {
+      "id": 4,
+      "school": "Google Developer Groups - Lerma de Villada",
+      "degree": "Organizer for GDG Lerma",
+      "timeframe": "August 2021 - January 2024",
+      "awards": [
+        {
+          "title": "Charla Técnica - Devfest 2021",
+          "role": "Participante",
+          "description": "Flutter/Dart"
+        },
+        {
+          "title": "Hashcode 2022",
+          "role": "Participante",
+          "description": ""
+        },
+        {
+          "title": " Taller / Charla Técnica ",
+          "role": "Participante",
+          "description": "Devfest 2022 - Diseño web UX-UI/mobile first and responsive design/ creating a real-time chat example with ReactJS and Firebase simulating the interface of whatsapp.  / prenderemos un poco sobre Firebase y algunas de las herrmientas que nos ofrece para la creacion de proyectos profesionales"
+        },
+        {
+          "title": " Organizador / Charla Técnica ",
+          "role": "Participante",
+          "description": "Google I/O : charla sobre las novedades de android, google AI y google cloud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "school": "Instituto Tecnológico de Toluca - CLE",
+      "degree": "TOEFL ITP Certification - CEFR Level B1",
+      "timeframe": "May 2023",
+      "awards": []
+    },
+    {
+      "id": 2,
+      "school": "Think-e English Courses",
+      "degree": "English language",
+      "timeframe": "July 2021 - November 2022",
+      "awards": []
+    },
+    {
+      "id": 1,
+      "school": "Instituto Tecnológico de Toluca",
+      "degree": "Computer Systems Engineering",
+      "timeframe": "August 2015 - June 2021",
+      "awards": [
+        {
+          "title": "School Project",
+          "role": "Participante",
+          "description": "Collaborated in the research and development of the theoretical framework for a web application to create a virtual newspaper archive and a tutoring platform, reducing the failure rate of students in the program by 30%."
+        },
+        {
+          "title": "School Project",
+          "role": "Participante",
+          "description": ""
+        },
+        {
+          "title": "FLISOL 2019",
+          "role": "Participante",
+          "description": "Participated in the “Installfest,” promoting the use of free software and assisting with the installation of various Linux distributions."
+        }
+      ]
+    }
+  ],
+  "Attachments Title": "Attachments",
+  "Attachments Array": [
+    {
+      "id": 3,
+      "name": "Google Ads for Beginners",
+      "type": "Project Certificate",
+      "timeframe": "",
+      "assets": "/files/Coursera OVV770NV260F.pdf"
+    },
+    {
+      "id": 2,
+      "name": "Getting Started with Data Analytics on AWS",
+      "type": "Project Certificate",
+      "timeframe": "",
+      "assets": "/files/Coursera IBXJRQDIYF4B.pdf"
+    },
+    {
+      "id": 1,
+      "name": "TOEFL ITP Certification - CEFR Level B1",
+      "type": "Certificate",
+      "timeframe": "",
+      "assets": "/files/CertificationB1.pdf"
+    }
+  ]
 }

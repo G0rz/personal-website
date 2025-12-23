@@ -53,8 +53,8 @@ const EducationCard = () => {
                         return <div key={index}
                                     className="flex flex-wrap items-center justify-start                                                     ">
                             <div className="w-3/4 mb-4">
-                                <p className="text-bold capitalize">{element.name}</p>
-                                <p className="text-bold capitalize text-default-400">{element.type}</p>
+                                <p className="text-xl font-bold">{element.name}</p>
+                                <p className="text-lg font-bold text-default-400">{element.type}</p>
                             </div>
                             {element.assets.length !== 0 && <Tooltip content="Details">
                                 <Button

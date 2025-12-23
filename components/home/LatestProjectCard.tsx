@@ -26,7 +26,7 @@ const LatestProjectCard = () => {
 
     return (
         <>
-            <Drawer backdrop="opaque" placement="left" isOpen={isOpen} onOpenChange={onOpenChange}>
+            <Drawer backdrop="blur" placement="left" size="lg" isOpen={isOpen} onOpenChange={onOpenChange}>
                 <DrawerContent>
                     {(onClose) => (
                         <>

@@ -1,12 +1,120 @@
 {
-  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web developer",
-  "Download Button": "DOWNLOAD RESUME",
+  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web developer | Freelance",
+  "Download Button": "DESCARGAR CV",
   "Close Button": "Cerrar",
   "Details Button": "Detalles",
-  "Availability": "DISPONIBLE PARA TRABAJAR",
+  "Availability": "DISPONIBLE",
   "Tech Stack Title": "Habilidades Técnicas",
   "About Me Title": "Acerca de mí",
   "About Me": "Ingeniero en Sistemas Computacionales y Desarrollador Full Stack con 7 años de experiencia construyendo aplicaciones robustas y escalables. Experto en Front End con React, me apasiona crear interfaces de usuario fluidas y de alto rendimiento. Busco trasladar mi sólida base en arquitectura de componentes y gestión de estado hacia el Desarrollo Mobile, aprovechando tecnologías transversales para crear experiencias nativas impactantes.",
+  "Jobs Title": "Experiencia Laboral",
+  "Jobs Array": [
+    {
+      "id": 7,
+      "job": "",
+      "position": "Freelance",
+      "timeframe": "December 2024 - Actually",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": ["React 18.3.1", "MUI 5.15.19", "Tailwind 3.4.X/4.0", "Stripe", "Firebase", "Google Cloud", "Docker", "MongoDB", "Git"]
+    },
+    {
+      "id": 6,
+      "job": "Excite – Inbound Marketing México",
+      "position": "Full-Stack React Web Developer",
+      "timeframe": "April 2024 – December 2024",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": []
+    },
+    {
+      "id": 5,
+      "job": "Secretaría de Seguridad del Estado de México",
+      "position": "Full-Stack Java Web Developer",
+      "timeframe": "February 2023 - April 2024",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": []
+    },
+    {
+      "id": 4,
+      "job": "DADUVA SYSTEMS",
+      "position": "Front-End React Web Developer",
+      "timeframe": "March 2022 - February 2023",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": []
+    },
+    {
+      "id": 3,
+      "job": "Satori Tech",
+      "position": "Full-Stack Web Developer Jr.",
+      "timeframe": "September 2021 - March 2022",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": []
+    },
+    {
+      "id": 2,
+      "job": "Satori Tech",
+      "position": "Internship",
+      "timeframe": "March 2021 - September 2021",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": []
+    },
+    {
+      "id": 1,
+      "job": "EDEM Consultores",
+      "position": "Trainee for Business Planning Systems Developer",
+      "timeframe": "January 2019 - July 2019",
+      "awards": [
+        {
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+        },
+        {
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+        }
+      ],
+      "tech_stack": []
+    }
+  ],
   "Education Title": "Educación",
   "Education Array": [
     {

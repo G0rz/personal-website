@@ -24,7 +24,7 @@ const EducationCard = () => {
     let education = t("Education Array", {returnObjects: true});
 
     return (<>
-            <Drawer backdrop="opaque" placement="left" isOpen={isOpen} onOpenChange={onOpenChange}>
+            <Drawer backdrop="blur" placement="left" size="lg" isOpen={isOpen} onOpenChange={onOpenChange}>
                 <DrawerContent>
                     {(onClose) => (
                         <>
@@ -36,7 +36,8 @@ const EducationCard = () => {
                                     description: string
                                 }, index: number) => {
                                     return <div key={index}>
-                                        <p className="font-extrabold text-lg">{element.title} - <span className="font-bold text-default-400">{element.role}</span></p>
+                                        <p className="text-xl font-bold">{element.title}</p>
+                                        <p className="text-lg font-bold text-default-400">{element.role}</p>
                                         <p>{element.description}</p>
                                     </div>
                                 })}
@@ -58,9 +59,9 @@ const EducationCard = () => {
                     {education && Array.isArray(education) && education.map((element, index) => {
                         return <div key={index} className="flex flex-wrap items-center justify-start">
                             <div className="w-3/4 mb-4">
-                                <p className="font-extrabold">{element.degree}</p>
-                                <p className="font-bold text-default-400">{element.school}</p>
-                                <p className="text-sm">{element.timeframe}</p>
+                                <p className="text-xl font-bold">{element.degree}</p>
+                                <p className="text-lg font-bold text-default-400">{element.school}</p>
+                                <p className="font-bold">{element.timeframe}</p>
                             </div>
                             {element.awards.length !== 0 && <Tooltip content="Details">
                                 <Button

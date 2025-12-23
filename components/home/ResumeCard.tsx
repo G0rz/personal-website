@@ -10,7 +10,7 @@ import {useTranslation} from "react-i18next";
 const ResumeCard = () => {
 
     const {t, i18n} = useTranslation();
-    const currentLanguage = i18n.language;
+    const currentLanguage = i18n.resolvedLanguage;
 
     return (
         <Card className="md:col-span-2 md:row-span-2 p-4">
@@ -20,7 +20,7 @@ const ResumeCard = () => {
                     {t("Availability")}
                 </p>
                 <button className="absolute top-0 left-0 py-1 font-extrabold uppercase"
-                        onClick={currentLanguage === "es" ? async () => await i18n.changeLanguage("en") : async () => await i18n.changeLanguage("es")}>{currentLanguage}</button>
+                        onClick={currentLanguage === "es" ? async () => await i18n.changeLanguage("en") : async () => await i18n.changeLanguage("es")}>{currentLanguage === "es" ? "EN" : "ES"}</button>
                 <Image
                     alt="Profile Picture"
                     width={250}

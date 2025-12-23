@@ -12,28 +12,32 @@
     {
       "id": 4,
       "school": "Google Developer Groups - Lerma de Villada",
-      "degree": "Organizer for GDG Lerma",
+      "degree": "Organizer at GDG Lerma",
       "timeframe": "August 2021 - January 2024",
       "awards": [
         {
-          "title": "Charla Técnica - Devfest 2021",
-          "role": "Participante",
-          "description": "Flutter/Dart"
+          "id": 4,
+          "title": "Google I/O Extended 2023",
+          "role": "Organizer and Speaker",
+          "description": "Presented the latest innovations in Android, Google AI, and Google Cloud."
         },
         {
-          "title": "Hashcode 2022",
-          "role": "Participante",
-          "description": ""
+          "id": 4,
+          "title": "DevFest 2022",
+          "role": "Speaker",
+          "description": "Delivered a conference on 'Mobile First' methodology and led a practical workshop on creating a real-time chat using React, Material UI (MUI), and Firebase."
         },
         {
-          "title": " Taller / Charla Técnica ",
-          "role": "Participante",
-          "description": "Devfest 2022 - Diseño web UX-UI/mobile first and responsive design/ creating a real-time chat example with ReactJS and Firebase simulating the interface of whatsapp.  / prenderemos un poco sobre Firebase y algunas de las herrmientas que nos ofrece para la creacion de proyectos profesionales"
+          "id": 4,
+          "title": "Google Hash Code 2022",
+          "role": "Participant",
+          "description": "Participated in Google Hash Code 2022, solving algorithmic optimization challenges and applying my knowledge of data structures and algorithms."
         },
         {
-          "title": " Organizador / Charla Técnica ",
-          "role": "Participante",
-          "description": "Google I/O : charla sobre las novedades de android, google AI y google cloud"
+          "id": 4,
+          "title": "DevFest 2021",
+          "role": "Speaker",
+          "description": "Delivered a technical talk on optimization and cross-platform application development using Flutter and Dart."
         }
       ]
     },
@@ -47,7 +51,7 @@
     {
       "id": 2,
       "school": "Think-e English Courses",
-      "degree": "English language",
+      "degree": "English Language",
       "timeframe": "July 2021 - November 2022",
       "awards": []
     },
@@ -59,18 +63,13 @@
       "awards": [
         {
           "title": "School Project",
-          "role": "Participante",
-          "description": "Collaborated in the research and development of the theoretical framework for a web application to create a virtual newspaper archive and a tutoring platform, reducing the failure rate of students in the program by 30%."
+          "role": "Student",
+          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
         },
         {
-          "title": "School Project",
-          "role": "Participante",
-          "description": ""
-        },
-        {
-          "title": "FLISOL 2019",
-          "role": "Participante",
-          "description": "Participated in the “Installfest,” promoting the use of free software and assisting with the installation of various Linux distributions."
+          "title": "FLISOL 2018",
+          "role": "Staff",
+          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ]
     }

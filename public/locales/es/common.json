@@ -16,31 +16,35 @@
       "timeframe": "Agosto 2021 - Enero 2024",
       "awards": [
         {
-          "title": " Ponente / Charla Técnica ",
-          "role": "Participante",
-          "description": "Devfest 2021 - Flutter/Dart"
+          "id": 4,
+          "title": "Google I/O Extended 2023",
+          "role": "Organizador y Ponente",
+          "description": "Presenté las últimas innovaciones en Android, Google AI y Google Cloud."
         },
         {
-          "title": " Participante",
-          "role": "Participante",
-          "description": "Hashcode 2022"
+          "id": 3,
+          "title": "DevFest 2022",
+          "role": "Ponente",
+          "description": "Impartí una conferencia sobre la metodología 'Mobile First' y dirigí un taller práctico sobre la creación de un chat en tiempo real utilizando React, Material UI (MUI) y Firebase."
         },
         {
-          "title": " Taller / Charla Técnica ",
+          "id": 2,
+          "title": "Google Hash Code 2022",
           "role": "Participante",
-          "description": "Devfest 2022 - Diseño web UX-UI/mobile first and responsive design/ creating a real-time chat example with ReactJS and Firebase simulating the interface of whatsapp.  / prenderemos un poco sobre Firebase y algunas de las herrmientas que nos ofrece para la creacion de proyectos profesionales"
+          "description": "Participé en Google Hash Code 2022, resolviendo retos de optimización algorítmica y aplicando mis conocimientos en estructuras de datos y algoritmos."
         },
         {
-          "title": " Organizador / Charla Técnica ",
-          "role": "Participante",
-          "description": "Google I/O : charla sobre las novedades de android, google AI y google cloud"
+          "id": 1,
+          "title": "DevFest 2021",
+          "role": "Ponente",
+          "description": "Impartí una charla técnica sobre optimización y desarrollo de aplicaciones multiplataforma utilizando Flutter y Dart."
         }
       ]
     },
     {
       "id": 3,
       "school": "Instituto Tecnológico de Toluca - CLE",
-      "degree": "TOEFL ITP Certification - CEFR Level B1",
+      "degree": "Certificación TOEFL ITP - Nivel CEFR B1",
       "timeframe": "Mayo 2023",
       "awards": []
     },
@@ -54,23 +58,20 @@
     {
       "id": 1,
       "school": "Instituto Tecnológico de Toluca",
-      "degree": "Computer Systems Engineering",
+      "degree": "Ingeniería en Sistemas Computacionales",
       "timeframe": "Agosto 2015 - Junio 2021",
       "awards": [
         {
-          "title": "School Project",
-          "role": "Participante",
-          "description": "Collaborated in the research and development of the theoretical framework for a web application to create a virtual newspaper archive and a tutoring platform, reducing the failure rate of students in the program by 30%."
+          "id": 2,
+          "title": "Proyecto Escolar",
+          "role": "Estudiante",
+          "description": "Colaboré en la creación de una plataforma virtual (Java Web) para la gestión de asesorías y materiales académicos, orientada a mejorar la retención escolar y disminuir la deserción estudiantil en un 30% mediante el aprendizaje colaborativo."
         },
         {
-          "title": "School Project",
-          "role": "Participante",
-          "description": ""
-        },
-        {
-          "title": "Staff member | FLISOL 2019",
-          "role": "Participante",
-          "description": "Participated in the “Installfest,” promoting the use of free software and assisting with the installation of various Linux distributions."
+          "id": 1,
+          "title": "FLISOL 2018",
+          "role": "Staff",
+          "description": "Fui responsable de facilitar herramientas y materiales técnicos a los expositores, así como de brindar asesoría sobre las ventajas del software libre a los asistentes."
         }
       ]
     }

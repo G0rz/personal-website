@@ -7,7 +7,7 @@ import {
     DrawerFooter,
     Tooltip,
     useDisclosure,
-    Button
+    Button, DrawerHeader
 } from "@heroui/react";
 import {FaEye} from "react-icons/fa";
 import {Card, CardBody, CardHeader} from "@heroui/card";
@@ -28,13 +28,15 @@ const EducationCard = () => {
                 <DrawerContent>
                     {(onClose) => (
                         <>
+                            <DrawerHeader></DrawerHeader>
                             <DrawerBody>
                                 {selectedItem !== undefined && selectedItem.map((element: {
                                     title: string,
+                                    role: string,
                                     description: string
                                 }, index: number) => {
                                     return <div key={index}>
-                                        <h4 className="font-extrabold text-lg">{element.title}</h4>
+                                        <p className="font-extrabold text-lg">{element.title} - <span className="font-bold text-default-400">{element.role}</span></p>
                                         <p>{element.description}</p>
                                     </div>
                                 })}
@@ -56,8 +58,8 @@ const EducationCard = () => {
                     {education && Array.isArray(education) && education.map((element, index) => {
                         return <div key={index} className="flex flex-wrap items-center justify-start">
                             <div className="w-3/4 mb-4">
-                                <p className="font-extrabold capitalize">{element.degree}</p>
-                                <p className="font-bold capitalize text-default-400">{element.school}</p>
+                                <p className="font-extrabold">{element.degree}</p>
+                                <p className="font-bold text-default-400">{element.school}</p>
                                 <p className="text-sm">{element.timeframe}</p>
                             </div>
                             {element.awards.length !== 0 && <Tooltip content="Details">

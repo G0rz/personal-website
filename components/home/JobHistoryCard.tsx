@@ -2,16 +2,15 @@
 
 import {Card, CardBody, CardHeader} from "@heroui/card";
 import {
-    Accordion,
-    AccordionItem,
     Drawer,
     DrawerBody,
     DrawerContent,
     DrawerFooter,
-    DrawerHeader, Tooltip,
+    DrawerHeader,
+    Tooltip,
     useDisclosure
 } from "@heroui/react";
-import React, {useState} from "react";
+import {useState} from "react";
 import {Button} from "@heroui/button";
 import {useTranslation} from "react-i18next";
 import {FaEye} from "react-icons/fa";
@@ -21,28 +20,26 @@ const JobHistoryCard = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const {t} = useTranslation();
 
-    const [selectedItem, setSelectedItem] = useState([{title: "", role: "", description: ""}])
+    const [selectedItem, setSelectedItem] = useState([{description: ""}])
 
     let jobs = t("Jobs Array", {returnObjects: true});
 
     return (<>
-            <Drawer backdrop="blur" placement="left" size="lg" isOpen={isOpen} onOpenChange={onOpenChange}>
+            <Drawer backdrop="blur" placement="right" size="lg" isOpen={isOpen} onOpenChange={onOpenChange}>
                 <DrawerContent>
                     {(onClose) => (
                         <>
-                            <DrawerHeader></DrawerHeader>
+                            <DrawerHeader>{t("Jobs.Responsabilities")}</DrawerHeader>
                             <DrawerBody>
-                                {selectedItem !== undefined && selectedItem.map((element: {
-                                    title: string,
-                                    role: string,
-                                    description: string
-                                }, index: number) => {
-                                    return <div key={index}>
-                                        <p className="text-xl font-bold">{element.title}</p>
-                                        <p className="text-lg font-bold text-default-400">{element.role}</p>
-                                        <p>{element.description}</p>
-                                    </div>
-                                })}
+                                <ul className="list-disc px-4">
+                                    {selectedItem !== undefined && selectedItem.map((element: {
+                                        description: string
+                                    }, index: number) => {
+                                        return <li className="p-2" key={index}>
+                                            {element.description}
+                                        </li>
+                                    })}
+                                </ul>
                             </DrawerBody>
                             <DrawerFooter>
                                 <Button color="danger" variant="light" onPress={onClose}>
@@ -53,7 +50,7 @@ const JobHistoryCard = () => {
                     )}
                 </DrawerContent>
             </Drawer>
-            <Card className="lg:col-span-2 md:row-span-3 p-4">
+            <Card className="md:col-span-2 md:row-span-3 p-4">
                 <CardHeader>
                     <h3 className="text-2xl font-bold">{t("Jobs Title")}</h3>
                 </CardHeader>
@@ -64,7 +61,8 @@ const JobHistoryCard = () => {
                                 <p className="text-xl font-bold">{element.position}</p>
                                 <p className="text-lg font-bold text-default-400">{element.job}</p>
                                 <p className="font-bold">{element.timeframe}</p>
-                                <p className="text-sm italic"><span className="font-bold">Tech Stack:</span> {element.tech_stack.join(", ")}</p>
+                                <p className="text-sm italic"><span
+                                    className="font-bold">Tech Stack:</span> {element.tech_stack.join(", ")}</p>
                             </div>
                             {element.awards.length !== 0 && <Tooltip content="Details">
                                 <Button

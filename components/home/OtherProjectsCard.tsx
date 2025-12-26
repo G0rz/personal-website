@@ -9,7 +9,7 @@ import {CiMail} from "react-icons/ci";
 const OtherProjectsCard = () => {
     return (
         <>
-            <Card isFooterBlurred className="border-none col-span-full lg:col-span-2" radius="lg">
+            <Card isFooterBlurred className="border-none md:col-span-2 md:row-span-1" radius="lg">
                 <Link href="https://maps.app.goo.gl/gDpKmfCMR4EPe7Qo7" target="_blank" rel="noreferrer">
                     <Image
                         alt="Woman listing to music"
@@ -24,7 +24,7 @@ const OtherProjectsCard = () => {
                     <IoLocationOutline/><p className="text-tiny text-white/80">Based in Toluca, México.</p>
                 </CardFooter>
             </Card>
-            <Card isFooterBlurred className="border-none col-span-full lg:col-span-2" radius="lg">
+            <Card isFooterBlurred className="border-none md:col-span-2 md:row-span-1" radius="lg">
                 <Link href="https://maps.app.goo.gl/gDpKmfCMR4EPe7Qo7" target="_blank" rel="noreferrer">
                     <Image
                         alt="Woman listing to music"

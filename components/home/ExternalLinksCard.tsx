@@ -11,7 +11,7 @@ const ExternalLinksCard = () => {
     const {theme, setTheme} = useTheme()
 
     return (
-        <div className="flex flex-wrap items-center justify-around gap-4">
+        <div className="md:col-span-1 md:row-span-1 flex flex-wrap items-center justify-around gap-4">
             <Card isFooterBlurred
                   className="border-none relative w-[45%] md:w-[44%] min-h-20 group transition-all duration-500 ease-in-out hover:bg-foreground"
                   radius="lg">

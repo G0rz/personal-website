@@ -8,7 +8,7 @@ const AboutMeCard = () => {
     const {t} = useTranslation();
 
     return (
-        <Card className="md:col-span-2 p-4 flex items-center justify-center">
+        <Card className="md:col-span-2 md:row-span-1 p-4 flex items-center justify-center">
             <CardHeader>
                 <h3 className="text-2xl font-bold">{t("About Me Title")}</h3>
             </CardHeader>

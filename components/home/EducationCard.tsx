@@ -51,7 +51,7 @@ const EducationCard = () => {
                     )}
                 </DrawerContent>
             </Drawer>
-            <Card className="lg:col-span-2 p-4">
+            <Card className="md:col-span-2 md:row-span-1 p-4">
                 <CardHeader>
                     <h3 className="text-2xl font-bold">{t("Education Title")}</h3>
                 </CardHeader>

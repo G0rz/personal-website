@@ -11,7 +11,7 @@ import AttachmentsCard from "@/components/home/AttachmentsCard";
 
 export default function Home() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6 p-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-6 p-4">
             <ResumeCard/>
             <ExternalLinksCard/>
             <TechStackCard/>
@@ -19,8 +19,8 @@ export default function Home() {
             <JobHistoryCard/>
             <EducationCard/>
             <AttachmentsCard/>
-            <LatestProjectCard/>
             <ContactCard/>
+            <LatestProjectCard/>
             <OtherProjectsCard/>
         </div>
     );

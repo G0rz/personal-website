@@ -1,61 +1,71 @@
 'use client'
 
-import {Button, Form, Input, Card, CardBody} from "@heroui/react";
-import  {useState} from "react";
+import {Button, Form, Input, Textarea, Card, CardBody} from "@heroui/react";
+import {useState} from "react";
 import {CardHeader} from "@heroui/card";
+import {useTranslation} from "react-i18next";
 
 const ContactCard = () => {
 
-    const [action, setAction] = useState<string | null>(null);
+    const [action, setAction] = useState(null);
+    const {t} = useTranslation();
 
     return (
-        <Card className="col-span-full lg:col-span-2 ">
+        <Card className="md:col-span-2 md:row-span-2 p-4">
             <CardHeader>
-                <h3>CONTACTAME:</h3>
+                <h5 className="text-2xl font-bold">{t("Contact Title")}</h5>
             </CardHeader>
-            <CardBody className="text-center gap-y-2">
+            <CardBody>
                 <Form
-                    className="w-full max-w-xs flex flex-col gap-4"
-                    onReset={() => setAction("reset")}
+                    className="w-full flex flex-col gap-4"
                     onSubmit={(e) => {
                         e.preventDefault();
                         let data = Object.fromEntries(new FormData(e.currentTarget));
-
-                        setAction(`submit ${JSON.stringify(data)}`);
                     }}
                 >
                     <Input
                         isRequired
-                        errorMessage="Please enter a valid username"
-                        label="Username"
-                        labelPlacement="outside"
-                        name="username"
-                        placeholder="Enter your username"
-                        type="text"
-                    />
-
-                    <Input
-                        isRequired
-                        errorMessage="Please enter a valid email"
-                        label="Email"
+                        errorMessage={t("Error Email")}
+                        label={t("Input Label Email")}
                         labelPlacement="outside"
                         name="email"
-                        placeholder="Enter your email"
+                        placeholder={t("Placeholder Email")}
                         type="email"
+                        autoComplete="off"
                     />
-                    <div className="flex gap-2">
-                        <Button color="primary" type="submit">
-                            Submit
-                        </Button>
-                        <Button type="reset" variant="flat">
-                            Reset
-                        </Button>
-                    </div>
-                    {action && (
-                        <div className="text-small text-default-500">
-                            Action: <code>{action}</code>
-                        </div>
-                    )}
+                    <Input
+                        isRequired
+                        errorMessage={t("Error Name")}
+                        label={t("Input Label Name")}
+                        labelPlacement="outside"
+                        name="username"
+                        placeholder={t("Placeholder Name")}
+                        type="text"
+                        autoComplete="off"
+                    />
+                    <Input
+                        isRequired
+                        errorMessage={t("Error Subject")}
+                        label={t("Input Label Subject")}
+                        labelPlacement="outside"
+                        name="username"
+                        placeholder={t("Placeholder Subject")}
+                        type="text"
+                        autoComplete="off"
+                    />
+                    <Textarea
+                        isRequired
+                        errorMessage={t("Error Message")}
+                        label={t("Input Label Message")}
+                        labelPlacement="outside"
+                        name="username"
+                        placeholder={t("Placeholder Message")}
+                        type="text"
+                        autoComplete="off"
+                    />
+                    <Button className="w-full" color="primary" type="submit">
+                        {t("Submit Button")}
+                    </Button>
                 </Form>
             </CardBody>
         </Card>

@@ -4,6 +4,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import CustomFont from "next/font/local";
 import "./globals.css"
 import {Providers} from "@/app/providers";
+import Link from "next/link";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -62,6 +63,10 @@ export default function RootLayout({
                 <main className="flex min-h-screen items-center justify-center text-foreground bg-background">
                     {children}
                 </main>
+                <footer className="w-full text-center text-sm text-default-400">
+                    © {new Date().getFullYear()} <Link href="https://github.com/G0rz" target="_blank"
+                                                       rel="noreferrer">G0rz</Link>. Al rights reserved.
+                </footer>
             </ViewTransition>
         </Providers>
         </body>

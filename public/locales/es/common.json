@@ -8,6 +8,7 @@
   "About Me Title": "Acerca de mí",
   "About Me": "Ingeniero en Sistemas Computacionales y Desarrollador Full Stack con 7 años de experiencia construyendo aplicaciones robustas y escalables. Experto en Front End con React, me apasiona crear interfaces de usuario fluidas y de alto rendimiento. Busco trasladar mi sólida base en arquitectura de componentes y gestión de estado hacia el Desarrollo Mobile, aprovechando tecnologías transversales para crear experiencias nativas impactantes.",
   "Jobs Title": "Experiencia Laboral",
+  "Jobs.Responsabilities": "Responsabilidades y Logros",
   "Jobs Array": [
     {
       "id": 7,
@@ -22,7 +23,17 @@
           "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ],
-      "tech_stack": ["React 18.3.1", "MUI 5.15.19", "Tailwind 3.4.X/4.0", "Stripe", "Firebase", "Google Cloud", "Docker", "MongoDB", "Git"]
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 3.4.X/4.0",
+        "Stripe",
+        "Firebase",
+        "Google Cloud",
+        "Docker",
+        "MongoDB",
+        "Git"
+      ]
     },
     {
       "id": 6,
@@ -37,7 +48,19 @@
           "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ],
-      "tech_stack": []
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 3.4.X/4.0",
+        "Stripe",
+        "Firebase",
+        "Google Cloud",
+        "Docker",
+        "MongoDB",
+        "Git",
+        "Tankstack Query",
+        "Figma"
+      ]
     },
     {
       "id": 5,
@@ -52,7 +75,16 @@
           "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ],
-      "tech_stack": []
+      "tech_stack": [
+        "JavaEE 7",
+        "JSF 2.2",
+        "Primefaces 5.2",
+        "Bootstrap 3.3.6/5.X",
+        "JQuery",
+        "Java 8",
+        "MySQL",
+        "Git"
+      ]
     },
     {
       "id": 4,
@@ -67,7 +99,14 @@
           "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ],
-      "tech_stack": []
+      "tech_stack": [
+        "React 18.2.0",
+        "MUI 4.12.4/5.0.6",
+        "Tailwind 3.1.4",
+        "Nextjs 12",
+        "NextUI 1.0.0",
+        "Git"
+      ]
     },
     {
       "id": 3,
@@ -82,7 +121,19 @@
           "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ],
-      "tech_stack": []
+      "tech_stack": [
+        "React 16.14.0",
+        "Vue.js 2.6.14",
+        "Vuetify 2.6.0",
+        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Bootstrap",
+        "3.X/4.X/5.X",
+        "JQuery",
+        "PHP 7",
+        "MySQL",
+        "Git",
+        "Adobe"
+      ]
     },
     {
       "id": 2,
@@ -97,7 +148,19 @@
           "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
         }
       ],
-      "tech_stack": []
+      "tech_stack": [
+        "React 16.14.0",
+        "Vue.js 2.6.14",
+        "Vuetify 2.6.0",
+        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Bootstrap",
+        "3.X/4.X/5.X",
+        "JQuery",
+        "PHP 7",
+        "MySQL",
+        "Git",
+        "Adobe"
+      ]
     },
     {
       "id": 1,
@@ -207,5 +270,19 @@
       "timeframe": "",
       "assets": "/files/CertificationB1.pdf"
     }
-  ]
+  ],
+  "Contact Title": "CONTACTO",
+  "Input Label Email": "Correo Electrónico",
+  "Placeholder Email": "Ingresa tu correo electrónico",
+  "Error Email": "Por favor ingresa un correo electrónico valido",
+  "Input Label Name": "Nombre",
+  "Placeholder Name": "Ingresa tu nombre",
+  "Error Name": "Por favor ingresa un nombre",
+  "Input Label Subject": "Asunto",
+  "Placeholder Subject": "Ingresa tu asunto",
+  "Error Subject": "Por favor ingresa un asunto",
+  "Input Label Message": "Mensaje",
+  "Placeholder Message": "Ingresa tu mensaje",
+  "Error Message": "Por favor ingresa tu mensaje",
+  "Submit Button": "Enviar"
 }

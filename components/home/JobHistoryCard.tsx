@@ -64,13 +64,13 @@ const JobHistoryCard = () => {
                                 <p className="text-sm italic"><span
                                     className="font-bold">Tech Stack:</span> {element.tech_stack.join(", ")}</p>
                             </div>
-                            {element.awards.length !== 0 && <Tooltip content="Details">
+                            {element.awards.length !== 0 && <Tooltip content={t("Details Button")}>
                                 <Button
                                     className="self-start ms-auto"
                                     color="primary"
                                     variant="flat"
                                     isIconOnly
-                                    aria-label="Details"
+                                    aria-label={t("Details Button")}
                                     onPress={() => {
                                         onOpen();
                                         return setSelectedItem(element.awards);

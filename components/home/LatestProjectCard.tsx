@@ -59,12 +59,12 @@ const LatestProjectCard = () => {
 
                 </CardBody>
                 <CardFooter className="flex items-center justify-end gap-2">
-                    <Tooltip content="Details">
+                    <Tooltip content={t("Details Button")}>
                         <Button
                             variant="flat"
                             className="text-white font-bold"
                             isIconOnly
-                            aria-label="Details"
+                            aria-label={t("Details Button")}
                             onPress={() => onOpen()}
                         >
                             <FaEye/>

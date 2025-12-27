@@ -19,7 +19,7 @@ const ResumeCard = () => {
                     <span className="animate-pulse size-2.5 inline-block bg-success rounded-full mr-2"></span>
                     {t("Availability")}
                 </p>
-                <button className="absolute top-0 left-0 py-1 font-extrabold uppercase"
+                <button className="absolute top-0 left-0 py-1 font-extrabold uppercase cursor-pointer"
                         onClick={currentLanguage === "es" ? async () => await i18n.changeLanguage("en") : async () => await i18n.changeLanguage("es")}>{currentLanguage === "es" ? "EN" : "ES"}</button>
                 <Image
                     alt="Profile Picture"

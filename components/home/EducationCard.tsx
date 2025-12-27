@@ -63,13 +63,13 @@ const EducationCard = () => {
                                 <p className="text-lg font-bold text-default-400">{element.school}</p>
                                 <p className="font-bold">{element.timeframe}</p>
                             </div>
-                            {element.awards.length !== 0 && <Tooltip content="Details">
+                            {element.awards.length !== 0 && <Tooltip content={t("Details Button")}>
                                 <Button
                                     className="self-start ms-auto"
                                     color="primary"
                                     variant="flat"
                                     isIconOnly
-                                    aria-label="Details"
+                                    aria-label={t("Details Button")}
                                     onPress={() => {
                                         onOpen();
                                         return setSelectedItem(element.awards);

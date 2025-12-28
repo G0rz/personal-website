@@ -1,9 +1,8 @@
 'use client'
 
-import {Button, Form, Input, Textarea, Card, CardBody} from "@heroui/react";
 import {useState} from "react";
-import {CardHeader} from "@heroui/card";
 import {useTranslation} from "react-i18next";
+import {Button, Form, Input, Textarea, Card, CardHeader, CardBody} from "@heroui/react";
 
 const ContactCard = () => {
 
@@ -13,7 +12,7 @@ const ContactCard = () => {
     return (
         <Card className="md:col-span-2 md:row-span-2 p-4">
             <CardHeader>
-                <h5 className="text-2xl font-bold">{t("Contact Title")}</h5>
+                <h4 className="text-2xl font-bold uppercase">{t("Contact Title")}</h4>
             </CardHeader>
             <CardBody>
                 <Form
@@ -21,6 +20,7 @@ const ContactCard = () => {
                     onSubmit={(e) => {
                         e.preventDefault();
                         let data = Object.fromEntries(new FormData(e.currentTarget));
+                        console.log(data)
                     }}
                 >
                     <Input
@@ -38,7 +38,7 @@ const ContactCard = () => {
                         errorMessage={t("Error Name")}
                         label={t("Input Label Name")}
                         labelPlacement="outside"
-                        name="username"
+                        name="name"
                         placeholder={t("Placeholder Name")}
                         type="text"
                         autoComplete="off"
@@ -48,7 +48,7 @@ const ContactCard = () => {
                         errorMessage={t("Error Subject")}
                         label={t("Input Label Subject")}
                         labelPlacement="outside"
-                        name="username"
+                        name="subject"
                         placeholder={t("Placeholder Subject")}
                         type="text"
                         autoComplete="off"
@@ -58,10 +58,11 @@ const ContactCard = () => {
                         errorMessage={t("Error Message")}
                         label={t("Input Label Message")}
                         labelPlacement="outside"
-                        name="username"
+                        name="message"
                         placeholder={t("Placeholder Message")}
                         type="text"
                         autoComplete="off"
+
                     />
                     <Button className="w-full" color="primary" type="submit">
                         {t("Submit Button")}

@@ -3,6 +3,7 @@
   "Download Button": "DESCARGAR CV",
   "Close Button": "Cerrar",
   "Details Button": "Detalles",
+  "Preview Button": "Ir al sitio",
   "Availability": "DISPONIBLE",
   "Tech Stack Title": "Habilidades Técnicas",
   "About Me Title": "Acerca de mí",
@@ -284,5 +285,8 @@
   "Input Label Message": "Mensaje",
   "Placeholder Message": "Ingresa tu mensaje",
   "Error Message": "Por favor ingresa tu mensaje",
-  "Submit Button": "Enviar"
+  "Submit Button": "Enviar",
+  "Latest Project": "Ultimo Proyecto",
+  "Working On": "Trabajando",
+  "Other Projects": "Otros Proyectos"
 }

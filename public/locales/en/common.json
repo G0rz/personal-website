@@ -3,9 +3,10 @@
   "Download Button": "DOWNLOAD RESUME",
   "Close Button": "Close",
   "Details Button": "Details",
+  "Preview Button": "Go to site",
   "Availability": "AVALIBLE FOR WORK",
   "Tech Stack Title": "Tech Stack",
-  "About Me Title": "Tech Stack",
+  "About Me Title": "About Me",
   "About Me": "Computer Systems Engineer and Full Stack Developer with 7 years of experience building robust and scalable applications. Front-End specialist with strong expertise in React, passionate about creating high-performance, smooth, and intuitive user interfaces. Seeking to leverage a solid foundation in component architecture and state management to transition into Mobile Development, utilizing cross-platform technologies to deliver impactful native experiences.",
   "Jobs Title": "Work Experience",
   "Jobs.Responsabilities": "Responsibilities and Achievements",
@@ -282,5 +283,8 @@
   "Input Label Message": "Message",
   "Placeholder Message": "Enter your message",
   "Error Message": "Please enter your message",
-  "Submit Button": "Submit"
+  "Submit Button": "Submit",
+  "Latest Project": "Latest Project",
+  "Working On": "Working On",
+  "Other Projects": "Other Projects"
 }

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin './hero.ts';
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
@@ -74,8 +75,59 @@
 
 @theme inline {
     --font-custom: var(--font-custom);
+    --font-fallout: var(--font-fallout);
 }
 
 body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    font-size: clamp(18px, 3vw, 30px);
+    scrollbar-color: #ffd52c #ff5c00;
+
+}
+
+div.retro-container {
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    padding: 0.5rem;
+    border: 2px solid #ffd52c;
+    color: #ffd52c;
+    mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+    mask-size: 100% 2px;
+    text-shadow: 0 0 0.5rem;
+}
+
+
+@keyframes crtAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 10000%;
+    }
+}
+
+.old-crt-monitor {
+    box-shadow: inset 0px 0px 2rem;
+    background-image: linear-gradient(0deg, #0000 10%, #fff1 90%, #0000 100%);
+    animation: crtAnimation 100s linear infinite;
+    background-size: 100% 80%;
+}
+
+alert {
+    animation: blink-bg 1s ease-out infinite;
+}
+
+@keyframes blink-bg {
+    0%, 60% {
+        text-shadow: 0 0 10.5rem;
+        color: #ffd52c;
+    }
+    70%, 100% {
+        text-shadow: 0 0 20.5rem;
+        color: #ffd52c;
+    }
 }

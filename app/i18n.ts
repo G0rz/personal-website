@@ -22,10 +22,8 @@ i18n
     .use(initReactI18next)
     .use(LanguageDetector)
     .init({
-        detection: DETECTION_OPTIONS,
-        resources,
+        detection: DETECTION_OPTIONS, resources,
         fallbackLng: "es",
-
         interpolation: {
             escapeValue: false
         }

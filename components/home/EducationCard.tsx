@@ -1,6 +1,9 @@
 'use client'
 
+import {useState} from "react";
+import {useTranslation} from "react-i18next";
 import {
+    Card, CardBody, CardHeader,
     Drawer,
     DrawerBody,
     DrawerContent,
@@ -10,9 +13,6 @@ import {
     Button, DrawerHeader
 } from "@heroui/react";
 import {FaEye} from "react-icons/fa";
-import {Card, CardBody, CardHeader} from "@heroui/card";
-import {useState} from "react";
-import {useTranslation} from "react-i18next";
 
 const EducationCard = () => {
 
@@ -43,7 +43,7 @@ const EducationCard = () => {
                                 })}
                             </DrawerBody>
                             <DrawerFooter>
-                                <Button color="danger" variant="light" onPress={onClose}>
+                                <Button color="danger" variant="flat" onPress={onClose}>
                                     {t("Close Button")}
                                 </Button>
                             </DrawerFooter>
@@ -53,7 +53,7 @@ const EducationCard = () => {
             </Drawer>
             <Card className="md:col-span-2 md:row-span-1 p-4">
                 <CardHeader>
-                    <h3 className="text-2xl font-bold">{t("Education Title")}</h3>
+                    <h3 className="text-2xl font-bold uppercase">{t("Education Title")}</h3>
                 </CardHeader>
                 <CardBody>
                     {education && Array.isArray(education) && education.map((element, index) => {

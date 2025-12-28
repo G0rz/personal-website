@@ -1,11 +1,11 @@
 'use client'
 
-import {Card, CardBody, CardHeader} from "@heroui/card";
-import {motion, animate, useMotionValue} from "framer-motion";
-import Image from "next/image";
-import useMeasure from 'react-use-measure'
 import {useEffect} from "react";
+import Image from "next/image";
 import {useTranslation} from "react-i18next";
+import {Card, CardBody, CardHeader} from "@heroui/react";
+import useMeasure from 'react-use-measure'
+import {motion, animate, useMotionValue} from "framer-motion";
 
 export const techStackImages = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
@@ -48,7 +48,7 @@ const TechStackCard = () => {
     return (
         <Card className="md:col-span-3 md:row-span-1 p-4">
             <CardHeader>
-                <h3 className="text-2xl font-bold">{t("Tech Stack Title")}</h3>
+                <h3 className="text-2xl font-bold uppercase">{t("Tech Stack Title")}</h3>
             </CardHeader>
             <CardBody className="relative overflow-hidden min-h-[70px] justify-center items-center">
                 <motion.div className="absolute left-0 gap-4 flex" ref={ref} style={{x: xTranslation}}>

@@ -1,4 +1,8 @@
+'use client'
+import {useEffect} from "react";
+
 const Page = () => {
+
     return (
         <div
             className="font-fallout text-[#ffd52c] bg-[#111] flex justify-center items-center overflow-hidden old-crt-monitor">

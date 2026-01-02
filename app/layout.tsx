@@ -1,6 +1,6 @@
 import {ViewTransition} from 'react'
 import {Metadata} from "next";
-import {Geist, Geist_Mono, Roboto_Flex} from "next/font/google";
+import {Geist, Geist_Mono} from "next/font/google";
 import CustomFont from "next/font/local";
 import "./globals.css"
 import {Providers} from "@/app/providers";
@@ -21,9 +21,9 @@ const customFont = CustomFont({
     variable: "--font-custom",
 });
 
-const fontFallout = Roboto_Flex({
+const fontFallout = CustomFont({
+    src: "/../public/fonts/VT323-Regular.ttf",
     variable: "--font-fallout",
-    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -61,7 +61,7 @@ export default function RootLayout({
     return (
         <html lang="es">
         <body
-            className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
+            className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} ${fontFallout.variable} antialiased scroll-smooth`}
         >
         <Providers>
             <ViewTransition>

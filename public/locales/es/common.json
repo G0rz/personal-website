@@ -286,6 +286,10 @@
   "Placeholder Message": "Ingresa tu mensaje",
   "Error Message": "Por favor ingresa tu mensaje",
   "Submit Button": "Enviar",
+  "Email Title Success": "",
+  "Email Description Success": "",
+  "Email Title Error": "",
+  "Email Description Error": "",
   "Latest Project": "Ultimo Proyecto",
   "Working On": "Trabajando",
   "Other Projects": "Otros Proyectos"

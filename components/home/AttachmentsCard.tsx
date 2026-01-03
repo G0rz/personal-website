@@ -27,14 +27,15 @@ const EducationCard = () => {
                     {(onClose) => (
                         <>
                             <ModalBody className="pt-12">
-                                <iframe
+
+                                <embed
+                                    style={{
+                                        width: '100%',
+                                        height: '375px',
+                                    }}
+                                    type='application/pdf'
                                     src={selectedItem}
-                                    className="h-[375px]"
-                                    title="PDF Preview"
-                                >
-                                    <p>Your browser does not support iframes. You can
-                                        <a href={selectedItem}>download the PDF</a> instead.</p>
-                                </iframe>
+                                />
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="danger" variant="flat" onPress={onClose}>

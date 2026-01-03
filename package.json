@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@heroui/react": "^2.8.5",
     "@react-stately/data": "^3.15.0",
     "framer-motion": "^12.23.25",

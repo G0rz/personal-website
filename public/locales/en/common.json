@@ -284,6 +284,10 @@
   "Placeholder Message": "Enter your message",
   "Error Message": "Please enter your message",
   "Submit Button": "Submit",
+  "Email Title Success": "",
+  "Email Description Success": "",
+  "Email Title Error": "",
+  "Email Description Error": "",
   "Latest Project": "Latest Project",
   "Working On": "Working On",
   "Other Projects": "Other Projects"

@@ -252,24 +252,33 @@
   "Attachments Array": [
     {
       "id": 3,
-      "name": "Google Ads para Principiantes",
-      "type": "Certificado de Proyecto",
+      "name": "Google Ads for Beginners",
+      "type": "Project Certificate",
       "timeframe": "",
-      "assets": "/files/Coursera OVV770NV260F.pdf"
+      "assets": {
+        "image": "/images/attachments/Coursera OVV770NV260F.jpg",
+        "file": "/files/Coursera OVV770NV260F.pdf"
+      }
     },
     {
       "id": 2,
-      "name": "Introducción al análisis de datos en AWS",
-      "type": "Certificado de Proyecto",
+      "name": "Getting Started with Data Analytics on AWS",
+      "type": "Project Certificate",
       "timeframe": "",
-      "assets": "/files/Coursera IBXJRQDIYF4B.pdf"
+      "assets": {
+        "image": "/images/attachments/Coursera IBXJRQDIYF4B.jpg",
+        "file": "/files/Coursera IBXJRQDIYF4B.pdf"
+      }
     },
     {
       "id": 1,
-      "name": "TOEFL ITP Certificación - CEFR Level B1",
-      "type": "Certificado",
+      "name": "TOEFL ITP Certification - CEFR Level B1",
+      "type": "Certificate",
       "timeframe": "",
-      "assets": "/files/CertificationB1.pdf"
+      "assets": {
+        "image":  "/images/attachments/CertificationB1.jpg",
+        "file":  "/files/CertificationB1.pdf"
+      }
     }
   ],
   "Contact Title": "CONTACTO",

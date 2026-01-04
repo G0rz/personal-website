@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin './hero.ts';
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
@@ -77,13 +78,13 @@
     --font-fallout: var(--font-fallout);
 }
 
-img{
-    pointer-events: none;
+img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    scrollbar-color: #ffd52c #ff5c00;
 }
 
 div.retro-container {
@@ -99,6 +100,7 @@ div.retro-container {
     mask-size: 100% 2px;
     text-shadow: 0 0 0.5rem;
     font-size: clamp(18px, 3vw, 30px);
+    scrollbar-color: #ffd52c #ff5c00;
 }
 
 

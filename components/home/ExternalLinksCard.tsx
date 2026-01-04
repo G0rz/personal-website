@@ -18,7 +18,7 @@ const ExternalLinksCard = () => {
                 <Image
                     onClick={() => theme === 'light' ? setTheme('dark') : setTheme('light')}
                     alt="Victini"
-                    className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-7 transition-all duration-500 ease-in-out group-hover:rotate-y-360 cursor-pointer"
+                    className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-7 transition-all duration-500 ease-in-out group-hover:rotate-y-360 cursor-pointer drop-shadow-sm drop-shadow-foreground"
                     height={35}
                     width={35}
                     src="/images/victini.gif"
@@ -30,7 +30,7 @@ const ExternalLinksCard = () => {
                   radius="lg">
                 <Link href="https://github.com/G0rz" target="_blank" rel="noreferrer">
                     <FaGithub
-                        className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-7 hover:scale-110"/>
+                        className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-7 hover:scale-110 "/>
                 </Link>
             </Card>
             <Card isFooterBlurred
@@ -44,7 +44,7 @@ const ExternalLinksCard = () => {
             <Card isFooterBlurred className="border-none relative w-[45%] md:w-[44%] min-h-20" radius="lg">
                 <Link href="mailto:leonardo.becerril@hotmail.com" target="_blank" rel="noreferrer">
                     <FaEnvelope
-                        className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-7 hover:scale-110"/>
+                        className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-7 hover:scale-110 "/>
                 </Link>
             </Card>
         </div>

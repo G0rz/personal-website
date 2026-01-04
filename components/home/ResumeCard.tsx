@@ -21,20 +21,19 @@ const ResumeCard = () => {
                     <span className="animate-pulse size-2.5 inline-block bg-success rounded-full mr-2"></span>
                     {t("Availability")}
                 </p>
-                <Tooltip content=" 🧠 I'm learning kotlin things." placement="right" color="danger">
-                    <Image
-                        alt="Profile Picture"
-                        width={250}
-                        height={250}
-                        className="rounded-full object-cover w-1/2"
-                        loading="eager"
-                        src="https://avatars.githubusercontent.com/u/63682340?v=4"
-                    />
-                </Tooltip>
+                <Image
+                    alt="Profile Picture"
+                    width={250}
+                    height={250}
+                    className="rounded-full w-1/2"
+                    loading="eager"
+                    src="https://avatars.githubusercontent.com/u/63682340?v=4"
+                />
                 <h1 className={'text-2xl font-extrabold'}>Leonardo Yael Bazan Becerril</h1>
                 <h2 className={'text-xl font-bold'}>{t("Personal Title")}</h2>
 
-                <Button as={Link} href="/files/LeonardoBecerril-CV-2026.pdf" download variant="solid" color="primary"
+                <Button as={Link} href="/files/LeonardoBecerril-CV-2026.pdf" target="_blank" rel="noreferrer"
+                        variant="solid" color="primary"
                         className="w-full  transition-all font-bold">{t("Download Button")}<RxDownload/>
                 </Button>
             </CardBody>

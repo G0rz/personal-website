@@ -62,7 +62,7 @@ const LatestProjectCard = () => {
                 <CardHeader className="bg-black/40">
                     <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Latest Project")}</h5>
                 </CardHeader>
-                <CardBody className="h-[20vh]">
+                <CardBody className="h-[10vh]">
 
                 </CardBody>
                 <CardFooter className="flex items-center justify-end gap-2">

@@ -13,12 +13,15 @@ import {
     Button
 } from "@heroui/react";
 import {FaEye} from "react-icons/fa";
+import Image from "next/image";
+import {RxDownload} from "react-icons/rx";
+import Link from "next/link";
 
 const EducationCard = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const {t} = useTranslation();
-    const [selectedItem, setSelectedItem] = useState("")
+    const [selectedItem, setSelectedItem] = useState({image:"", file:""})
     let attachments = t("Attachments Array", {returnObjects: true});
 
     return (<>
@@ -26,18 +29,15 @@ const EducationCard = () => {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalBody className="pt-12">
-
-                                <embed
-                                    style={{
-                                        width: '100%',
-                                        height: '375px',
-                                    }}
-                                    type='application/pdf'
-                                    src={selectedItem}
-                                />
+                            <ModalBody>
+                                <Image className="pt-8" width={500} height={500} src={selectedItem.image.trim()}
+                                       alt={'Preview'}/>
                             </ModalBody>
                             <ModalFooter>
+                                <Button color="success" isIconOnly variant="light" as={Link}
+                                        href={selectedItem.file.trim()} target="_blank" rel="noreferrer">
+                                    <RxDownload/>
+                                </Button>
                                 <Button color="danger" variant="flat" onPress={onClose}>
                                     {t("Close Button")}
                                 </Button>

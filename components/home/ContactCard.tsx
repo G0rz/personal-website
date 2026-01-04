@@ -48,9 +48,9 @@ const ContactCard = () => {
             <CardHeader>
                 <h4 className="text-2xl font-bold uppercase">{t("Contact Title")}</h4>
             </CardHeader>
-            <CardBody>
+                <CardBody className="flex flex-wrap justify-center items-center">
                 <Form id="contact-form"
-                      className="w-full flex flex-col justify-center items-center gap-4"
+                      className="w-full gap-4"
                       onSubmit={handleSendEmail}
                 >
                     <Input

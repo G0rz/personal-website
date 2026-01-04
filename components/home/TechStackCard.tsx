@@ -53,8 +53,9 @@ const TechStackCard = () => {
             <CardBody className="relative overflow-hidden min-h-[70px] justify-center items-center">
                 <motion.div className="absolute left-0 gap-4 flex" ref={ref} style={{x: xTranslation}}>
                     {[...techStackImages, ...techStackImages].map((item, index) => {
-                        return <motion.div key={index} className="min-w-[50px] flex justify-center items-center">
-                            <Image alt="Tech Stack Item" width={50} height={50} loading="eager" className="object-cover"
+                        return <motion.div key={index}
+                                           className="min-w-[50px] flex justify-center items-center drop-shadow-black drop-shadow-md">
+                            <Image alt="Tech Stack Item" width={50} height={50} loading="eager"
                                    src={item}/>
                         </motion.div>
                     })}

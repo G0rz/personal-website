@@ -17,11 +17,11 @@ const OtherProjectsCard = () => {
     return (
         <>
             <Card
-                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.png')] bg-cover bg-top bg-no-repeat">
+                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.png')] bg-cover bg-center bg-no-repeat">
                 <CardHeader className="bg-black/40">
                     <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Working On")}</h5>
                 </CardHeader>
-                <CardBody className="h-[20vh]">
+                <CardBody className="h-[10vh]">
 
                 </CardBody>
                 <CardFooter className="flex items-center justify-end gap-2">
@@ -42,11 +42,11 @@ const OtherProjectsCard = () => {
                 </CardFooter>
             </Card>
             <Card
-                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.png')] bg-cover bg-top bg-no-repeat">
+                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.png')] bg-cover bg-center bg-no-repeat">
                 <CardHeader className="bg-black/40">
                     <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Other Projects")}</h5>
                 </CardHeader>
-                <CardBody className="h-[20vh]">
+                <CardBody className="h-[10vh]">
 
                 </CardBody>
                 <CardFooter className="flex items-center justify-end gap-2">

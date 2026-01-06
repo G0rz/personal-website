@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const PageNotFound = () => {
+export const PageNotFound = () => {
     return (<main
             className="relative w-screen h-screen bg-black text-white font-custom tracking-tighter">
             <div
@@ -15,5 +15,3 @@ const PageNotFound = () => {
         </main>
     );
 };
-
-export default PageNotFound;

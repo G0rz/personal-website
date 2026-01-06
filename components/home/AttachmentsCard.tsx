@@ -16,6 +16,7 @@ import {FaEye} from "react-icons/fa";
 import Image from "next/image";
 import {RxDownload} from "react-icons/rx";
 import Link from "next/link";
+import {ModalHeader} from "@heroui/modal";
 
 const EducationCard = () => {
 
@@ -29,8 +30,9 @@ const EducationCard = () => {
                 <ModalContent>
                     {(onClose) => (
                         <>
+                            <ModalHeader></ModalHeader>
                             <ModalBody>
-                                <Image className="pt-8" width={500} height={500} src={selectedItem.image.trim()}
+                                <Image className="pointer-events-none" width={500} height={500} src={selectedItem.image.trim()}
                                        alt={'Preview'}/>
                             </ModalBody>
                             <ModalFooter>

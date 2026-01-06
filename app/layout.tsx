@@ -1,45 +1,42 @@
 import {ViewTransition} from 'react'
-import {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
-import CustomFont from "next/font/local";
+import {Metadata, Viewport} from "next";
 import "./globals.css"
 import {Providers} from "@/app/providers";
 import Link from "next/link";
+import {customFont, geistSans, jetbrainsMono, vt323} from "@/config/fonts";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
-
-const customFont = CustomFont({
-    src: "/../public/fonts/NIS-JTC-Win-M9.ttf",
-    variable: "--font-custom",
-});
-
-const fontFallout = CustomFont({
-    src: "/../public/fonts/VT323-Regular.ttf",
-    variable: "--font-fallout",
-});
+export const viewport: Viewport = {
+    themeColor: [
+        {media: '(prefers-color-scheme: light)', color: 'white'},
+        {media: '(prefers-color-scheme: dark)', color: 'black'},
+    ],
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+}
 
 export const metadata: Metadata = {
-    title: 'Leonardo Becerril | Personal Website',
-    description: 'Without description.',
+    metadataBase: new URL('https://leonardobecerril.dev'),
+    title: {
+        default: 'Leonardo Becerril | Full Stack Developer & Computer Systems Engineer',
+        template: '%s | Leonardo Becerril'
+    },
+    description: 'Portfolio of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
+    keywords: ['Leonardo Becerril', 'Full Stack Developer', 'Computer Systems Engineer', 'React Developer', 'Next.js', 'Mobile Development', 'Web Development', 'Software Engineer', 'Portfolio'],
+    authors: [{name: 'Leonardo Becerril', url: 'https://leonardobecerril.dev'}],
+    creator: 'Leonardo Becerril',
+    publisher: 'Leonardo Becerril',
     openGraph: {
-        title: 'Personal Website',
-        description: 'Without description.',
-        url: "https://leonardobecerril.dev/",
-        siteName: 'Leonardo Becerril | Personal Website',
+        title: 'Leonardo Becerril | Full Stack Developer',
+        description: 'Computer Systems Engineer & Full Stack Developer Portfolio. Specializing in building robust and scalable applications.',
+        url: 'https://leonardobecerril.dev',
+        siteName: 'Leonardo Becerril Portfolio',
         images: [
             {
-                url: 'https://leonardobecerril.dev/preview.png',
-                width: 800,
-                height: 600,
-                alt: 'Preview Image',
+                url: '/preview.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Leonardo Becerril Portfolio Preview',
             },
         ],
         locale: 'es_MX',
@@ -47,34 +44,42 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Personal Website',
-        description: 'Without description.',
-        images: ['https://example.com/images/blog-post.jpg'],
+        title: 'Leonardo Becerril | Full Stack Developer',
+        description: 'Computer Systems Engineer & Full Stack Developer Portfolio.',
+        creator: '@XDeathZero',
+        images: ['/preview.webp'],
+    },
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon-16x16.png',
+        apple: '/apple-touch-icon.png',
+    },
+    manifest: '/site.webmanifest',
+    alternates: {
+        canonical: 'https://leonardobecerril.dev',
     },
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
     return (
-        <html lang="es">
-        <body
-            className={`${customFont.variable} ${geistSans.variable} ${geistMono.variable} ${fontFallout.variable} antialiased scroll-smooth`}
-        >
-        <Providers>
-            <ViewTransition>
-                <main className="flex min-h-screen items-center justify-center text-foreground bg-background">
+        <ViewTransition>
+            <html lang="es" suppressHydrationWarning>
+            <body
+                className={`${customFont.variable} ${geistSans.variable} ${jetbrainsMono.variable} ${vt323.variable} antialiased scroll-smooth`}
+            >
+            <Providers>
+                <main className="flex min-h-screen items-center justify-center text-foreground bg-background font-sans">
                     {children}
                 </main>
-                <footer className="w-full text-center text-sm text-default-400">
+                <footer className="w-full text-center text-sm text-muted-foreground py-4">
                     © {new Date().getFullYear()} <Link href="https://github.com/G0rz" target="_blank"
-                                                       rel="noreferrer">G0rz</Link>. Al rights reserved.
+                                                       rel="noreferrer"
+                                                       className="hover:text-primary transition-colors">G0rz</Link>. All
+                    rights reserved.
                 </footer>
-            </ViewTransition>
-        </Providers>
-        </body>
-        </html>
+            </Providers>
+            </body>
+            </html>
+        </ViewTransition>
     );
 }

@@ -25,7 +25,7 @@ const ResumeCard = () => {
                     alt="Profile Picture"
                     width={250}
                     height={250}
-                    className="rounded-full w-1/2"
+                    className="rounded-full w-1/2 pointer-events-none"
                     loading="eager"
                     src="https://avatars.githubusercontent.com/u/63682340?v=4"
                 />

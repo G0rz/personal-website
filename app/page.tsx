@@ -8,8 +8,10 @@ import LatestProjectCard from "@/components/home/LatestProjectCard";
 import ContactCard from "@/components/home/ContactCard";
 import OtherProjectsCard from "@/components/home/OtherProjectsCard";
 import AttachmentsCard from "@/components/home/AttachmentsCard";
+import {motion} from "framer-motion";
 
 export default function Home() {
+
     return (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 p-4">
             <ResumeCard/>

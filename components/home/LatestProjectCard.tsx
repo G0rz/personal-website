@@ -58,7 +58,7 @@ const LatestProjectCard = () => {
                 </DrawerContent>
             </Drawer>
             <Card
-                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.png')] bg-cover bg-top bg-no-repeat">
+                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.webp')] bg-cover bg-top bg-no-repeat">
                 <CardHeader className="bg-black/40">
                     <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Latest Project")}</h5>
                 </CardHeader>

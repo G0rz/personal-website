@@ -36,14 +36,10 @@ const Navbar = () => {
                     <Link href="/" className={pathname === '/' ? 'text-[#F8E231]' : ''}>Home</Link>
                     <Link href="/projects" className={pathname === '/projects' ? 'text-[#F8E231]' : ''}>Projects</Link>
                     <Link href="https://github.com/G0rz" target="_blank" rel="noopener noreferrer" className="hover:transform hover:scale-110 transition-all duration-300">
-                        <img src="/images/github-mark-white.svg"
-                             alt="Github icon" width={25}
-                             height={25}/>
+
                     </Link>
                     <Link href="https://www.linkedin.com/in/typenull/" target="_blank" rel="noopener noreferrer" className="hover:transform hover:scale-110 transition-all">
-                        <img src="/images/InBug-White.png"
-                             alt="Linkedin icon" width={25}
-                             height={25}/>
+
                     </Link>
                 </div>
             </nav>

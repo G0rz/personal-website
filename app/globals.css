@@ -1,9 +1,40 @@
 @import "tailwindcss";
-
 @plugin './hero.ts';
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
+@keyframes crtAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 10000%;
+    }
+}
+@keyframes blink-bg {
+    0%, 60% {
+        text-shadow: 0 0 10.5rem;
+        color: #ffd52c;
+    }
+    70%, 100% {
+        text-shadow: 0 0 20.5rem;
+        color: #ffd52c;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@theme inline {
+    --font-custom: var(--font-custom);
+    --font-fallout: var(--font-fallout);
+}
 :root {
     --radius: 0.625rem;
     --background: oklch(1 0 0);
@@ -17,7 +48,7 @@
     --secondary: oklch(0.968 0.007 247.896);
     --secondary-foreground: oklch(0.208 0.042 265.755);
     --muted: oklch(0.968 0.007 247.896);
-    --muted-foreground: oklch(0.554 0.046 257.417);
+    --muted-foreground: oklch(0.40 0.046 257.417);
     --accent: oklch(0.968 0.007 247.896);
     --accent-foreground: oklch(0.208 0.042 265.755);
     --destructive: oklch(0.577 0.245 27.325);
@@ -38,7 +69,6 @@
     --sidebar-border: oklch(0.929 0.013 255.508);
     --sidebar-ring: oklch(0.704 0.04 256.788);
 }
-
 .dark {
     --background: oklch(0.129 0.042 264.695);
     --foreground: oklch(0.984 0.003 247.858);
@@ -51,7 +81,7 @@
     --secondary: oklch(0.279 0.041 260.031);
     --secondary-foreground: oklch(0.984 0.003 247.858);
     --muted: oklch(0.279 0.041 260.031);
-    --muted-foreground: oklch(0.704 0.04 256.788);
+    --muted-foreground: oklch(0.80 0.04 256.788);
     --accent: oklch(0.279 0.041 260.031);
     --accent-foreground: oklch(0.984 0.003 247.858);
     --destructive: oklch(0.704 0.191 22.216);
@@ -73,18 +103,20 @@
     --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-@theme inline {
-    --font-custom: var(--font-custom);
-    --font-fallout: var(--font-fallout);
+::view-transition-old(root) {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+::view-transition-new(root) {
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 img {
     aspect-ratio: 1/1;
     object-fit: contain;
-}
-
-body {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 div.retro-container {
@@ -103,17 +135,6 @@ div.retro-container {
     scrollbar-color: #ffd52c #ff5c00;
 }
 
-
-@keyframes crtAnimation {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 0 10000%;
-    }
-}
-
 .old-crt-monitor {
     box-shadow: inset 0px 0px 2rem;
     background-image: linear-gradient(0deg, #0000 10%, #fff1 90%, #0000 100%);
@@ -123,15 +144,4 @@ div.retro-container {
 
 .alert {
     animation: blink-bg 1s ease-out infinite;
-}
-
-@keyframes blink-bg {
-    0%, 60% {
-        text-shadow: 0 0 10.5rem;
-        color: #ffd52c;
-    }
-    70%, 100% {
-        text-shadow: 0 0 20.5rem;
-        color: #ffd52c;
-    }
 }

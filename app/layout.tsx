@@ -33,26 +33,21 @@ export const metadata: Metadata = {
         siteName: 'Leonardo Becerril Website',
         images: [
             {
-                url: '/og.jpg',
+                url: '/opengraph-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Leonardo Becerril Website Preview',
-            }, {
-                url: '/og-alt.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Leonardo Becerril Website Preview',
-            },
+            }
         ],
         locale: 'es_MX',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Leonardo Becerril | Computer Systems Engineer',
+        title: 'Leonardo Becerril | Death Zero',
         description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer.',
         creator: '@XDeathZero',
-        images: ['/og.jpg'],
+        images: ['/opengraph-image.jpg'],
     },
     icons: {
         icon: '/favicon.ico',

@@ -33,7 +33,12 @@ export const metadata: Metadata = {
         siteName: 'Leonardo Becerril Portfolio',
         images: [
             {
-                url: '/preview.webp',
+                url: '/og.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Leonardo Becerril Portfolio Preview',
+            },   {
+                url: '/og-alt.png',
                 width: 1200,
                 height: 630,
                 alt: 'Leonardo Becerril Portfolio Preview',
@@ -47,14 +52,13 @@ export const metadata: Metadata = {
         title: 'Leonardo Becerril | Full Stack Developer',
         description: 'Computer Systems Engineer & Full Stack Developer Portfolio.',
         creator: '@XDeathZero',
-        images: ['/preview.webp'],
+        images: ['/og.webp'],
     },
     icons: {
         icon: '/favicon.ico',
         shortcut: '/favicon-16x16.png',
         apple: '/apple-touch-icon.png',
     },
-    manifest: '/site.webmanifest',
     alternates: {
         canonical: 'https://leonardobecerril.dev',
     },

@@ -18,30 +18,30 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     metadataBase: new URL('https://leonardobecerril.dev'),
     title: {
-        default: 'Leonardo Becerril | Full Stack Developer & Computer Systems Engineer',
+        default: 'Leonardo Becerril | Computer Systems Engineer & Full Stack Developer',
         template: '%s | Leonardo Becerril'
     },
-    description: 'Portfolio of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
+    description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
     keywords: ['Leonardo Becerril', 'Full Stack Developer', 'Computer Systems Engineer', 'React Developer', 'Next.js', 'Mobile Development', 'Web Development', 'Software Engineer', 'Portfolio'],
     authors: [{name: 'Leonardo Becerril', url: 'https://leonardobecerril.dev'}],
     creator: 'Leonardo Becerril',
     publisher: 'Leonardo Becerril',
     openGraph: {
-        title: 'Leonardo Becerril | Full Stack Developer',
-        description: 'Computer Systems Engineer & Full Stack Developer Portfolio. Specializing in building robust and scalable applications.',
+        title: 'Leonardo Becerril | Computer Systems Engineer & Full Stack Developer',
+        description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
         url: 'https://leonardobecerril.dev',
-        siteName: 'Leonardo Becerril Portfolio',
+        siteName: 'Leonardo Becerril Website',
         images: [
             {
                 url: '/og.webp',
                 width: 1200,
                 height: 630,
-                alt: 'Leonardo Becerril Portfolio Preview',
+                alt: 'Leonardo Becerril Website Preview',
             },   {
-                url: '/og-alt.png',
+                url: '/og-alt.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Leonardo Becerril Portfolio Preview',
+                alt: 'Leonardo Becerril Website Preview',
             },
         ],
         locale: 'es_MX',
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Leonardo Becerril | Full Stack Developer',
-        description: 'Computer Systems Engineer & Full Stack Developer Portfolio.',
+        title: 'Leonardo Becerril | Computer Systems Engineer & Full Stack Developer',
+        description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
         creator: '@XDeathZero',
         images: ['/og.webp'],
     },

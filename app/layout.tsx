@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     metadataBase: new URL('https://leonardobecerril.dev'),
     title: {
-        default: 'Leonardo Becerril | Computer Systems Engineer',
+        default: 'Leonardo Becerril | Website',
         template: '%s | Leonardo Becerril'
     },
     description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
@@ -27,24 +27,22 @@ export const metadata: Metadata = {
     creator: 'Leonardo Becerril',
     publisher: 'Leonardo Becerril',
     openGraph: {
-        title: 'Leonardo Becerril | Computer Systems Engineer',
+        title: 'Leonardo Becerril | Website',
         description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
         url: 'https://leonardobecerril.dev',
-        siteName: 'Leonardo Becerril Website',
-        images: [
-            {
-                url: '/opengraph-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Leonardo Becerril Website Preview',
-            }
-        ],
+        siteName: 'Leonardo Becerril | Website',
+        images:  {
+            url: '/opengraph-image.jpg',
+            width: 1200,
+            height: 630,
+            alt: 'Leonardo Becerril Website Preview',
+        },
         locale: 'es_MX',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Leonardo Becerril | Death Zero',
+        title: 'Leonardo Becerril | Website',
         description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer.',
         creator: '@XDeathZero',
         images: ['/opengraph-image.jpg'],

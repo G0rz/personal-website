@@ -16,20 +16,20 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://leonardobecerril.dev'),
+    metadataBase: new URL('https://g0rz-website.netlify.app'),
     title: {
         default: 'Leonardo Becerril | Website',
         template: '%s | Leonardo Becerril'
     },
     description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
     keywords: ['Leonardo Becerril', 'Full Stack Developer', 'Computer Systems Engineer', 'React Developer', 'Next.js', 'Mobile Development', 'Web Development', 'Software Engineer', 'Portfolio'],
-    authors: [{name: 'Leonardo Becerril', url: 'https://leonardobecerril.dev'}],
+    authors: [{name: 'Leonardo Becerril', url: 'https://g0rz-website.netlify.app'}],
     creator: 'Leonardo Becerril',
     publisher: 'Leonardo Becerril',
     openGraph: {
         title: 'Leonardo Becerril | Website',
         description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
-        url: 'https://leonardobecerril.dev',
+        url: 'https://g0rz-website.netlify.app',
         siteName: 'Leonardo Becerril | Website',
         images:  {
             url: '/opengraph-image.jpg',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         apple: '/apple-touch-icon.png',
     },
     alternates: {
-        canonical: 'https://leonardobecerril.dev',
+        canonical: 'https://g0rz-website.netlify.app',
     },
 };
 

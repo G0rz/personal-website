@@ -18,21 +18,25 @@
       "timeframe": "December 2024 - Actually",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": "Provided technical consultancy for businesses on process optimization through warehouse management systems and strategic web presence."
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": "Led the end-to-end development of 3 high-impact landing pages, encompassing UX/UI design, prototyping, and coding."
+        },
+        {
+          "description": "Executed advanced SEO optimization and performance tuning for existing websites."
+        },
+        {
+          "description": "Managed cloud infrastructure, domain configuration, and automated deployment using Firebase Hosting."
         }
       ],
       "tech_stack": [
-        "React 18.3.1",
-        "MUI 5.15.19",
-        "Tailwind 3.4.X/4.0",
-        "Stripe",
+        "Next.js",
+        "React",
+        "HeroUI",
+        "TailwindCSS",
         "Firebase",
-        "Google Cloud",
         "Docker",
-        "MongoDB",
         "Git"
       ]
     },
@@ -43,24 +47,35 @@
       "timeframe": "April 2024 – December 2024",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": "Led the end-to-end frontend development of Menumatic.io using Next.js, React, and Tailwind CSS, implementing Server-Side Rendering (SSR) to maximize performance and SEO optimization."
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": "Implemented advanced Stripe API integrations, designing and executing payment workflows for monthly and annual subscription models to enable automated business monetization."
+        },
+        {
+          "description": "Headed technical Figma-to-Code transitions, establishing efficient workflows to create reusable, responsive, and scalable component libraries."
+        },
+        {
+          "description": "Developed AI-driven automation solutions, building a Python-based system that integrates web scraping (Google Trends) with the OpenAI API for real-time content generation."
+        },
+        {
+          "description": "Refactored and modernized legacy architectures, transforming React, MUI, and MongoDB systems into fully responsive and functionally complete applications."
+        },
+        {
+          "description": "Deployment on Google Cloud Platform (GCP), ensuring high availability and continuous delivery for multiple production-level web projects."
         }
       ],
       "tech_stack": [
-        "React 18.3.1",
-        "MUI 5.15.19",
-        "Tailwind 3.4.X/4.0",
-        "Stripe",
-        "Firebase",
-        "Google Cloud",
-        "Docker",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Stripe API",
+        "Python",
+        "Figma",
+        "MUI",
         "MongoDB",
-        "Git",
-        "Tankstack Query",
-        "Figma"
+        "Google Cloud Platform",
+        "Zapier"
       ]
     },
     {
@@ -70,10 +85,19 @@
       "timeframe": "February 2023 - April 2024",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": "Modernized team workflow by deploying an Ubuntu server with GitLab, establishing the first version control system in the department, which significantly improved collaboration and development speed."
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": "Increased system stability by 70% by designing and implementing a staging environment, drastically reducing critical production errors and the volume of support tickets."
+        },
+        {
+          "description": "Refactored critical file management and encryption modules within a JavaEE (JSF, Primefaces) ecosystem, resolving persistent image upload failures and ensuring the integrity of sensitive medical data."
+        },
+        {
+          "description": "Managed the full software development life cycle (SDLC)—including requirements gathering, SQL/Oracle database management, and Apache server deployment—for a mission-critical Public Security system."
+        },
+        {
+          "description": "Improved departmental efficiency by developing comprehensive technical documentation (ERDs, flowcharts) and implementing a strategic requirement filtering process to prioritize core development over basic support."
         }
       ],
       "tech_stack": [
@@ -94,10 +118,19 @@
       "timeframe": "March 2022 - February 2023",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": ""
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": ""
+        },
+        {
+          "description": ""
+        },
+        {
+          "description": ""
+        },
+        {
+          "description": ""
         }
       ],
       "tech_stack": [
@@ -116,10 +149,19 @@
       "timeframe": "September 2021 - March 2022",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": ""
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": ""
+        },
+        {
+          "description": ""
+        },
+        {
+          "description": ""
+        },
+        {
+          "description": ""
         }
       ],
       "tech_stack": [
@@ -143,10 +185,19 @@
       "timeframe": "March 2021 - September 2021",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": ""
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": ""
+        },
+        {
+          "description": ""
+        },
+        {
+          "description": ""
+        },
+        {
+          "description": ""
         }
       ],
       "tech_stack": [
@@ -170,13 +221,22 @@
       "timeframe": "January 2019 - July 2019",
       "awards": [
         {
-          "description": "Collaborated in the creation of a virtual platform (Java Web) for managing tutoring and academic materials, aimed at improving school retention and reducing student dropout by 30% through collaborative learning."
+          "description": "Gathered system requirements through direct interaction with Universidad Autónoma del Estado de México (UAEMex) end-users."
         },
         {
-          "description": "Responsible for facilitating technical tools and materials for exhibitors, as well as providing advice on the advantages of free software to attendees."
+          "description": "Developed user interfaces (UI) utilizing HTML, CSS, Bootstrap 3, and jQuery."
+        },
+        {
+          "description": "Managed and queried databases using SQL Server to support system functionality"
         }
       ],
-      "tech_stack": []
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "jQuery",
+        "Bootstrap",
+        "SQL/MySQL"
+      ]
     }
   ],
   "Education Title": "Education",
@@ -274,8 +334,8 @@
       "type": "Certificate",
       "timeframe": "",
       "assets": {
-        "image":  "/images/attachments/CertificationB1.webp",
-        "file":  "/files/CertificationB1.pdf"
+        "image": "/images/attachments/CertificationB1.webp",
+        "file": "/files/CertificationB1.pdf"
       }
     }
   ],

@@ -8,7 +8,6 @@ import LatestProjectCard from "@/components/home/LatestProjectCard";
 import ContactCard from "@/components/home/ContactCard";
 import OtherProjectsCard from "@/components/home/OtherProjectsCard";
 import AttachmentsCard from "@/components/home/AttachmentsCard";
-import {motion} from "framer-motion";
 
 export default function Home() {
 

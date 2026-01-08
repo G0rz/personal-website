@@ -177,21 +177,7 @@ export default function Page() {
                 "IMPLEMENTAR UNA GALERIA DE IMAGENES CON CAPTURAS DE PANTALLA DEL RESULTADO FINAL O DE
                 HOT POINTS"
             </GlobalDrawer>
-            <Select
-                label="Favorite Animal"
-                placeholder="Select an tech"
-                selectedKeys={values}
-                selectionMode="multiple"
-                onSelectionChange={setValues}
-                size="sm"
-                isClearable
-                labelPlacement="outside"
 
-            >
-                {stack.map((tech) => (
-                    <SelectItem key={tech.key}>{tech.label}</SelectItem>
-                ))}
-            </Select>
 
             {repositories.length !== 0 && displayData.filter((repo) => values.every(element => repo.tech_stack.includes(element))).map((repository, index) => {
                 return <Card key={index}

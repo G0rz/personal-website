@@ -1,5 +1,5 @@
 {
-  "Personal Title": "Computer Systems Engineer | Full-Stack Web developer | Freelance",
+  "Personal Title": "Computer Systems Engineer | Full-Stack Web Developer | Freelance",
   "Download Button": "DOWNLOAD RESUME",
   "Close Button": "Close",
   "Details Button": "Details",
@@ -15,7 +15,7 @@
       "id": 7,
       "job": "",
       "position": "Freelance",
-      "timeframe": "December 2024 - Actually",
+      "timeframe": "December 2024 - Present",
       "awards": [
         {
           "description": "Provided technical consultancy for businesses on process optimization through warehouse management systems and strategic web presence."
@@ -118,19 +118,22 @@
       "timeframe": "March 2022 - February 2023",
       "awards": [
         {
-          "description": ""
+          "description": "Spearheaded the creation of high-traffic landing pages for public figures and political campaigns using React JS and Material UI (MUI), ensuring a seamless Mobile First experience."
         },
         {
-          "description": ""
+          "description": "Successfully integrated the Facebook API to automate real-time profile updates, enhancing user engagement through dynamic content synchronization."
         },
         {
-          "description": ""
+          "description": "Improved the Cablebús administration platform by streamlining complex user journeys into linear, intuitive workflows, significantly enhancing operational efficiency."
         },
         {
-          "description": ""
+          "description": "Developed robust administrative modules for file management, dynamic image galleries, and CRUD (Create, Read, Update, Delete) functionalities for large-scale data systems."
         },
         {
-          "description": ""
+          "description": "Implemented a standardized GitHub-based workflow and CI/CD best practices, leading to faster deployment cycles and more reliable code collaboration."
+        },
+        {
+          "description": "Led the technical research and UI architecture for a real-time chat application, modeling the interface after WhatsApp Web and defining specifications for WebSocket integration."
         }
       ],
       "tech_stack": [
@@ -149,19 +152,19 @@
       "timeframe": "September 2021 - March 2022",
       "awards": [
         {
-          "description": ""
+          "description": "Led development teams across diverse high-impact projects (E-commerce, Social Media, Rental Platforms), overseeing the full software development lifecycle (SDLC) and ensuring high-quality deliverables."
         },
         {
-          "description": ""
+          "description": "Spearheaded onboarding programs for junior developers and conducted internal workshops on web standards and emerging technologies to align team technical capabilities."
         },
         {
-          "description": ""
+          "description": "Designed and implemented comprehensive administrative dashboards, CMS, and client-facing portals using Laravel, Vue.js, and React, with a strict adherence to Mobile First principles."
         },
         {
-          "description": ""
+          "description": "Engineered standardized login systems featuring advanced sensitive data encryption, custom security middlewares, and secure automated password recovery workflows."
         },
         {
-          "description": ""
+          "description": "Delivered tailored web solutions for various industries—including sports e-commerce, real estate, and automotive rentals—optimizing user management and business inventory systems."
         }
       ],
       "tech_stack": [
@@ -185,19 +188,19 @@
       "timeframe": "March 2021 - September 2021",
       "awards": [
         {
-          "description": ""
+          "description": "Managed the full development lifecycle for landing pages and web platforms using PHP and Laravel, delivering high-quality products aligned with business goals."
         },
         {
-          "description": ""
+          "description": "Bridged the gap between design and engineering using Adobe XD and Creative Cloud, actively proposing usability enhancements and technical UI improvements."
         },
         {
-          "description": ""
+          "description": "Spearheaded database design and normalization processes, focusing on long-term scalability and reducing technical debt through accurate requirement analysis."
         },
         {
-          "description": ""
+          "description": "Executed software projects within Scrum environments, contributing to brainstorming sessions, task planning, and sprint execution for efficient delivery."
         },
         {
-          "description": ""
+          "description": "Utilized GitLab for precise project tracking and version control, ensuring a streamlined workflow from development to deployment."
         }
       ],
       "tech_stack": [
@@ -353,10 +356,10 @@
   "Placeholder Message": "Enter your message",
   "Error Message": "Please enter your message",
   "Submit Button": "Submit",
-  "Email Title Success": "",
-  "Email Description Success": "",
-  "Email Title Error": "",
-  "Email Description Error": "",
+  "Email Title Success": "Message sent successfully 🥳",
+  "Email Description Success": "I will get back to you as soon as possible.",
+  "Email Title Error": "Something went wrong 💀",
+  "Email Description Error": "Please try again later or contact me via another method.",
   "Latest Project": "Latest Project",
   "Working On": "Working On",
   "Other Projects": "Other Projects"

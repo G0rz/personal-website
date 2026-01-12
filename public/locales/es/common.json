@@ -1,5 +1,5 @@
 {
-  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web developer | Freelance",
+  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web Developer | Freelance",
   "Download Button": "DESCARGAR CV",
   "Close Button": "Cerrar",
   "Details Button": "Detalles",
@@ -15,7 +15,7 @@
       "id": 7,
       "job": "",
       "position": "Freelance",
-      "timeframe": "December 2024 - Actually",
+      "timeframe": "Diciembre 2024 - Actualidad",
       "awards": [
         {
           "description": "Consultoría técnica para negocios sobre la optimización de procesos mediante sistemas de gestión de almacenes y presencia web estratégica."
@@ -46,7 +46,7 @@
       "id": 6,
       "job": "Excite – Inbound Marketing México",
       "position": "Full-Stack React Web Developer",
-      "timeframe": "April 2024 – December 2024",
+      "timeframe": "Abril 2024 – Diciembre 2024",
       "awards": [
         {
           "description": "Desarrollo integral (End-to-End) de la plataforma Menumatic.io utilizando Next.js, React y Tailwind CSS, implementando Server-Side Rendering (SSR) para maximizar el rendimiento y la optimización SEO."
@@ -85,7 +85,7 @@
       "id": 5,
       "job": "Secretaría de Seguridad del Estado de México",
       "position": "Full-Stack Java Web Developer",
-      "timeframe": "February 2023 - April 2024",
+      "timeframe": "Febrero 2023 - Abril 2024",
       "awards": [
         {
           "description": "Modernicé el flujo de trabajo del equipo mediante la implementación de un servidor Ubuntu con GitLab, estableciendo por primera vez un sistema de control de versiones que optimizó la colaboración y productividad del área."
@@ -118,22 +118,25 @@
       "id": 4,
       "job": "DADUVA SYSTEMS",
       "position": "Front-End React Web Developer",
-      "timeframe": "March 2022 - February 2023",
+      "timeframe": "Marzo 2022 - Febrero 2023",
       "awards": [
         {
-          "description": ""
+          "description": "Lideré el desarrollo de landing pages para campañas políticas de alto perfil, aplicando principios de Mobile First y optimizando la interfaz con React JS y Material UI (MUI) para asegurar un rendimiento crítico bajo alto tráfico."
         },
         {
-          "description": ""
+          "description": "Implementé de forma exitosa la API de Facebook para la sincronización de contenido en tiempo real, permitiendo la actualización automática de perfiles públicos en plataformas web."
         },
         {
-          "description": ""
+          "description": "Modernicé el sistema de administración de Cablebús, rediseñando flujos de usuario complejos en procesos lineales e intuitivos, lo que redujo la curva de aprendizaje y errores operativos."
         },
         {
-          "description": ""
+          "description": "Desarrollé funcionalidades avanzadas de gestión de activos, incluyendo sistemas de carga de archivos, galerías dinámicas y módulos de edición de registros para la administración de infraestructura de transporte."
         },
         {
-          "description": ""
+          "description": "Establecí un flujo de trabajo basado en Git/GitHub, implementando metodologías de Integración Continua (CI) que mejoraron la velocidad de entrega y la trazabilidad del código en el equipo."
+        },
+        {
+          "description": "Lideré la investigación técnica y el diseño de interfaz (UI) para un sistema de chat en tiempo real inspirado en WhatsApp Web, definiendo la arquitectura para la integración de WebSockets."
         }
       ],
       "tech_stack": [
@@ -149,22 +152,22 @@
       "id": 3,
       "job": "Satori Tech",
       "position": "Full-Stack Web Developer Jr.",
-      "timeframe": "September 2021 - March 2022",
+      "timeframe": "Septiembre 2021 - Marzo 2022",
       "awards": [
         {
-          "description": ""
+          "description": "Dirigí equipos de desarrollo en múltiples proyectos de alta complejidad (E-commerce, Redes Sociales, Rentas), coordinando desde la arquitectura inicial hasta la entrega final bajo estándares de calidad."
         },
         {
-          "description": ""
+          "description": "Lideré la formación de nuevos desarrolladores y dicté talleres técnicos internos sobre buenas prácticas y adopción de nuevas tecnologías para estandarizar los procesos de desarrollo en la empresa."
         },
         {
-          "description": ""
+          "description": "Diseñé y desarrollé sistemas administrativos (CMS), dashboards informativos y plataformas de clientes finales (B2C) utilizando Laravel y Vue.js, priorizando siempre la escalabilidad y el enfoque Mobile First."
         },
         {
-          "description": ""
+          "description": "Implementé sistemas de autenticación centralizados con encriptación avanzada, desarrollo de middlewares de seguridad y flujos críticos de recuperación de cuentas y validación de usuarios."
         },
         {
-          "description": ""
+          "description": "Desarrollé soluciones personalizadas para diversos sectores (Deportes, Bienes Raíces, Servicios), automatizando inventarios, suscripciones y gestión de usuarios para mejorar la eficiencia operativa de los clientes."
         }
       ],
       "tech_stack": [
@@ -185,22 +188,22 @@
       "id": 2,
       "job": "Satori Tech",
       "position": "Internship",
-      "timeframe": "March 2021 - September 2021",
+      "timeframe": "Marzo 2021 - Septiembre 2021",
       "awards": [
         {
-          "description": ""
+          "description": "Ejecuté el ciclo completo de desarrollo para landing pages y plataformas web utilizando PHP y Laravel, garantizando productos alineados con los objetivos de negocio."
         },
         {
-          "description": ""
+          "description": "Optimicé la comunicación entre diseño y desarrollo mediante el uso de Adobe XD y herramientas de edición (Adobe Suite), participando activamente en la propuesta de mejoras de usabilidad y fidelidad visual."
         },
         {
-          "description": ""
+          "description": "Lideré el diseño y normalización de bases de datos bajo una mentalidad de prevención de deuda técnica, asegurando que el modelo de datos fuera escalable y reflejara con precisión los requerimientos del sistema."
         },
         {
-          "description": ""
+          "description": "Aprendí Scrum y Agile, participando en sesiones de brainstorming, definición de tareas en el planner y cumplimiento de sprints para una entrega continua y eficiente."
         },
         {
-          "description": ""
+          "description": "Gestioné proyectos de forma precisa utilizando GitLab, integrando el control de versiones con la planificación de tareas para mantener la trazabilidad del código."
         }
       ],
       "tech_stack": [
@@ -221,7 +224,7 @@
       "id": 1,
       "job": "EDEM Consultores",
       "position": "Trainee for Business Planning Systems Developer",
-      "timeframe": "January 2019 - July 2019",
+      "timeframe": "Enero 2019 - Julio 2019",
       "awards": [
         {
           "description": "Levantamiento de requerimientos mediante trato directo con usuarios finales de la Universidad Autónoma del Estado de México (UAEMex)."
@@ -315,8 +318,8 @@
   "Attachments Array": [
     {
       "id": 3,
-      "name": "Google Ads for Beginners",
-      "type": "Project Certificate",
+      "name": "Google Ads para Principiantes",
+      "type": "Certificado de Proyecto",
       "timeframe": "",
       "assets": {
         "image": "/images/attachments/Coursera OVV770NV260F.webp",
@@ -325,8 +328,8 @@
     },
     {
       "id": 2,
-      "name": "Getting Started with Data Analytics on AWS",
-      "type": "Project Certificate",
+      "name": "Introducción al análisis de datos en AWS",
+      "type": "Certificado de Proyecto",
       "timeframe": "",
       "assets": {
         "image": "/images/attachments/Coursera IBXJRQDIYF4B.webp",
@@ -335,8 +338,8 @@
     },
     {
       "id": 1,
-      "name": "TOEFL ITP Certification - CEFR Level B1",
-      "type": "Certificate",
+      "name": "TOEFL ITP Certificación - CEFR Level B1",
+      "type": "Certificado",
       "timeframe": "",
       "assets": {
         "image": "/images/attachments/CertificationB1.webp",
@@ -347,7 +350,7 @@
   "Contact Title": "CONTACTO",
   "Input Label Email": "Correo Electrónico",
   "Placeholder Email": "Ingresa tu correo electrónico",
-  "Error Email": "Por favor ingresa un correo electrónico valido",
+  "Error Email": "Por favor ingresa un correo electrónico válido",
   "Input Label Name": "Nombre",
   "Placeholder Name": "Ingresa tu nombre",
   "Error Name": "Por favor ingresa un nombre",
@@ -359,10 +362,10 @@
   "Error Message": "Por favor ingresa tu mensaje",
   "Submit Button": "Enviar",
   "Email Title Success": "Tu mensaje ha sido enviado 🥳",
-  "Email Description Success": "Me pondre en contacto contigo a la brevedad.",
+  "Email Description Success": "Me pondré en contacto contigo a la brevedad.",
   "Email Title Error": "Parece que algo ha salido mal 💀",
-  "Email Description Error": "Intentalo nuevamente más tarde o contactame por otro medio.",
-  "Latest Project": "Ultimo Proyecto",
-  "Working On": "Trabajando",
+  "Email Description Error": "Inténtalo nuevamente más tarde o contáctame por otro medio.",
+  "Latest Project": "Último Proyecto",
+  "Working On": "Trabajando en",
   "Other Projects": "Otros Proyectos"
 }

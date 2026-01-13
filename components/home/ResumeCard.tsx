@@ -32,7 +32,7 @@ const ResumeCard = () => {
                 <h1 className={'text-2xl font-extrabold'}>Leonardo Yael Bazan Becerril</h1>
                 <h2 className={'text-xl font-bold'}>{t("Personal Title")}</h2>
 
-                <Button as={Link} href={t("Download Link")} target="_blank" rel="noreferrer"
+                <Button as={Link} href="/files/LeonardoBecerril-CV-2026.pdf" target="_blank" rel="noreferrer"
                         variant="solid" color="primary"
                         className="w-full  transition-all font-bold">{t("Download Button")}<RxDownload/>
                 </Button>

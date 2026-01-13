@@ -35,13 +35,14 @@ yarn-error.log*
 # env files
 .env*
 .env.local
-.env.development.local
+.env
 .env.test.local
 .env.production.local
 
 # vercel
 .vercel
-
+.firebase
+.firebaserc
 # typescript
 *.tsbuildinfo
 next-env.d.ts

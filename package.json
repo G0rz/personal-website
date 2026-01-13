@@ -1,6 +1,6 @@
 {
-  "name": "untitled",
-  "version": "0.1.0",
+  "name": "personal-website",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,11 +9,20 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@heroui/react": "^3.0.0-beta.2",
-    "@heroui/styles": "^3.0.0-beta.2",
-    "next": "16.0.4",
+    "@emailjs/browser": "^4.4.1",
+    "@heroui/react": "^2.8.5",
+    "@react-stately/data": "^3.15.0",
+    "framer-motion": "^12.23.25",
+    "i18next": "^25.7.3",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "next": "^16.1.1",
+    "next-themes": "^0.4.6",
+    "next-view-transitions": "^0.3.5",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-i18next": "^16.5.0",
+    "react-icons": "^5.5.0",
+    "react-use-measure": "^2.1.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

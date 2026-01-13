@@ -1,0 +1,385 @@
+{
+  "Personal Title": "Computer Systems Engineer | Full-Stack Web Developer | Freelance",
+  "Download Button": "DOWNLOAD RESUME",
+  "Download Link": "/files/LeonardoBecerril-CV-2026.pdf",
+  "Close Button": "Close",
+  "Details Button": "Details",
+  "Preview Button": "Go to site",
+  "Availability": "AVAILABLE FOR WORK",
+  "Tech Stack Title": "Tech Stack",
+  "About Me Title": "About Me",
+  "About Me": "Computer Systems Engineer and Full Stack Developer with 7 years of experience. I specialize in Front End with React, focusing on building fast and clean user interfaces. Currently, I'm taking my component architecture expertise into mobile development, aiming to build native apps with the same quality as my web projects.",
+  "Jobs Title": "Work Experience",
+  "Jobs.Responsabilities": "Responsibilities and Achievements",
+  "Jobs Array": [
+    {
+      "id": 7,
+      "job": "",
+      "position": "Freelance",
+      "timeframe": "December 2024 - Present",
+      "awards": [
+        {
+          "description": "Technical consultant for small businesses, helping digitize warehouse processes and improve online presence."
+        },
+        {
+          "description": "Designed and coded 3 landing pages from scratch, handling everything from UX/UI prototyping to final deployment."
+        },
+        {
+          "description": "Audited and improved technical SEO and page load speed for client websites."
+        },
+        {
+          "description": "Configured domains and deployed applications using Firebase Hosting and Google Cloud."
+        }
+      ],
+      "tech_stack": [
+        "Next.js",
+        "React",
+        "HeroUI",
+        "TailwindCSS",
+        "Firebase",
+        "Docker",
+        "Git"
+      ]
+    },
+    {
+      "id": 6,
+      "job": "Excite – Inbound Marketing México",
+      "position": "Full-Stack React Web Developer",
+      "timeframe": "April 2024 – December 2024",
+      "awards": [
+        {
+          "description": "Built Menumatic.io platform from scratch using Next.js and Tailwind, implementing SSR for fast loading and better SEO."
+        },
+        {
+          "description": "Integrated Stripe API to automate monthly and annual subscription payments."
+        },
+        {
+          "description": "Standardized the Figma-to-Code workflow, creating a reusable component library to speed up development."
+        },
+        {
+          "description": "Developed a Python script connecting Google Trends with OpenAI to generate real-time content ideas."
+        },
+        {
+          "description": "Upgraded legacy systems built with old React versions, migrating them to modern tech stacks and making them responsive."
+        },
+        {
+          "description": "Managed production deployments using Google Cloud Platform."
+        }
+      ],
+      "tech_stack": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Stripe API",
+        "Python",
+        "Figma",
+        "MUI",
+        "MongoDB",
+        "Google Cloud Platform",
+        "Zapier"
+      ]
+    },
+    {
+      "id": 5,
+      "job": "Secretaría de Seguridad del Estado de México",
+      "position": "Full-Stack Java Web Developer",
+      "timeframe": "February 2023 - April 2024",
+      "awards": [
+        {
+          "description": "Implemented the department's first version control system by setting up a GitLab server on Ubuntu."
+        },
+        {
+          "description": "Created a staging environment that reduced production errors by 70%."
+        },
+        {
+          "description": "Fixed critical file upload and encryption modules in a JavaEE system, solving recurring issues with medical records."
+        },
+        {
+          "description": "Handled the full development cycle (Oracle DB, Java Backend, Frontend) for internal public security systems."
+        },
+        {
+          "description": "Wrote technical documentation and established a filter to prioritize real feature requests over basic support."
+        }
+      ],
+      "tech_stack": [
+        "JavaEE 7",
+        "JSF 2.2",
+        "Primefaces 5.2",
+        "Bootstrap 3.3.6/5.X",
+        "JQuery",
+        "Java 8",
+        "MySQL",
+        "Git"
+      ]
+    },
+    {
+      "id": 4,
+      "job": "DADUVA SYSTEMS",
+      "position": "Front-End React Web Developer",
+      "timeframe": "March 2022 - February 2023",
+      "awards": [
+        {
+          "description": "Developed high-traffic landing pages for political campaigns, prioritizing Mobile First design."
+        },
+        {
+          "description": "Connected the Facebook API to display real-time social media updates on websites."
+        },
+        {
+          "description": "Redesigned the Cablebús admin panel, simplifying forms and workflows for operators."
+        },
+        {
+          "description": "Coded modules for file management and dynamic image galleries in internal systems."
+        },
+        {
+          "description": "Introduced Git and GitHub to the team, improving code organization and delivery."
+        },
+        {
+          "description": "Researched and designed the architecture for a real-time chat, based on the WhatsApp Web interface."
+        }
+      ],
+      "tech_stack": [
+        "React 18.2.0",
+        "MUI 4.12.4/5.0.6",
+        "Tailwind 3.1.4",
+        "Nextjs 12",
+        "NextUI 1.0.0",
+        "Git"
+      ]
+    },
+    {
+      "id": 3,
+      "job": "Satori Tech",
+      "position": "Full-Stack Web Developer Jr.",
+      "timeframe": "September 2021 - March 2022",
+      "awards": [
+        {
+          "description": "Coordinated development for E-commerce and rental platform projects, ensuring on-time delivery."
+        },
+        {
+          "description": "Trained new developers and gave internal workshops on coding best practices."
+        },
+        {
+          "description": "Built admin panels (CMS) and dashboards using Laravel and Vue.js."
+        },
+        {
+          "description": "Implemented secure login systems, password recovery, and sensitive data encryption."
+        },
+        {
+          "description": "Created custom solutions for real estate and sports clients, automating their inventories and records."
+        }
+      ],
+      "tech_stack": [
+        "React 16.14.0",
+        "Vue.js 2.6.14",
+        "Vuetify 2.6.0",
+        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Bootstrap",
+        "3.X/4.X/5.X",
+        "JQuery",
+        "PHP 7",
+        "MySQL",
+        "Git",
+        "Adobe"
+      ]
+    },
+    {
+      "id": 2,
+      "job": "Satori Tech",
+      "position": "Internship",
+      "timeframe": "March 2021 - September 2021",
+      "awards": [
+        {
+          "description": "Developed websites and landing pages using PHP and Laravel."
+        },
+        {
+          "description": "Collaborated with the design team using Adobe XD to ensure the final web product matched the prototype."
+        },
+        {
+          "description": "Designed relational databases, ensuring they were well-structured to avoid future issues."
+        },
+        {
+          "description": "Worked under Scrum methodology, participating in weekly planning and sprint deliveries."
+        },
+        {
+          "description": "Used GitLab to track my tasks and code versions."
+        }
+      ],
+      "tech_stack": [
+        "React 16.14.0",
+        "Vue.js 2.6.14",
+        "Vuetify 2.6.0",
+        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Bootstrap",
+        "3.X/4.X/5.X",
+        "JQuery",
+        "PHP 7",
+        "MySQL",
+        "Git",
+        "Adobe"
+      ]
+    },
+    {
+      "id": 1,
+      "job": "EDEM Consultores",
+      "position": "Trainee for Business Planning Systems Developer",
+      "timeframe": "January 2019 - July 2019",
+      "awards": [
+        {
+          "description": "Gathered requirements directly from UAEMex users."
+        },
+        {
+          "description": "Built user interfaces (UI) using HTML, CSS, and Bootstrap."
+        },
+        {
+          "description": "Handled basic queries and data management in SQL Server."
+        }
+      ],
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "jQuery",
+        "Bootstrap",
+        "SQL/MySQL"
+      ]
+    }
+  ],
+  "Education Title": "Education",
+  "Education Array": [
+    {
+      "id": 4,
+      "school": "Google Developer Groups - Lerma de Villada",
+      "degree": "Organizer at GDG Lerma",
+      "timeframe": "August 2021 - January 2024",
+      "awards": [
+        {
+          "id": 4,
+          "title": "Google I/O Extended 2023",
+          "role": "Organizer and Speaker",
+          "description": "Presented updates on Android, Google AI, and Cloud."
+        },
+        {
+          "id": 4,
+          "title": "DevFest 2022",
+          "role": "Speaker",
+          "description": "Gave a talk on 'Mobile First' and a hands-on workshop on real-time chat with React and Firebase."
+        },
+        {
+          "id": 4,
+          "title": "Google Hash Code 2022",
+          "role": "Participant",
+          "description": "Solved algorithmic optimization challenges as part of a team."
+        },
+        {
+          "id": 4,
+          "title": "DevFest 2021",
+          "role": "Speaker",
+          "description": "Technical talk on cross-platform development with Flutter."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "school": "Instituto Tecnológico de Toluca - CLE",
+      "degree": "TOEFL ITP Certification - CEFR Level B1",
+      "timeframe": "May 2023",
+      "awards": []
+    },
+    {
+      "id": 2,
+      "school": "Think-e English Courses",
+      "degree": "English Language",
+      "timeframe": "July 2021 - November 2022",
+      "awards": []
+    },
+    {
+      "id": 1,
+      "school": "Instituto Tecnológico de Toluca",
+      "degree": "Computer Systems Engineering",
+      "timeframe": "August 2015 - June 2021",
+      "awards": [
+        {
+          "title": "School Project",
+          "role": "Student",
+          "description": "Collaborated on a Java Web platform for tutoring management, helping reduce dropout rates through collaborative learning."
+        },
+        {
+          "title": "FLISOL 2018",
+          "role": "Staff",
+          "description": "Supported logistics and advised attendees on free software."
+        }
+      ]
+    }
+  ],
+  "Attachments Title": "Attachments",
+  "Attachments Array": [
+    {
+      "id": 3,
+      "name": "Google Ads for Beginners",
+      "type": "Project Certificate",
+      "timeframe": "",
+      "assets": {
+        "image": "/images/attachments/Coursera OVV770NV260F.webp",
+        "file": "/files/Coursera OVV770NV260F.pdf"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Getting Started with Data Analytics on AWS",
+      "type": "Project Certificate",
+      "timeframe": "",
+      "assets": {
+        "image": "/images/attachments/Coursera IBXJRQDIYF4B.webp",
+        "file": "/files/Coursera IBXJRQDIYF4B.pdf"
+      }
+    },
+    {
+      "id": 1,
+      "name": "TOEFL ITP Certification - CEFR Level B1",
+      "type": "Certificate",
+      "timeframe": "",
+      "assets": {
+        "image": "/images/attachments/CertificationB1.webp",
+        "file": "/files/CertificationB1.pdf"
+      }
+    }
+  ],
+  "Contact Title": "CONTACT WITH ME",
+  "Input Label Email": "Email",
+  "Placeholder Email": "youremail@example.com",
+  "Error Email": "Please enter a valid email",
+  "Input Label Name": "Name",
+  "Placeholder Name": "Your name",
+  "Error Name": "Please enter your name",
+  "Input Label Subject": "Subject",
+  "Placeholder Subject": "What do you want to talk about?",
+  "Error Subject": "Subject is required",
+  "Input Label Message": "Message",
+  "Placeholder Message": "Write your message here...",
+  "Error Message": "Don't forget to write the message",
+  "Submit Button": "Send Message",
+  "Email Title Success": "Message sent!",
+  "Email Description Success": "Thanks for writing. I'll get back to you ASAP.",
+  "Email Title Error": "Something went wrong",
+  "Email Description Error": "Couldn't send the message. Please try again later.",
+  "Latest Project Title": "Latest Project",
+  "Latest Project Array": [
+    {
+      "id": 1,
+      "name": "Pablo Marte - Website",
+      "type": "landing page",
+      "timeframe": "2025",
+      "description": "I developed this digital platform for musician and author Pablo Marte to centralize his literary, musical, and photographic work. The primary goal was to establish a clear and professional brand identity, organizing all his creative content in a single space.\n\nOn the technical side, I used Next.js and Tailwind CSS, incorporating libraries like React Bits and HeroUI to build a modern and functional interface. I focused on optimizing technical SEO and site performance to ensure visibility in search engines and a smooth navigation experience.\n\nThe application is deployed on Firebase and integrates Cloud Firestore for real-time data management. The project followed an iterative process with constant communication to define a visual hierarchy that balanced a clean aesthetic with the technical requirements of the site.",
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 4",
+        "HeroUI",
+        "React Bits",
+        "Firebase"
+      ],
+      "assets": []
+    }
+  ],
+  "Working On": "Working On",
+  "Other Projects": "Other Projects"
+}

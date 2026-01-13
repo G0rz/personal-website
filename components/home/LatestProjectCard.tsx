@@ -18,11 +18,13 @@ import {
 } from "@heroui/react";
 import {FaEye} from "react-icons/fa";
 import {CiLink} from "react-icons/ci";
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from "react";
 
 const LatestProjectCard = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const {t} = useTranslation();
+    let latest_project = t("Latest Project Array", {returnObjects: true});
 
     return (
         <>
@@ -30,37 +32,46 @@ const LatestProjectCard = () => {
                 <DrawerContent>
                     {(onClose) => (
                         <>
-                            <DrawerHeader className="flex flex-col gap-1">Pablo Marte - Website</DrawerHeader>
-                            <DrawerBody>
-                                <p>Problem/Goal</p>
-                                <p>My Role and Process: Fui el diseñador y desarrollador del sitio web, siempre
-                                    consultando a Pablo Marte sobre su preferencia respecto a los elementos que se
-                                    mostraban y el orden. LLegue a diseñar dos propuestas, una más simple que la otra
-                                    apostando por el minimalismo y el dinamismo que las imagenes expresan.</p>
-                                <p>Solutions: Create a landing page for show some pictures and a</p>
-                                <p>Outcomes/Impact</p>
-                                <p>Answer the "who:Me and Pablou Marte, what:Create a landing page, why:for been more
-                                    close to their fans and share with the world passion, how:designing and developing
-                                    an modern interface"</p>
-                                <p className="text-sm italic"><span className="font-bold"> TECH STACK: </span>React
-                                    18.3.1, MUI 5.15.19, Tailwind 3.4.X/4.0, Stripe, Firebase, Google Cloud, Docker,
-                                    MongoDB, Git</p>
-                                "IMPLEMENTAR UNA GALERIA DE IMAGENES CON CAPTURAS DE PANTALLA DEL RESULTADO FINAL O DE
-                                HOT POINTS"
-                            </DrawerBody>
-                            <DrawerFooter>
-                                <Button color="danger" variant="flat" onPress={onClose}>
-                                    {t("Close Button")}
-                                </Button>
-                            </DrawerFooter>
+                            {latest_project && Array.isArray(latest_project) && latest_project.map((element, index) => {
+                                return <div key={index}>
+                                    <DrawerHeader
+                                        className="flex flex-col gap-1">{element.name}</DrawerHeader>
+                                    <DrawerBody>
+                                        {element.ws.map((item: {
+                                            w1: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | Iterable<ReactNode> | null | undefined;
+                                            w2: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | Iterable<ReactNode> | null | undefined;
+                                            w3: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | Iterable<ReactNode> | null | undefined;
+                                            w4: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | Iterable<ReactNode> | null | undefined;
+                                            w5: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | Iterable<ReactNode> | null | undefined;
+                                        }, index: Key | null | undefined) =>{
+                                            return <div key={index}>
+                                                <p className="my-2">{item.w1}</p>
+                                                <p className="my-2">{item.w2}</p>
+                                                <p className="my-2">{item.w3}</p>
+                                                <p className="my-2">{item.w4}</p>
+                                                <p className="my-2">{item.w5}</p>
+                                            </div>
+                                        })}
+                                        <p className="text-sm italic"><span className="font-bold"> TECH STACK: </span>
+                                            {element.tech_stack.join(", ")}
+                                        </p>
+                                    </DrawerBody>
+                                    <DrawerFooter>
+                                        <Button color="danger" variant="flat" onPress={onClose}>
+                                            {t("Close Button")}
+                                        </Button>
+                                    </DrawerFooter>
+                                </div>
+                            })}
                         </>
-                    )}
+                    )
+                    }
                 </DrawerContent>
             </Drawer>
             <Card
                 className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.webp')] bg-cover bg-top bg-no-repeat">
                 <CardHeader className="bg-black/40">
-                    <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Latest Project")}</h5>
+                    <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Latest Project Title")}</h5>
                 </CardHeader>
                 <CardBody className="h-[10vh]">
 
@@ -94,7 +105,8 @@ const LatestProjectCard = () => {
                 </CardFooter>
             </Card>
         </>
-    );
+    )
+        ;
 };
 
 export default LatestProjectCard;

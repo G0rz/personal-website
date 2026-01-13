@@ -1,0 +1,397 @@
+{
+  "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web Developer | Freelance",
+  "Download Button": "DESCARGAR CV",
+  "Download Link": "/files/LeonardoBecerril-CVES-2026.pdf",
+  "Close Button": "Cerrar",
+  "Details Button": "Detalles",
+  "Preview Button": "Ir al sitio",
+  "Availability": "DISPONIBLE",
+  "Tech Stack Title": "Habilidades Técnicas",
+  "About Me Title": "Acerca de mí",
+  "About Me": "Ingeniero en Sistemas y Desarrollador Full Stack con 7 años de experiencia. Me especializo en Front End con React, enfocándome en crear interfaces rápidas y limpias. Actualmente estoy llevando mi experiencia en arquitectura de componentes hacia el desarrollo móvil, buscando crear aplicaciones nativas con la misma calidad que mis proyectos web.",
+  "Jobs Title": "Experiencia Laboral",
+  "Jobs.Responsabilities": "Responsabilidades y Logros",
+  "Jobs Array": [
+    {
+      "id": 7,
+      "job": "",
+      "position": "Freelance",
+      "timeframe": "Diciembre 2024 - Actualidad",
+      "awards": [
+        {
+          "description": "Consultor técnico para PyMEs, ayudando a digitalizar procesos de almacén y mejorar su presencia en línea."
+        },
+        {
+          "description": "Diseño y programación completa de 3 landing pages, encargándome desde el prototipo en UX/UI hasta el código final."
+        },
+        {
+          "description": "Auditoría y mejora de SEO técnico y velocidad de carga en sitios web de clientes."
+        },
+        {
+          "description": "Configuración de dominios y despliegue de aplicaciones usando Firebase Hosting y Google Cloud."
+        }
+      ],
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 3.4.X/4.0",
+        "Stripe",
+        "Firebase",
+        "Google Cloud",
+        "Docker",
+        "MongoDB",
+        "Git"
+      ]
+    },
+    {
+      "id": 6,
+      "job": "Excite – Inbound Marketing México",
+      "position": "Full-Stack React Web Developer",
+      "timeframe": "Abril 2024 – Diciembre 2024",
+      "awards": [
+        {
+          "description": "Construí la plataforma Menumatic.io desde cero usando Next.js y Tailwind, implementando SSR para asegurar una carga rápida y buen posicionamiento en buscadores."
+        },
+        {
+          "description": "Integré la API de Stripe para automatizar los cobros de suscripciones mensuales y anuales."
+        },
+        {
+          "description": "Estandaricé el proceso de diseño a código (Figma-to-Code), creando una librería de componentes reutilizables para acelerar el desarrollo."
+        },
+        {
+          "description": "Desarrollé un script en Python que conecta Google Trends con OpenAI para generar ideas de contenido en tiempo real."
+        },
+        {
+          "description": "Actualicé sistemas antiguos hechos en versiones viejas de React y MUI, migrándolos a tecnologías modernas y haciéndolos responsivos."
+        },
+        {
+          "description": "Administré el despliegue de aplicaciones en producción usando Google Cloud Platform."
+        }
+      ],
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 3.4.X/4.0",
+        "Stripe",
+        "Firebase",
+        "Google Cloud",
+        "Docker",
+        "MongoDB",
+        "Git",
+        "Tankstack Query",
+        "Figma"
+      ]
+    },
+    {
+      "id": 5,
+      "job": "Secretaría de Seguridad del Estado de México",
+      "position": "Full-Stack Java Web Developer",
+      "timeframe": "Febrero 2023 - Abril 2024",
+      "awards": [
+        {
+          "description": "Implementé el primer sistema de control de versiones del área montando un servidor GitLab en Ubuntu, lo que ordenó el trabajo del equipo."
+        },
+        {
+          "description": "Creé un entorno de pruebas (staging) que redujo en un 70% los errores que llegaban a producción."
+        },
+        {
+          "description": "Arreglé módulos críticos de carga de archivos y encriptación en un sistema JavaEE, solucionando problemas recurrentes con expedientes médicos."
+        },
+        {
+          "description": "Me encargué del ciclo completo de desarrollo (Base de datos Oracle, Backend Java y Frontend) para sistemas internos de seguridad pública."
+        },
+        {
+          "description": "Redacté la documentación técnica de los sistemas y establecí un filtro para priorizar requerimientos reales sobre soporte básico."
+        }
+      ],
+      "tech_stack": [
+        "JavaEE 7",
+        "JSF 2.2",
+        "Primefaces 5.2",
+        "Bootstrap 3.3.6/5.X",
+        "JQuery",
+        "Java 8",
+        "MySQL",
+        "Git"
+      ]
+    },
+    {
+      "id": 4,
+      "job": "DADUVA SYSTEMS",
+      "position": "Front-End React Web Developer",
+      "timeframe": "Marzo 2022 - Febrero 2023",
+      "awards": [
+        {
+          "description": "Desarrollé landing pages para campañas políticas con alto tráfico, priorizando la optimización para móviles (Mobile First)."
+        },
+        {
+          "description": "Conecté la API de Facebook para mostrar actualizaciones de redes sociales en tiempo real dentro de los sitios web."
+        },
+        {
+          "description": "Rediseñé el panel administrativo del Cablebús, simplificando los formularios y flujos para que fueran más fáciles de usar por los operadores."
+        },
+        {
+          "description": "Programé módulos para gestión de archivos y galerías de imágenes dinámicas en los sistemas internos."
+        },
+        {
+          "description": "Introduje el uso de Git y GitHub en el equipo, mejorando la organización y entrega de código."
+        },
+        {
+          "description": "Investigué y diseñé la arquitectura para un chat en tiempo real, basándome en la interfaz de WhatsApp Web."
+        }
+      ],
+      "tech_stack": [
+        "React 18.2.0",
+        "MUI 4.12.4/5.0.6",
+        "Tailwind 3.1.4",
+        "Nextjs 12",
+        "NextUI 1.0.0",
+        "Git"
+      ]
+    },
+    {
+      "id": 3,
+      "job": "Satori Tech",
+      "position": "Full-Stack Web Developer Jr.",
+      "timeframe": "Septiembre 2021 - Marzo 2022",
+      "awards": [
+        {
+          "description": "Coordiné el desarrollo de proyectos de E-commerce y plataformas de renta, asegurando que se cumplieran los tiempos de entrega."
+        },
+        {
+          "description": "Capacité a desarrolladores nuevos y di talleres internos sobre buenas prácticas de código."
+        },
+        {
+          "description": "Construí paneles administrativos (CMS) y dashboards usando Laravel y Vue.js."
+        },
+        {
+          "description": "Implementé sistemas de login seguros, recuperación de contraseñas y encriptación de datos sensibles."
+        },
+        {
+          "description": "Creé soluciones a medida para clientes de bienes raíces y deportes, automatizando sus inventarios y registros."
+        }
+      ],
+      "tech_stack": [
+        "React 16.14.0",
+        "Vue.js 2.6.14",
+        "Vuetify 2.6.0",
+        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Bootstrap",
+        "3.X/4.X/5.X",
+        "JQuery",
+        "PHP 7",
+        "MySQL",
+        "Git",
+        "Adobe"
+      ]
+    },
+    {
+      "id": 2,
+      "job": "Satori Tech",
+      "position": "Internship",
+      "timeframe": "Marzo 2021 - Septiembre 2021",
+      "awards": [
+        {
+          "description": "Desarrollé sitios web y landing pages utilizando PHP y Laravel."
+        },
+        {
+          "description": "Colaboré con el equipo de diseño usando Adobe XD para asegurar que la web final se viera igual al prototipo."
+        },
+        {
+          "description": "Diseñé bases de datos relacionales, asegurando que estuvieran bien estructuradas para evitar problemas futuros."
+        },
+        {
+          "description": "Trabajé bajo metodología Scrum, participando en las planeaciones semanales y entregas de sprints."
+        },
+        {
+          "description": "Usé GitLab para llevar el control de mis tareas y versiones del código."
+        }
+      ],
+      "tech_stack": [
+        "React 16.14.0",
+        "Vue.js 2.6.14",
+        "Vuetify 2.6.0",
+        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Bootstrap",
+        "3.X/4.X/5.X",
+        "JQuery",
+        "PHP 7",
+        "MySQL",
+        "Git",
+        "Adobe"
+      ]
+    },
+    {
+      "id": 1,
+      "job": "EDEM Consultores",
+      "position": "Trainee for Business Planning Systems Developer",
+      "timeframe": "Enero 2019 - Julio 2019",
+      "awards": [
+        {
+          "description": "Levantamiento de requerimientos directamente con usuarios de la UAEMex."
+        },
+        {
+          "description": "Maquetación de interfaces (UI) usando HTML, CSS y Bootstrap."
+        },
+        {
+          "description": "Consultas básicas y gestión de datos en SQL Server."
+        }
+      ],
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "jQuery",
+        "Bootstrap",
+        "SQL/MySQL"
+      ]
+    }
+  ],
+  "Education Title": "Educación",
+  "Education Array": [
+    {
+      "id": 4,
+      "school": "Google Developer Groups - Lerma de Villada",
+      "degree": "Organizador en GDG Lerma",
+      "timeframe": "Agosto 2021 - Enero 2024",
+      "awards": [
+        {
+          "id": 4,
+          "title": "Google I/O Extended 2023",
+          "role": "Organizador y Ponente",
+          "description": "Presenté novedades sobre Android, Google AI y Cloud."
+        },
+        {
+          "id": 3,
+          "title": "DevFest 2022",
+          "role": "Ponente",
+          "description": "Di una charla sobre 'Mobile First' y un taller práctico de chat en tiempo real con React y Firebase."
+        },
+        {
+          "id": 2,
+          "title": "Google Hash Code 2022",
+          "role": "Participante",
+          "description": "Resolví retos de optimización de algoritmos en equipo."
+        },
+        {
+          "id": 1,
+          "title": "DevFest 2021",
+          "role": "Ponente",
+          "description": "Charla técnica sobre desarrollo multiplataforma con Flutter."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "school": "Instituto Tecnológico de Toluca - CLE",
+      "degree": "Certificación TOEFL ITP - Nivel CEFR B1",
+      "timeframe": "Mayo 2023",
+      "awards": []
+    },
+    {
+      "id": 2,
+      "school": "Think-e English Courses",
+      "degree": "Idioma Inglés",
+      "timeframe": "Julio 2021 - Noviembre 2022",
+      "awards": []
+    },
+    {
+      "id": 1,
+      "school": "Instituto Tecnológico de Toluca",
+      "degree": "Ingeniería en Sistemas Computacionales",
+      "timeframe": "Agosto 2015 - Junio 2021",
+      "awards": [
+        {
+          "id": 2,
+          "title": "Proyecto Escolar",
+          "role": "Estudiante",
+          "description": "Colaboré en una plataforma Java Web para gestión de asesorías, ayudando a reducir la deserción escolar mediante aprendizaje colaborativo."
+        },
+        {
+          "id": 1,
+          "title": "FLISOL 2018",
+          "role": "Staff",
+          "description": "Apoyé en la logística y asesoré a los asistentes sobre software libre."
+        }
+      ]
+    }
+  ],
+  "Attachments Title": "Adjuntos",
+  "Attachments Array": [
+    {
+      "id": 3,
+      "name": "Google Ads para Principiantes",
+      "type": "Certificado de Proyecto",
+      "timeframe": "",
+      "assets": {
+        "image": "/images/attachments/Coursera OVV770NV260F.webp",
+        "file": "/files/Coursera OVV770NV260F.pdf"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Introducción al análisis de datos en AWS",
+      "type": "Certificado de Proyecto",
+      "timeframe": "",
+      "assets": {
+        "image": "/images/attachments/Coursera IBXJRQDIYF4B.webp",
+        "file": "/files/Coursera IBXJRQDIYF4B.pdf"
+      }
+    },
+    {
+      "id": 1,
+      "name": "TOEFL ITP Certificación - CEFR Level B1",
+      "type": "Certificado",
+      "timeframe": "",
+      "assets": {
+        "image": "/images/attachments/CertificationB1.webp",
+        "file": "/files/CertificationB1.pdf"
+      }
+    }
+  ],
+  "Contact Title": "CONTACTO",
+  "Input Label Email": "Correo Electrónico",
+  "Placeholder Email": "tucorreo@ejemplo.com",
+  "Error Email": "Por favor ingresa un correo válido",
+  "Input Label Name": "Nombre",
+  "Placeholder Name": "Tu nombre",
+  "Error Name": "Por favor ingresa tu nombre",
+  "Input Label Subject": "Asunto",
+  "Placeholder Subject": "¿De qué quieres hablar?",
+  "Error Subject": "El asunto es requerido",
+  "Input Label Message": "Mensaje",
+  "Placeholder Message": "Escribe tu mensaje aquí...",
+  "Error Message": "No olvides escribir el mensaje",
+  "Submit Button": "Enviar Mensaje",
+  "Email Title Success": "¡Mensaje enviado!",
+  "Email Description Success": "Gracias por escribirme. Te responderé lo antes posible.",
+  "Email Title Error": "Hubo un error",
+  "Email Description Error": "No se pudo enviar el mensaje. Por favor intenta más tarde.",
+  "Latest Project Title": "Último Proyecto",
+  "Latest Project Array":[
+    {
+      "id": 1,
+      "name": "Pablo Marte - Website",
+      "type": "landing page",
+      "timeframe": "2025",
+      "ws": [
+        {
+          "w1": "Este proyecto fue una colaboración directa entre Pablo Marte (autor y músico) y mi persona como desarrollador estratégico. El objetivo principal fue proyectar la identidad de Pablo, integrando su material literario y fotográfico original para consolidar su marca personal en el ecosistema digital.",
+          "w2": "Se desarrolló una landing page de alto impacto visual diseñada específicamente para funcionar como portafolio dinámico. La plataforma no solo expone su obra musical de forma interactiva, sino que actúa como un repositorio de su visión artística. Técnicamente, implementé Next.js para garantizar un rendimiento óptimo y Tailwind CSS junto con librerías de vanguardia como React Bits y HeroUI para lograr una interfaz moderna y atractiva.",
+          "w3": "La necesidad radicaba en la falta de una presencia digital centralizada que permitiera a Pablo establecerse formalmente como artista. El reto era doble: lograr un SEO técnico impecable para que su nombre sea fácilmente localizable en buscadores, y resolver la complejidad estética de un diseño que debía ser, al mismo tiempo, sobrio, minimalista y moderno.",
+          "w4": "La aplicación se encuentra desplegada sobre la infraestructura de Firebase, utilizando un subdominio gestionado en Squarespace. Para la gestión de datos en tiempo real, integré Cloud Firestore, permitiendo que el formulario de contacto funcione como un canal de retroalimentación inmediata donde las opiniones de los usuarios se reflejan en la base de datos de manera instantánea.",
+          "w5": "El proyecto se llevó a cabo mediante un proceso iterativo de diseño. Tras presentar dos propuestas conceptuales y mantener una comunicación constante con el cliente, logramos definir la jerarquía visual correcta. El desarrollo se enfocó en aplicar las mejores prácticas de Next.js para el posicionamiento orgánico, culminando con un despliegue exitoso que cumple con todos los requerimientos técnicos y de marca solicitados."
+        }
+      ],
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 4",
+        "HeroUI",
+        "React Bits",
+        "Firebase"
+      ],
+      "assets": []
+    }],
+  "Working On": "Trabajando en",
+  "Other Projects": "Otros Proyectos"
+}

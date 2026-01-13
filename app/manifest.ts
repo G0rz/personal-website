@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Leonardo Becerril | Personal Website',
-    short_name: 'LB',
+    short_name: 'LeBe',
     description: 'Computer Systems Engineer & Full Stack Developer Portfolio',
     start_url: '/',
     display: 'standalone',
@@ -13,7 +13,7 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: '/favicon.ico',
         sizes: 'any',
-        type: 'image/x-icon',
+        type: 'image/ico',
       },
       {
         src: '/android-chrome-192x192.png',

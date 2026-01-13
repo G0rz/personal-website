@@ -37,15 +37,7 @@ const LatestProjectCard = () => {
                                     <DrawerHeader
                                         className="flex flex-col gap-1">{element.name}</DrawerHeader>
                                     <DrawerBody>
-                                        {element.ws.map((item: { w1: string; w2: string; w3: string; w4: string; w5: string; }, index: number) =>{
-                                            return <div key={index}>
-                                                <p className="my-2">{item.w1}</p>
-                                                <p className="my-2">{item.w2}</p>
-                                                <p className="my-2">{item.w3}</p>
-                                                <p className="my-2">{item.w4}</p>
-                                                <p className="my-2">{item.w5}</p>
-                                            </div>
-                                        })}
+                                       <p>{element.description}</p>
                                         <p className="text-sm italic"><span className="font-bold"> TECH STACK: </span>
                                             {element.tech_stack.join(", ")}
                                         </p>

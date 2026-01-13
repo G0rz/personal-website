@@ -2,6 +2,7 @@ import type {NextConfig} from "next";
 
 const nextConfig: NextConfig = {
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: 'https',
@@ -14,17 +15,15 @@ const nextConfig: NextConfig = {
                 pathname: '/images/**',
             },{
                 protocol: 'https',
-                hostname: 'lh3.googleusercontent.com',
-                pathname: '/**',
-            },{
-                protocol: 'https',
-                hostname: 'maps.app.goo.gl',
+                hostname: 'leonardobecerril.dev',
                 pathname: '/**',
             },
         ],
     },
     experimental: {
         viewTransition: true,
+        optimizeCss: true,
+
     },
 };
 

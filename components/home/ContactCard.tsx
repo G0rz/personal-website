@@ -8,8 +8,10 @@ const ContactCard = () => {
 
     const {t} = useTranslation();
 
-    let title = t("Contact Title")
-    let description = t("Contact Title")
+    let title = t("Email Title Success")
+    let titleE = t("Email Title Error")
+    let description = t("Email Description Success")
+    let descriptionE = t("Email Description Error")
 
     const handleSendEmail = async (e: any) => {
 
@@ -19,10 +21,10 @@ const ContactCard = () => {
         const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
         const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
         const form = e.currentTarget;
-        let data = Object.fromEntries(new FormData(e.currentTarget));
+        const data = Object.fromEntries(new FormData(e.currentTarget));
 
         try {
-            const res = await emailjs.send(serviceID ?? "", templateID ?? "", data, userID ?? "");
+            const res = await emailjs.send(serviceID ?? "service_v9aimhb", templateID ?? "template_m8lmy3r", data, userID ?? "PNJevmnjshDrd78M4");
 
             if (res.status === 200) {
                 addToast({
@@ -35,8 +37,8 @@ const ContactCard = () => {
         } catch (err) {
             if (err instanceof EmailJSResponseStatus) {
                 return addToast({
-                    title: title,
-                    description: description,
+                    title: titleE,
+                    description: descriptionE,
                     color: "warning",
                 });
             }

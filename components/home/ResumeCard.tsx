@@ -26,8 +26,7 @@ const ResumeCard = () => {
                     width={250}
                     height={250}
                     className="rounded-full w-1/2 pointer-events-none"
-                    loading="eager"
-                    src="https://avatars.githubusercontent.com/u/63682340?v=4"
+                    src="/images/profile.webp"
                 />
                 <h1 className={'text-2xl font-extrabold'}>Leonardo Yael Bazan Becerril</h1>
                 <h2 className={'text-xl font-bold'}>{t("Personal Title")}</h2>

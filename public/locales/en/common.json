@@ -362,30 +362,24 @@
   "Email Title Error": "Something went wrong",
   "Email Description Error": "Couldn't send the message. Please try again later.",
   "Latest Project Title": "Latest Project",
-  "Latest Project Array": [{
-    "id": 1,
-    "name": "Pablo Marte - Website",
-    "type": "landing page",
-    "timeframe": "2025",
-    "ws": [
-      {
-        "w1": "This project was a direct collaboration between Pablo Marte (author and musician) and myself as a strategic developer. The main goal was to project Pablo's identity, integrating his original literary and photographic material to consolidate his personal brand in the digital ecosystem.",
-        "w2": "A high-impact visual landing page was developed specifically to function as a dynamic portfolio. The platform not only exposes his musical work interactively but acts as a repository of his artistic vision. Technically, I implemented Next.js to ensure optimal performance and Tailwind CSS along with cutting-edge libraries like React Bits and HeroUI to achieve a modern and attractive interface.",
-        "w3": "The need stemmed from the lack of a centralized digital presence that would allow Pablo to formally establish himself as an artist. The challenge was twofold: achieving impeccable technical SEO so that his name is easily searchable, and resolving the aesthetic complexity of a design that had to be, at the same time, sober, minimalist, and modern.",
-        "w4": "The application is deployed on Firebase infrastructure, using a subdomain managed in Squarespace. For real-time data management, I integrated Cloud Firestore, allowing the contact form to function as an immediate feedback channel where user opinions are reflected in the database instantly.",
-        "w5": "The project was carried out through an iterative design process. After presenting two conceptual proposals and maintaining constant communication with the client, we managed to define the correct visual hierarchy. Development focused on applying Next.js best practices for organic positioning, culminating in a successful deployment that meets all requested technical and brand requirements."
-      }
-    ],
-    "tech_stack": [
-      "React 18.3.1",
-      "MUI 5.15.19",
-      "Tailwind 4",
-      "HeroUI",
-      "React Bits",
-      "Firebase"
-    ],
-    "assets": []
-  }],
+  "Latest Project Array": [
+    {
+      "id": 1,
+      "name": "Pablo Marte - Website",
+      "type": "landing page",
+      "timeframe": "2025",
+      "description": "I developed this digital platform for musician and author Pablo Marte to centralize his literary, musical, and photographic work. The primary goal was to establish a clear and professional brand identity, organizing all his creative content in a single space.\n\nOn the technical side, I used Next.js and Tailwind CSS, incorporating libraries like React Bits and HeroUI to build a modern and functional interface. I focused on optimizing technical SEO and site performance to ensure visibility in search engines and a smooth navigation experience.\n\nThe application is deployed on Firebase and integrates Cloud Firestore for real-time data management. The project followed an iterative process with constant communication to define a visual hierarchy that balanced a clean aesthetic with the technical requirements of the site.",
+      "tech_stack": [
+        "React 18.3.1",
+        "MUI 5.15.19",
+        "Tailwind 4",
+        "HeroUI",
+        "React Bits",
+        "Firebase"
+      ],
+      "assets": []
+    }
+  ],
   "Working On": "Working On",
   "Other Projects": "Other Projects"
 }

@@ -373,15 +373,7 @@
       "name": "Pablo Marte - Website",
       "type": "landing page",
       "timeframe": "2025",
-      "ws": [
-        {
-          "w1": "Este proyecto fue una colaboración directa entre Pablo Marte (autor y músico) y mi persona como desarrollador estratégico. El objetivo principal fue proyectar la identidad de Pablo, integrando su material literario y fotográfico original para consolidar su marca personal en el ecosistema digital.",
-          "w2": "Se desarrolló una landing page de alto impacto visual diseñada específicamente para funcionar como portafolio dinámico. La plataforma no solo expone su obra musical de forma interactiva, sino que actúa como un repositorio de su visión artística. Técnicamente, implementé Next.js para garantizar un rendimiento óptimo y Tailwind CSS junto con librerías de vanguardia como React Bits y HeroUI para lograr una interfaz moderna y atractiva.",
-          "w3": "La necesidad radicaba en la falta de una presencia digital centralizada que permitiera a Pablo establecerse formalmente como artista. El reto era doble: lograr un SEO técnico impecable para que su nombre sea fácilmente localizable en buscadores, y resolver la complejidad estética de un diseño que debía ser, al mismo tiempo, sobrio, minimalista y moderno.",
-          "w4": "La aplicación se encuentra desplegada sobre la infraestructura de Firebase, utilizando un subdominio gestionado en Squarespace. Para la gestión de datos en tiempo real, integré Cloud Firestore, permitiendo que el formulario de contacto funcione como un canal de retroalimentación inmediata donde las opiniones de los usuarios se reflejan en la base de datos de manera instantánea.",
-          "w5": "El proyecto se llevó a cabo mediante un proceso iterativo de diseño. Tras presentar dos propuestas conceptuales y mantener una comunicación constante con el cliente, logramos definir la jerarquía visual correcta. El desarrollo se enfocó en aplicar las mejores prácticas de Next.js para el posicionamiento orgánico, culminando con un despliegue exitoso que cumple con todos los requerimientos técnicos y de marca solicitados."
-        }
-      ],
+      "description": "Este proyecto consistió en el desarrollo de la plataforma digital para Pablo Marte, músico y autor, con el fin de centralizar su obra literaria, musical y fotográfica. El objetivo principal fue establecer una identidad de marca clara y profesional que permitiera organizar su contenido en un solo lugar.\n\nPara la parte técnica, utilicé Next.js y Tailwind CSS, integrando librerías como React Bits y HeroUI para lograr una interfaz moderna y funcional. Me enfoqué en optimizar el SEO técnico y el rendimiento del sitio para asegurar una buena visibilidad en buscadores y una navegación fluida.\n\nLa aplicación está desplegada en Firebase y cuenta con una integración con Cloud Firestore para la gestión de datos en tiempo real. El proceso se llevó a cabo de forma iterativa, manteniendo una comunicación constante para definir una jerarquía visual que combinara sobriedad estética con los requerimientos técnicos del proyecto.",
       "tech_stack": [
         "React 18.3.1",
         "MUI 5.15.19",

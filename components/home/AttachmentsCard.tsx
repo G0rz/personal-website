@@ -10,37 +10,69 @@ import {
     ModalFooter,
     Tooltip,
     useDisclosure,
-    Button
+    Button,
+    ModalHeader
 } from "@heroui/react";
 import {FaEye} from "react-icons/fa";
 import Image from "next/image";
 import {RxDownload} from "react-icons/rx";
 import Link from "next/link";
-import {ModalHeader} from "@heroui/modal";
 
-const EducationCard = () => {
+interface AttachmentAsset {
+    image: string;
+    file: string;
+}
+
+interface Attachment {
+    name: string;
+    type: string;
+    assets: AttachmentAsset;
+}
+
+const AttachmentsCard = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const {t} = useTranslation();
-    const [selectedItem, setSelectedItem] = useState({image:"", file:""})
-    let attachments = t("Attachments Array", {returnObjects: true});
+    const [selectedItem, setSelectedItem] = useState<AttachmentAsset>({image:"", file:""})
+    const attachments = t("Attachments Array", {returnObjects: true}) as Attachment[];
 
-    return (<>
-            <Modal backdrop={"opaque"} isOpen={isOpen} onOpenChange={onOpenChange}>
+    const handleOpenModal = (assets: AttachmentAsset) => {
+        setSelectedItem(assets);
+        onOpen();
+    };
+
+    return (
+        <>
+            <Modal backdrop="blur" isOpen={isOpen} onOpenChange={onOpenChange} size="2xl">
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader></ModalHeader>
-                            <ModalBody>
-                                <Image className="pointer-events-none" width={500} height={500} src={selectedItem.image.trim()}
-                                       alt={'Preview'}/>
+                            <ModalHeader className="flex flex-col gap-1">{t("Preview")}</ModalHeader>
+                            <ModalBody className="flex justify-center items-center">
+                                {selectedItem.image && (
+                                    <div className="relative w-full h-[400px]">
+                                        <Image 
+                                            className=" rounded-lg"
+                                            fill
+                                            src={selectedItem.image.trim()}
+                                            alt="Preview"
+                                        />
+                                    </div>
+                                )}
                             </ModalBody>
                             <ModalFooter>
-                                <Button color="success" isIconOnly variant="light" as={Link}
-                                        href={selectedItem.file.trim()} target="_blank" rel="noreferrer">
-                                    <RxDownload/>
+                                <Button 
+                                    color="success" 
+                                    variant="flat" 
+                                    as={Link}
+                                    href={selectedItem.file.trim()} 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                    startContent={<RxDownload />}
+                                >
+                                    {t("Download Button")}
                                 </Button>
-                                <Button color="danger" variant="flat" onPress={onClose}>
+                                <Button color="danger" variant="light" onPress={onClose}>
                                     {t("Close Button")}
                                 </Button>
                             </ModalFooter>
@@ -48,39 +80,36 @@ const EducationCard = () => {
                     )}
                 </ModalContent>
             </Modal>
-            <Card className="md:col-span-2 md:row-span-1 p-4">
+            <Card className="lg:col-span-2 lg:row-span-1 p-4">
                 <CardHeader>
-                    <h3 className="text-2xl font-bold uppercase">{t("Attachments Title")}</h3>
+                    <h3 className="font-bold uppercase">{t("Attachments Title")}</h3>
                 </CardHeader>
-                <CardBody>
-                    {attachments && Array.isArray(attachments) && attachments.map((element, index) => {
-                        return <div key={index}
-                                    className="flex flex-wrap items-center justify-start                                                     ">
-                            <div className="w-3/4 mb-4">
-                                <p className="text-xl font-bold">{element.name}</p>
-                                <p className="text-lg font-bold text-default-400">{element.type}</p>
+                <CardBody className="gap-4">
+                    {attachments && Array.isArray(attachments) && attachments.map((element, index) => (
+                        <div key={index} className="flex items-center justify-between p-2 rounded-lg transition-colors">
+                            <div className="flex flex-col">
+                                <p className="text-lg font-bold">{element.name}</p>
+                                <p className="text-sm text-default-500 font-medium">{element.type}</p>
                             </div>
-                            {element.assets.length !== 0 && <Tooltip content={t("Details Button")}>
-                                <Button
-                                    className="self-start ms-auto"
-                                    color="primary"
-                                    variant="flat"
-                                    isIconOnly
-                                    aria-label={t("Details Button")}
-                                    onPress={() => {
-                                        onOpen();
-                                        return setSelectedItem(element.assets);
-                                    }}
-                                >
-                                    <FaEye/>
-                                </Button>
-                            </Tooltip>}
+                            {element.assets && (
+                                <Tooltip content={t("Details Button")}>
+                                    <Button
+                                        color="primary"
+                                        variant="flat"
+                                        isIconOnly
+                                        aria-label={t("Details Button")}
+                                        onPress={() => handleOpenModal(element.assets)}
+                                    >
+                                        <FaEye />
+                                    </Button>
+                                </Tooltip>
+                            )}
                         </div>
-                    })}
+                    ))}
                 </CardBody>
             </Card>
         </>
     );
 };
 
-export default EducationCard;
+export default AttachmentsCard;

@@ -18,13 +18,18 @@ import {
 } from "@heroui/react";
 import {FaEye} from "react-icons/fa";
 import {CiLink} from "react-icons/ci";
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from "react";
+
+interface Project {
+    name: string;
+    description: string;
+    tech_stack: string[];
+}
 
 const LatestProjectCard = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const {t} = useTranslation();
-    let latest_project = t("Latest Project Array", {returnObjects: true});
+    const latest_project = t("Latest Project Array", {returnObjects: true}) as Project[];
 
     return (
         <>
@@ -32,15 +37,23 @@ const LatestProjectCard = () => {
                 <DrawerContent>
                     {(onClose) => (
                         <>
-                            {latest_project && Array.isArray(latest_project) && latest_project.map((element, index) => {
-                                return <div key={index}>
-                                    <DrawerHeader
-                                        className="flex flex-col gap-1">{element.name}</DrawerHeader>
+                            {latest_project && Array.isArray(latest_project) && latest_project.map((element, index) => (
+                                <div key={index} className="h-full flex flex-col">
+                                    <DrawerHeader className="flex flex-col gap-1 font-bold uppercase">
+                                        {element.name}
+                                    </DrawerHeader>
                                     <DrawerBody>
-                                       <p>{element.description}</p>
-                                        <p className="text-sm italic"><span className="font-bold"> TECH STACK: </span>
-                                            {element.tech_stack.join(", ")}
-                                        </p>
+                                       <p className="text-lg">{element.description}</p>
+                                        <div className="mt-4">
+                                            <p className="text-sm italic font-bold mb-2">TECH STACK:</p>
+                                            <div className="flex flex-wrap gap-2">
+                                                {element.tech_stack.map((tech, i) => (
+                                                    <span key={i} className="px-2 py-1 bg-default-100 rounded-md text-sm">
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
                                     </DrawerBody>
                                     <DrawerFooter>
                                         <Button color="danger" variant="flat" onPress={onClose}>
@@ -48,30 +61,28 @@ const LatestProjectCard = () => {
                                         </Button>
                                     </DrawerFooter>
                                 </div>
-                            })}
+                            ))}
                         </>
-                    )
-                    }
+                    )}
                 </DrawerContent>
             </Drawer>
             <Card
-                className="md:col-span-2 md:row-span-1 bg-[url('/images/latest_project.webp')] bg-cover bg-top bg-no-repeat">
-                <CardHeader className="bg-black/40">
-                    <h5 className="text-2xl font-bold text-white/80 uppercase">{t("Latest Project Title")}</h5>
+                className="lg:col-span-2 lg:row-span-1 bg-[url('/images/latest_project.webp')] bg-cover bg-top bg-no-repeat group"
+            >
+                <CardHeader className="bg-black/60 backdrop-blur-sm transition-colors">
+                    <h5 className="font-bold text-white uppercase">{t("Latest Project Title")}</h5>
                 </CardHeader>
-                <CardBody className="h-[10vh]">
-
-                </CardBody>
-                <CardFooter className="flex items-center justify-end gap-2">
+                <CardBody className="h-[10vh]" />
+                <CardFooter className="flex items-center justify-end gap-2 bg-black/40 backdrop-blur-sm">
                     <Tooltip content={t("Details Button")}>
                         <Button
                             variant="flat"
-                            className="text-white font-bold"
+                            className="text-white font-bold hover:bg-white/20"
                             isIconOnly
                             aria-label={t("Details Button")}
-                            onPress={() => onOpen()}
+                            onPress={onOpen}
                         >
-                            <FaEye/>
+                            <FaEye size={20} />
                         </Button>
                     </Tooltip>
                     <Tooltip content={t("Preview Button")}>
@@ -81,18 +92,17 @@ const LatestProjectCard = () => {
                             target="_blank"
                             rel="noreferrer"
                             variant="flat"
-                            className="text-white font-bold"
+                            className="text-white font-bold hover:bg-white/20"
                             isIconOnly
                             aria-label={t("Preview Button")}
                         >
-                            <CiLink/>
+                            <CiLink size={24} />
                         </Button>
                     </Tooltip>
                 </CardFooter>
             </Card>
         </>
-    )
-        ;
+    );
 };
 
 export default LatestProjectCard;

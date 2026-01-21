@@ -17,22 +17,22 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://leonardobecerril.dev'),
+    metadataBase: new URL('https://www.leonardobecerril.dev'),
     title: {
         default: 'Leonardo Becerril | Personal Website',
         template: '%s | Leonardo Becerril'
     },
     description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
     keywords: ['Leonardo Becerril', 'Full Stack Developer', 'Computer Systems Engineer', 'React Developer', 'Next.js', 'Mobile Development', 'Web Development', 'Software Engineer', 'Portfolio'],
-    authors: [{name: 'Leonardo Becerril', url: 'https://leonardobecerril.dev'}],
+    authors: [{name: 'Leonardo Becerril', url: 'https://www.leonardobecerril.dev'}],
     creator: 'Leonardo Becerril',
     publisher: 'Leonardo Becerril',
     openGraph: {
         title: 'Leonardo Becerril | Personal Website',
         description: 'Personal Website of Leonardo Becerril, a Computer Systems Engineer and Full Stack Developer specializing in React, Next.js, and Mobile Development. Explore my projects and skills.',
-        url: 'https://leonardobecerril.dev',
+        url: 'https://www.leonardobecerril.dev',
         siteName: 'Leonardo Becerril | Personal Website',
-        images:  {
+        images: {
             url: '/opengraph-image.jpg',
             width: 1200,
             height: 630,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         apple: '/apple-touch-icon.png',
     },
     alternates: {
-        canonical: 'https://leonardobecerril.dev',
+        canonical: 'https://www.leonardobecerril.dev',
     },
 };
 
@@ -63,11 +63,11 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
         <ViewTransition>
             <html lang="es" suppressHydrationWarning>
             <body
-                className={`${customFont.variable} ${geistSans.variable} ${jetbrainsMono.variable} ${vt323.variable} antialiased scroll-smooth`}
+                className={`${customFont.variable} ${geistSans.variable} ${jetbrainsMono.variable} antialiased scroll-smooth`}
             >
             <Providers>
-                <RegisterSW />
-                <main className="flex min-h-screen items-center justify-center text-foreground bg-background font-sans">
+                <RegisterSW/>
+                <main className="flex min-h-screen items-center justify-center font-sans">
                     {children}
                 </main>
                 <footer className="w-full text-center text-sm text-muted-foreground py-4">

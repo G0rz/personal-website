@@ -8,12 +8,12 @@ const AboutMeCard = () => {
     const {t} = useTranslation();
 
     return (
-        <Card className="md:col-span-2 md:row-span-1 p-4 flex items-center justify-center">
-            <CardHeader>
-                <h3 className="text-2xl font-bold uppercase">{t("About Me Title")}</h3>
+        <Card className="lg:col-span-2 lg:row-span-1 p-4">
+            <CardHeader className="pb-2">
+                <h3 className="text-xl font-extrabold uppercase">{t("About Me Title")}</h3>
             </CardHeader>
-            <CardBody>
-                <p className="text-md">{t("About Me")}</p>
+            <CardBody className="flex justify-center items-center">
+                <p className="lg:text-lg leading-relaxed text-default-700">{t("About Me")}</p>
             </CardBody>
         </Card>
     );

@@ -3,28 +3,40 @@
 import {useTranslation} from "react-i18next";
 import {Button, Form, Input, Textarea, Card, CardHeader, CardBody, addToast} from "@heroui/react";
 import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
+import { FormEvent } from "react";
 
 const ContactCard = () => {
 
     const {t} = useTranslation();
 
-    let title = t("Email Title Success")
-    let titleE = t("Email Title Error")
-    let description = t("Email Description Success")
-    let descriptionE = t("Email Description Error")
+    const title = t("Email Title Success")
+    const titleE = t("Email Title Error")
+    const description = t("Email Description Success")
+    const descriptionE = t("Email Description Error")
 
-    const handleSendEmail = async (e: any) => {
-
+    const handleSendEmail = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
         const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
         const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+        
         const form = e.currentTarget;
-        const data = Object.fromEntries(new FormData(e.currentTarget));
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData) as Record<string, unknown>;
+
+        if (!serviceID || !templateID || !userID) {
+            console.error("EmailJS environment variables are missing.");
+            addToast({
+                title: titleE,
+                description: "Configuration error. Please try again later.",
+                color: "danger",
+            });
+            return;
+        }
 
         try {
-            const res = await emailjs.send(serviceID ?? "service_v9aimhb", templateID ?? "template_m8lmy3r", data, userID ?? "PNJevmnjshDrd78M4");
+            const res = await emailjs.send(serviceID, templateID, data, userID);
 
             if (res.status === 200) {
                 addToast({
@@ -32,11 +44,12 @@ const ContactCard = () => {
                     description: description,
                     color: "success",
                 })
+                form.reset();
             }
-            return form.reset()
         } catch (err) {
-            if (err instanceof EmailJSResponseStatus) {
-                return addToast({
+            console.error("Email send error:", err);
+            if (err instanceof EmailJSResponseStatus || err instanceof Error) {
+                 addToast({
                     title: titleE,
                     description: descriptionE,
                     color: "warning",
@@ -46,9 +59,9 @@ const ContactCard = () => {
     }
 
     return (
-        <Card className="md:col-span-2 md:row-span-2 p-4">
+        <Card className="lg:col-span-2 lg:row-span-2 p-4">
             <CardHeader>
-                <h4 className="text-2xl font-bold uppercase">{t("Contact Title")}</h4>
+                <h3 className="font-bold uppercase">{t("Contact Title")}</h3>
             </CardHeader>
                 <CardBody className="flex flex-wrap justify-center items-center">
                 <Form id="contact-form"
@@ -63,7 +76,7 @@ const ContactCard = () => {
                         name="email"
                         placeholder={t("Placeholder Email")}
                         type="email"
-                        autoComplete="off"
+                        autoComplete="email"
                     />
                     <Input
                         isRequired
@@ -73,7 +86,7 @@ const ContactCard = () => {
                         name="name"
                         placeholder={t("Placeholder Name")}
                         type="text"
-                        autoComplete="off"
+                        autoComplete="name"
                     />
                     <Input
                         isRequired
@@ -83,7 +96,6 @@ const ContactCard = () => {
                         name="subject"
                         placeholder={t("Placeholder Subject")}
                         type="text"
-                        autoComplete="off"
                     />
                     <Textarea
                         isRequired
@@ -92,10 +104,9 @@ const ContactCard = () => {
                         labelPlacement="outside"
                         name="message"
                         placeholder={t("Placeholder Message")}
-                        type="text"
-                        autoComplete="off"
+                        minRows={4}
                     />
-                    <Button className="w-full" color="primary" type="submit">
+                    <Button className="w-full font-bold" color="primary" type="submit">
                         {t("Submit Button")}
                     </Button>
                 </Form>

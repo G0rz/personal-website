@@ -1,6 +1,6 @@
 # Leonardo Becerril | Personal Website
 
-Repositorio oficial de [leonardobecerril.dev](https://leonardobecerril.dev). Este proyecto aloja el código fuente de mi portafolio profesional, diseñado para mostrar mi experiencia laboral, educación y proyectos técnicos.
+Repositorio oficial de [leonardobecerril.dev](https://www.leonardobecerril.dev). Este proyecto aloja el código fuente de mi portafolio profesional, diseñado para mostrar mi experiencia laboral, educación y proyectos técnicos.
 
 ## Tech Stack
 

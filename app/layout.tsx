@@ -3,7 +3,7 @@ import {Metadata, Viewport} from "next";
 import "./globals.css"
 import {Providers} from "@/app/providers";
 import Link from "next/link";
-import {customFont, geistSans, jetbrainsMono, vt323} from "@/config/fonts";
+import {customFont, geistSans, jetbrainsMono} from "@/config/fonts";
 import {RegisterSW} from "@/app/register-sw";
 
 export const viewport: Viewport = {

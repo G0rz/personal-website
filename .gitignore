@@ -50,3 +50,5 @@ next-env.d.ts
 # IDE files
 .idea
 .vscode
+.gga
+AGENTS.md

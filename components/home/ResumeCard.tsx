@@ -27,7 +27,7 @@ const ResumeCard = () => {
                 >
                     {currentLanguage === "es" ? "EN" : "ES"}
                 </button>
-                <p className="px-3 py-1 border-2 border-success rounded-2xl lg:text-sm md:text-[10px] text-[8px] font-bold text-success">
+                <p className="px-3 py-1 border-2 border-success rounded-2xl text-md font-bold text-success">
                     <span className="animate-pulse size-2.5 inline-block bg-success rounded-full mr-2"></span>
                     {t("Availability")}
                 </p>

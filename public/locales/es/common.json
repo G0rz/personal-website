@@ -8,38 +8,32 @@
   "Availability": "DISPONIBLE",
   "Tech Stack Title": "Habilidades Técnicas",
   "About Me Title": "Acerca de mí",
-  "About Me": "Ingeniero de Sistemas Computacionales y Desarrollador Full Stack con 7 años de experiencia. Mis últimos proyectos se han centrado en Next.js, donde me especializo en crear interfaces rápidas, minimalistas y con buenas practicas de desarrollo. Actualmente, estoy buscando una oportunidad de trasladar mi experiencia en arquitectura de componentes al desarrollo móvil con Kotlin, enfocado en lograr aplicaciones nativas con la misma calidad que mis desarrollos web.",
+  "About Me": "Ingeniero en Sistemas Computacionales con 7 años de experiencia como Full-Stack Developer. Especialista en la arquitectura, desarrollo y despliegue de soluciones SaaS, e-commerce y sistemas administrativos de alta concurrencia.  Enfocado en la optimización de procesos técnicos y el diseño de componentes escalables que impactan directamente en la productividad del negocio.",
   "Jobs Title": "Experiencia Laboral",
   "Jobs.Responsabilities": "Responsabilidades y Logros",
   "Jobs Array": [
     {
       "id": 7,
       "job": "",
-      "position": "Freelance",
-      "timeframe": "Diciembre 2024 - Actualidad",
+      "position": "Consultor TI / Freelance",
+      "timeframe": "Enero 2025 - Actualidad",
       "awards": [
         {
-          "description": "Consultor técnico para PyMEs, ayudando a digitalizar procesos de almacén y mejorar su presencia en línea."
+          "description": "Gestioné el ciclo de vida completo de desarrollo de sistemas web para diversos clientes, desde el levantamiento de requerimientos funcionales hasta el despliegue, entregando soluciones web optimizadas para el crecimiento de PYMEs.\n"
         },
         {
-          "description": "Diseño y programación completa de 3 landing pages, encargándome desde el prototipo en UX/UI hasta el código final."
+          "description": "Ejecuté el rediseño y optimización de SEO para la plataforma del artista \"Pablo Marte\", logrando una mejora visual y un posicionamiento orgánico superior en los resultados de búsqueda de Google.\n"
         },
         {
-          "description": "Auditoría y mejora de SEO técnico y velocidad de carga en sitios web de clientes."
-        },
-        {
-          "description": "Configuración de dominios y despliegue de aplicaciones usando Firebase Hosting y Google Cloud."
+          "description": "Brindé consultoría técnica a empresas locales, evaluando la viabilidad de sistemas de software y proponiendo stacks tecnológicos que optimizaran sus procesos operativos y de ventas.\n"
         }
       ],
       "tech_stack": [
-        "React 18.3.1",
-        "MUI 5.15.19",
-        "Tailwind 3.4.X/4.0",
-        "Stripe",
+        "Nextjs",
+        "React",
+        "Tailwind",
+        "HeroUI",
         "Firebase",
-        "Google Cloud",
-        "Docker",
-        "MongoDB",
         "Git"
       ]
     },
@@ -192,57 +186,26 @@
       "timeframe": "Marzo 2021 - Septiembre 2021",
       "awards": [
         {
-          "description": "Desarrollé sitios web y landing pages utilizando PHP y Laravel."
+          "description": "Participé en el ciclo de vida completo de 7 proyectos web, incluyendo landing pages, paneles administrativos y una red social. Mi aporte abarcó desde el modelado de bases de datos y el diseño de APIs RESTful, hasta el desarrollo front-end.\n"
         },
         {
-          "description": "Colaboré con el equipo de diseño usando Adobe XD para asegurar que la web final se viera igual al prototipo."
+          "description": "Diseñé y desarrolle un prototipo de sistema administrativo para la gestión interna de proyectos, enfocado en el control de las aplicaciones en desarrollo de la empresa.\n"
         },
         {
-          "description": "Diseñé bases de datos relacionales, asegurando que estuvieran bien estructuradas para evitar problemas futuros."
-        },
-        {
-          "description": "Trabajé bajo metodología Scrum, participando en las planeaciones semanales y entregas de sprints."
-        },
-        {
-          "description": "Usé GitLab para llevar el control de mis tareas y versiones del código."
+          "description": "Estandaricé la creacion de logins para los proyectos web de la empresa, mediante el desarrollo de un módulo de autenticación reutilizable que incluía validación por correo electrónico y recuperación de contraseñas.\n"
         }
       ],
       "tech_stack": [
-        "React 16.14.0",
         "Vue.js 2.6.14",
         "Vuetify 2.6.0",
         "Laravel-Blade 5.5/6.X/7.X/8.X",
-        "Bootstrap",
-        "3.X/4.X/5.X",
+        "Bootstrap 3.X/4.X/5.X",
         "JQuery",
         "PHP 7",
         "MySQL",
+        "Docker",
         "Git",
         "Adobe"
-      ]
-    },
-    {
-      "id": 1,
-      "job": "EDEM Consultores",
-      "position": "Trainee for Business Planning Systems Developer",
-      "timeframe": "Enero 2019 - Julio 2019",
-      "awards": [
-        {
-          "description": "Levantamiento de requerimientos directamente con usuarios de la UAEMex."
-        },
-        {
-          "description": "Maquetación de interfaces (UI) usando HTML, CSS y Bootstrap."
-        },
-        {
-          "description": "Consultas básicas y gestión de datos en SQL Server."
-        }
-      ],
-      "tech_stack": [
-        "HTML",
-        "CSS",
-        "jQuery",
-        "Bootstrap",
-        "SQL/MySQL"
       ]
     }
   ],

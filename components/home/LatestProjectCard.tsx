@@ -43,12 +43,12 @@ const LatestProjectCard = () => {
                                         {element.name}
                                     </DrawerHeader>
                                     <DrawerBody>
-                                       <p className="text-lg">{element.description}</p>
+                                       <p className="text-md">{element.description}</p>
                                         <div className="mt-4">
                                             <p className="text-sm italic font-bold mb-2">TECH STACK:</p>
                                             <div className="flex flex-wrap gap-2">
                                                 {element.tech_stack.map((tech, i) => (
-                                                    <span key={i} className="px-2 py-1 bg-default-100 rounded-md text-sm">
+                                                    <span key={i} className="px-2 py-1 bg-primary-300 text-white rounded-md text-sm">
                                                         {tech}
                                                     </span>
                                                 ))}
@@ -73,10 +73,10 @@ const LatestProjectCard = () => {
                     <h5 className="font-bold text-white uppercase">{t("Latest Project Title")}</h5>
                 </CardHeader>
                 <CardBody className="h-[10vh]" />
-                <CardFooter className="flex items-center justify-end gap-2 bg-black/40 backdrop-blur-sm">
+                <CardFooter className="flex items-center justify-end gap-2">
                     <Tooltip content={t("Details Button")}>
                         <Button
-                            variant="flat"
+                            variant="light"
                             className="text-white font-bold hover:bg-white/20"
                             isIconOnly
                             aria-label={t("Details Button")}
@@ -91,7 +91,7 @@ const LatestProjectCard = () => {
                             href="https://pablo-marte.com/"
                             target="_blank"
                             rel="noreferrer"
-                            variant="flat"
+                            variant="light"
                             className="text-white font-bold hover:bg-white/20"
                             isIconOnly
                             aria-label={t("Preview Button")}

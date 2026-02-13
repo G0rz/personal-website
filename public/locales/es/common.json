@@ -1,15 +1,15 @@
 {
   "Personal Title": "Ingeniero en Sistemas Computacionales | Full-Stack Web Developer | Freelance",
   "Download Button": "DESCARGAR CV",
-  "Download Link": "/files/LeonardoBecerril-CVES-2026.pdf",
+  "Download Link": "/files/LeonardoBecerril-CV-ES.pdf",
   "Close Button": "Cerrar",
   "Details Button": "Detalles",
   "Preview Button": "Ir al sitio",
   "Availability": "DISPONIBLE",
   "Tech Stack Title": "Habilidades Técnicas",
   "About Me Title": "Acerca de mí",
-  "About Me": "Ingeniero en Sistemas Computacionales con 7 años de experiencia como Full-Stack Developer. Especialista en la arquitectura, desarrollo y despliegue de soluciones SaaS, e-commerce y sistemas administrativos de alta concurrencia.  Enfocado en la optimización de procesos técnicos y el diseño de componentes escalables que impactan directamente en la productividad del negocio.",
-  "Jobs Title": "Experiencia Laboral",
+  "About Me": "Ingeniero de Sistemas Computacionales y Desarrollador Full Stack con 7 años de experiencia. Mis últimos proyectos se han centrado en Next.js, donde me especializo en crear interfaces rápidas, minimalistas y con buenas practicas de desarrollo. Actualmente, estoy buscando una oportunidad de trasladar mi experiencia en arquitectura de componentes al desarrollo móvil con Kotlin, enfocado en lograr aplicaciones nativas con la misma calidad que mis desarrollos web.",
+  "Jobs Title": "Experiencia Profesional",
   "Jobs.Responsabilities": "Responsabilidades y Logros",
   "Jobs Array": [
     {
@@ -19,20 +19,21 @@
       "timeframe": "Enero 2025 - Actualidad",
       "awards": [
         {
-          "description": "Gestioné el ciclo de vida completo de desarrollo de sistemas web para diversos clientes, desde el levantamiento de requerimientos funcionales hasta el despliegue, entregando soluciones web optimizadas para el crecimiento de PYMEs.\n"
+          "description": "Gestioné el ciclo de vida completo de desarrollo de sistemas web para diversos clientes, desde el levantamiento de requerimientos funcionales hasta el despliegue, entregando soluciones web optimizadas para el crecimiento de PYMEs."
         },
         {
-          "description": "Ejecuté el rediseño y optimización de SEO para la plataforma del artista \"Pablo Marte\", logrando una mejora visual y un posicionamiento orgánico superior en los resultados de búsqueda de Google.\n"
+          "description": "Ejecuté el rediseño y optimización de SEO para la plataforma del artista \"Pablo Marte\", logrando una mejora visual y un posicionamiento orgánico superior en los resultados de búsqueda de Google."
         },
         {
-          "description": "Brindé consultoría técnica a empresas locales, evaluando la viabilidad de sistemas de software y proponiendo stacks tecnológicos que optimizaran sus procesos operativos y de ventas.\n"
+          "description": "Brindé consultoría técnica a empresas locales, evaluando la viabilidad de sistemas de software y proponiendo stacks tecnológicos que optimizaran sus procesos operativos y de ventas."
         }
       ],
       "tech_stack": [
-        "Nextjs",
+        "Next.js",
         "React",
-        "Tailwind",
+        "Typescript",
         "HeroUI",
+        "TailwindCSS",
         "Firebase",
         "Git"
       ]
@@ -44,36 +45,29 @@
       "timeframe": "Abril 2024 – Diciembre 2024",
       "awards": [
         {
-          "description": "Construí la plataforma Menumatic.io desde cero usando Next.js y Tailwind, implementando SSR para asegurar una carga rápida y buen posicionamiento en buscadores."
+          "description": "Implementé y documenté la integración de la pasarela de pagos Stripe para una plataforma SaaS, creando guías técnicas para futuras escalabilidades del sistema."
         },
         {
-          "description": "Integré la API de Stripe para automatizar los cobros de suscripciones mensuales y anuales."
+          "description": "Trabajé en colaboración directa con el equipo de UX/UI, traduciendo diseños de Figma en componentes modulares reutilizables que redujeron el tiempo de desarrollo de nuevos proyectos en un 30%."
         },
         {
-          "description": "Estandaricé el proceso de diseño a código (Figma-to-Code), creando una librería de componentes reutilizables para acelerar el desarrollo."
-        },
-        {
-          "description": "Desarrollé un script en Python que conecta Google Trends con OpenAI para generar ideas de contenido en tiempo real."
-        },
-        {
-          "description": "Actualicé sistemas antiguos hechos en versiones viejas de React y MUI, migrándolos a tecnologías modernas y haciéndolos responsivos."
-        },
-        {
-          "description": "Administré el despliegue de aplicaciones en producción usando Google Cloud Platform."
+          "description": "Participé en el desarrollo de un sistema de automatización de contenidos integrando librerías de web scrapping para Google Trends y automatizando la publicación de noticias en plataformas CMS sin intervención humana."
         }
       ],
       "tech_stack": [
-        "React 18.3.1",
-        "MUI 5.15.19",
-        "Tailwind 3.4.X/4.0",
-        "Stripe",
-        "Firebase",
-        "Google Cloud",
-        "Docker",
+        "Next.js",
+        "React",
+        "TailwindCSS",
+        "Stripe API",
+        "Python",
+        "Figma",
+        "MUI",
         "MongoDB",
-        "Git",
-        "Tankstack Query",
-        "Figma"
+        "Firebase",
+        "Docker",
+        "Google Cloud Platform",
+        "Zapier",
+        "Git"
       ]
     },
     {
@@ -83,28 +77,26 @@
       "timeframe": "Febrero 2023 - Abril 2024",
       "awards": [
         {
-          "description": "Implementé el primer sistema de control de versiones del área montando un servidor GitLab en Ubuntu, lo que ordenó el trabajo del equipo."
+          "description": "Optimicé el rendimiento y estabilidad de servidores mediante mantenimiento correctivo y ajustes de configuración técnica, logrando que los sistemas alojados soportaran altas cargas de trabajo y para garantizar la continuidad de los servicios."
         },
         {
-          "description": "Creé un entorno de pruebas (staging) que redujo en un 70% los errores que llegaban a producción."
+          "description": "Propusé e implementé el uso de un servidor Linux con GitLab para mejorar la organizacion y el flujo de trabajo en equipo, además también implementé un servidor y entorno de pruebas independiente para realizar pruebas y mitigar riesgos en producción."
         },
         {
-          "description": "Arreglé módulos críticos de carga de archivos y encriptación en un sistema JavaEE, solucionando problemas recurrentes con expedientes médicos."
+          "description": "Participé en el análisis, levantamiento de requerimientos, desarrollo, mantenimiento, pruebas y despliegue a producción de sistemas web asignados."
         },
         {
-          "description": "Me encargué del ciclo completo de desarrollo (Base de datos Oracle, Backend Java y Frontend) para sistemas internos de seguridad pública."
-        },
-        {
-          "description": "Redacté la documentación técnica de los sistemas y establecí un filtro para priorizar requerimientos reales sobre soporte básico."
+          "description": "Redacté la documentación técnica, diagramas de flujo, mapeo de procesos y diagramas entidad- relación de los sistemas que me fueron asignados."
         }
       ],
       "tech_stack": [
-        "JavaEE 7",
-        "JSF 2.2",
-        "Primefaces 5.2",
-        "Bootstrap 3.3.6/5.X",
+        "JavaEE",
+        "JSF",
+        "Primefaces",
+        "Bootstrap",
         "JQuery",
-        "Java 8",
+        "Java",
+        "Javascript",
         "MySQL",
         "Git"
       ]
@@ -116,30 +108,22 @@
       "timeframe": "Marzo 2022 - Febrero 2023",
       "awards": [
         {
-          "description": "Desarrollé landing pages para campañas políticas con alto tráfico, priorizando la optimización para móviles (Mobile First)."
+          "description": "Propusé e implementé el flujo de trabajo colaborativo mediante la implementación de GitHub, permitiendo un seguimiento riguroso de entregas y control de versiones."
         },
         {
-          "description": "Conecté la API de Facebook para mostrar actualizaciones de redes sociales en tiempo real dentro de los sitios web."
+          "description": "Realicé mantenimiento, diseño y desarrollo de diversos sistemas administrativos y sitios web entre los que destacan los sitios web orientados a campañas publicitarias en donde priorice los tiempos de carga, el manejo de SEO y el diseño responsivo."
         },
         {
-          "description": "Rediseñé el panel administrativo del Cablebús, simplificando los formularios y flujos para que fueran más fáciles de usar por los operadores."
-        },
-        {
-          "description": "Programé módulos para gestión de archivos y galerías de imágenes dinámicas en los sistemas internos."
-        },
-        {
-          "description": "Introduje el uso de Git y GitHub en el equipo, mejorando la organización y entrega de código."
-        },
-        {
-          "description": "Investigué y diseñé la arquitectura para un chat en tiempo real, basándome en la interfaz de WhatsApp Web."
+          "description": "Desarrolle un prototipo de chat en tiempo real basándome en la interfaz de usuario de WhatsApp Web añadiendo un diseño responsivo."
         }
       ],
       "tech_stack": [
-        "React 18.2.0",
-        "MUI 4.12.4/5.0.6",
-        "Tailwind 3.1.4",
-        "Nextjs 12",
-        "NextUI 1.0.0",
+        "Next.js",
+        "NextUI",
+        "React",
+        "Javascript",
+        "MUI",
+        "Tailwind",
         "Git"
       ]
     },
@@ -150,30 +134,23 @@
       "timeframe": "Septiembre 2021 - Marzo 2022",
       "awards": [
         {
-          "description": "Coordiné el desarrollo de proyectos de E-commerce y plataformas de renta, asegurando que se cumplieran los tiempos de entrega."
+          "description": "Lideré equipos de hasta 5 integrantes para el desarrollo de sistemas web, estableciendo flujos de trabajo basados en metodologías ágiles y tableros Scrumban, lo que resultó en una entrega de proyectos más predecibles y un incremento medible en la productividad del equipo."
         },
         {
-          "description": "Capacité a desarrolladores nuevos y di talleres internos sobre buenas prácticas de código."
+          "description": "Facilité la integración de nuevos desarrolladores mediante capacitación técnica y mentoría personalizada, logrando una reducción significativa en su curva de aprendizaje y alineándolos con los estándares de calidad de la empresa."
         },
         {
-          "description": "Construí paneles administrativos (CMS) y dashboards usando Laravel y Vue.js."
-        },
-        {
-          "description": "Implementé sistemas de login seguros, recuperación de contraseñas y encriptación de datos sensibles."
-        },
-        {
-          "description": "Creé soluciones a medida para clientes de bienes raíces y deportes, automatizando sus inventarios y registros."
+          "description": "Participé en el mantenimiento y desarrollo continuo de 12 proyectos web, incluyendo landing pages, PWA, paneles administrativos, sistemas de inventario, SASS y CMS."
         }
       ],
       "tech_stack": [
-        "React 16.14.0",
-        "Vue.js 2.6.14",
-        "Vuetify 2.6.0",
-        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "React",
+        "Vue.js",
+        "Vuetify",
+        "Laravel-Blade",
         "Bootstrap",
-        "3.X/4.X/5.X",
         "JQuery",
-        "PHP 7",
+        "PHP",
         "MySQL",
         "Git",
         "Adobe"
@@ -182,34 +159,49 @@
     {
       "id": 2,
       "job": "Satori Tech",
-      "position": "Internship",
-      "timeframe": "Marzo 2021 - Septiembre 2021",
+      "position": "Practicas Profesionales",
+      "timeframe": "Marzo 2021 - Agosto 2021",
       "awards": [
         {
-          "description": "Participé en el ciclo de vida completo de 7 proyectos web, incluyendo landing pages, paneles administrativos y una red social. Mi aporte abarcó desde el modelado de bases de datos y el diseño de APIs RESTful, hasta el desarrollo front-end.\n"
+          "description": "Participé en el ciclo de vida completo de 7 proyectos web, incluyendo landing pages, paneles administrativos y una red social. Mi aporte abarcó desde el modelado de bases de datos y el diseño de APIs RESTful, hasta el desarrollo front-end."
         },
         {
-          "description": "Diseñé y desarrolle un prototipo de sistema administrativo para la gestión interna de proyectos, enfocado en el control de las aplicaciones en desarrollo de la empresa.\n"
+          "description": "Diseñé y desarrolle un prototipo de sistema administrativo para la gestión interna de proyectos, enfocado en el control de las aplicaciones en desarrollo de la empresa."
         },
         {
-          "description": "Estandaricé la creacion de logins para los proyectos web de la empresa, mediante el desarrollo de un módulo de autenticación reutilizable que incluía validación por correo electrónico y recuperación de contraseñas.\n"
+          "description": "Estandaricé la creacion de logins para los proyectos web de la empresa, mediante el desarrollo de un módulo de autenticación reutilizable que incluía validación por correo electrónico y recuperación de contraseñas."
         }
       ],
       "tech_stack": [
-        "Vue.js 2.6.14",
-        "Vuetify 2.6.0",
-        "Laravel-Blade 5.5/6.X/7.X/8.X",
-        "Bootstrap 3.X/4.X/5.X",
-        "JQuery",
-        "PHP 7",
+        "Vue.js",
+        "Vuetify",
+        "Laravel-Blade",
+        "Bootstrap",
+        "jQuery",
+        "PHP",
         "MySQL",
-        "Docker",
         "Git",
         "Adobe"
+      ]
+    },
+    {
+      "id": 1,
+      "job": "EDEM Consultores",
+      "position": "Trainee for Business Planning Systems Developer",
+      "timeframe": "Enero 2019 - Julio 2019",
+      "awards": [
+      ],
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "jQuery",
+        "Bootstrap",
+        "SQL"
       ]
     }
   ],
   "Education Title": "Educación",
+  "Education.Goals": "Logros",
   "Education Array": [
     {
       "id": 4,
@@ -330,13 +322,13 @@
   "Email Title Error": "Hubo un error",
   "Email Description Error": "No se pudo enviar el mensaje. Por favor intenta más tarde.",
   "Latest Project Title": "Último Proyecto",
-  "Latest Project Array":[
+  "Latest Project Array": [
     {
       "id": 1,
       "name": "Pablo Marte - Website",
       "type": "landing page",
       "timeframe": "2025",
-      "description": "Este proyecto consistió en el desarrollo de la plataforma digital para Pablo Marte, músico y autor, con el fin de centralizar su obra literaria, musical y fotográfica. El objetivo principal fue establecer una identidad de marca clara y profesional que permitiera organizar su contenido en un solo lugar.\n\nPara la parte técnica, utilicé Next.js y Tailwind CSS, integrando librerías como React Bits y HeroUI para lograr una interfaz moderna y funcional. Me enfoqué en optimizar el SEO técnico y el rendimiento del sitio para asegurar una buena visibilidad en buscadores y una navegación fluida.\n\nLa aplicación está desplegada en Firebase y cuenta con una integración con Cloud Firestore para la gestión de datos en tiempo real. El proceso se llevó a cabo de forma iterativa, manteniendo una comunicación constante para definir una jerarquía visual que combinara sobriedad estética con los requerimientos técnicos del proyecto.",
+      "description": "Este proyecto consistió en el desarrollo de la plataforma digital para Pablo Marte, músico y autor, con el fin de centralizar su obra literaria, musical y fotográfica. El objetivo principal fue establecer una identidad de marca clara y profesional que permitiera organizar su contenido en un solo lugar. Para la parte técnica, utilicé Next.js y Tailwind CSS, integrando librerías como React Bits y HeroUI para lograr una interfaz moderna y funcional. Me enfoqué en optimizar el SEO técnico y el rendimiento del sitio para asegurar una buena visibilidad en buscadores y una navegación fluida. La aplicación está desplegada en Firebase y cuenta con una integración con Cloud Firestore para la gestión de datos en tiempo real. El proceso se llevó a cabo de forma iterativa, manteniendo una comunicación constante para definir una jerarquía visual que combinara sobriedad estética con los requerimientos técnicos del proyecto.",
       "tech_stack": [
         "React 18.3.1",
         "MUI 5.15.19",
@@ -346,7 +338,8 @@
         "Firebase"
       ],
       "assets": []
-    }],
+    }
+  ],
   "Working On": "Trabajando en",
   "Other Projects": "Otros Proyectos"
 }

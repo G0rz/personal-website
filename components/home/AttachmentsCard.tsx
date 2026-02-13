@@ -47,7 +47,7 @@ const AttachmentsCard = () => {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">{t("Preview")}</ModalHeader>
+                            <ModalHeader></ModalHeader>
                             <ModalBody className="flex justify-center items-center">
                                 {selectedItem.image && (
                                     <div className="relative w-full h-[400px]">
@@ -63,14 +63,14 @@ const AttachmentsCard = () => {
                             <ModalFooter>
                                 <Button 
                                     color="success" 
-                                    variant="flat" 
+                                    variant="solid"
                                     as={Link}
                                     href={selectedItem.file.trim()} 
                                     target="_blank" 
                                     rel="noreferrer"
-                                    startContent={<RxDownload />}
+                                    isIconOnly
+                                    startContent={<RxDownload className="text-white"/>}
                                 >
-                                    {t("Download Button")}
                                 </Button>
                                 <Button color="danger" variant="light" onPress={onClose}>
                                     {t("Close Button")}
@@ -82,20 +82,20 @@ const AttachmentsCard = () => {
             </Modal>
             <Card className="lg:col-span-2 lg:row-span-1 p-4">
                 <CardHeader>
-                    <h3 className="font-bold uppercase">{t("Attachments Title")}</h3>
+                    <h3 className="text-xl font-bold uppercase">{t("Attachments Title")}</h3>
                 </CardHeader>
                 <CardBody className="gap-4">
                     {attachments && Array.isArray(attachments) && attachments.map((element, index) => (
-                        <div key={index} className="flex items-center justify-between p-2 rounded-lg transition-colors">
+                        <div key={index} className="flex items-center justify-between">
                             <div className="flex flex-col">
                                 <p className="text-lg font-bold">{element.name}</p>
-                                <p className="text-sm text-default-500 font-medium">{element.type}</p>
+                                <p className="text-md text-default-500">{element.type}</p>
                             </div>
                             {element.assets && (
                                 <Tooltip content={t("Details Button")}>
                                     <Button
                                         color="primary"
-                                        variant="flat"
+                                        variant="light"
                                         isIconOnly
                                         aria-label={t("Details Button")}
                                         onPress={() => handleOpenModal(element.assets)}

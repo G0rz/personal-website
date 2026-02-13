@@ -47,14 +47,15 @@ const EducationCard = () => {
                 <DrawerContent>
                     {(onClose) => (
                         <>
-                            <DrawerHeader className="font-bold uppercase">{t("Awards & Achievements")}</DrawerHeader>
+                            <DrawerHeader
+                                className="text-xl font-extrabold uppercase">{t("Education.Goals")}</DrawerHeader>
                             <DrawerBody>
                                 <div className="flex flex-col gap-6">
                                     {selectedItem && selectedItem.map((element, index) => (
-                                        <div key={index} className="p-4 bg-default-50 rounded-lg">
-                                            <p className="text-xl font-bold text-primary">{element.title}</p>
-                                            <p className="text-md font-semibold text-default-500 mb-2">{element.role}</p>
-                                            <p className="text-default-700 leading-relaxed">{element.description}</p>
+                                        <div key={index} className="px-6">
+                                            <p className="text-lg font-extrabold text-primary-500">{element.title}</p>
+                                            <p className="text-md font-semibold">{element.role}</p>
+                                            <p className="text-sm font-bold tracking-wider text-default-500">{element.description}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -70,30 +71,32 @@ const EducationCard = () => {
             </Drawer>
             <Card className="lg:col-span-2 lg:row-span-1 p-4">
                 <CardHeader>
-                    <h3 className="font-bold uppercase">{t("Education Title")}</h3>
+                    <h3 className="text-xl font-bold uppercase">{t("Education Title")}</h3>
                 </CardHeader>
                 <CardBody className="gap-4">
                     {education && Array.isArray(education) && education.map((element, index) => (
-                        <div key={index} className="flex items-start justify-between p-2 rounded-lg transition-colors">
-                            <div className="flex flex-col gap-1 w-3/4">
-                                <p className="text-lg font-bold leading-tight">{element.degree}</p>
-                                <p className="text-md text-default-500 font-medium">{element.school}</p>
-                                <p className="text-sm font-bold text-primary">{element.timeframe}</p>
+                        <div key={index} className="flex flex-col">
+                            <div className="flex justify-between items-start">
+                                <div className="flex flex-col">
+                                    <p className="text-lg font-extrabold text-primary-500">{element.degree}</p>
+                                    <p className="text-md font-semibold">{element.school}</p>
+                                    <p className="text-sm font-bold uppercase tracking-wider text-default-500">{element.timeframe}</p>
+                                </div>
+                                {element.awards && element.awards.length > 0 && (
+                                    <Tooltip content={t("Details Button")}>
+                                        <Button
+                                            className="mt-1"
+                                            color="primary"
+                                            variant="light"
+                                            isIconOnly
+                                            aria-label={t("Details Button")}
+                                            onPress={() => handleOpenDrawer(element.awards)}
+                                        >
+                                            <FaEye />
+                                        </Button>
+                                    </Tooltip>
+                                )}
                             </div>
-                            {element.awards && element.awards.length > 0 && (
-                                <Tooltip content={t("Details Button")}>
-                                    <Button
-                                        className="mt-1"
-                                        color="primary"
-                                        variant="flat"
-                                        isIconOnly
-                                        aria-label={t("Details Button")}
-                                        onPress={() => handleOpenDrawer(element.awards)}
-                                    >
-                                        <FaEye />
-                                    </Button>
-                                </Tooltip>
-                            )}
                         </div>
                     ))}
                 </CardBody>

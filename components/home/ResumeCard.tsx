@@ -32,17 +32,17 @@ const ResumeCard = () => {
                     {t("Availability")}
                 </p>
             </CardHeader>
-            <CardBody className="flex flex-wrap justify-center items-center gap-4">
+            <CardBody className="flex flex-wrap justify-center items-center gap-4 text-center">
                 <Image
                     alt="Leonardo Becerril Profile Picture"
-                    width={500}
-                    height={500}
-                    className="rounded-full w-1/2 pointer-events-none md:self-center self-start"
+                    width={750}
+                    height={750}
+                    className="rounded-full w-1/2 pointer-events-none self-center"
                     src="/images/profile.webp"
                     priority
                 />
                 <h1 className="text-3xl font-extrabold">Leonardo Yael Bazan Becerril</h1>
-                <h2 className="text-xl font-bold text-default-500">{t("Personal Title")}</h2>
+                <h2 className="text-xl font-bold">{t("Personal Title")}</h2>
             </CardBody>
             <CardFooter>
                 <Button

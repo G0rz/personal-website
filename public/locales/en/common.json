@@ -1,7 +1,7 @@
 {
   "Personal Title": "Computer Systems Engineer | Full-Stack Web Developer | Freelance",
   "Download Button": "DOWNLOAD RESUME",
-  "Download Link": "/files/LeonardoBecerril-CV-2026.pdf",
+  "Download Link": "/files/LeonardoBecerril-CV-EN.pdf",
   "Close Button": "Close",
   "Details Button": "Details",
   "Preview Button": "Go to site",
@@ -9,74 +9,65 @@
   "Tech Stack Title": "Tech Stack",
   "About Me Title": "About Me",
   "About Me": "Software Engineer and Full Stack Developer with 7 years of experience. My recent work has been focused on Next.js, specializing in building fast, minimalist interfaces using development best practices. I am now looking to translate my expertise in component architecture to mobile development with Kotlin, aiming to deliver native apps with the same high quality as my web projects.",
-  "Jobs Title": "Work Experience",
+  "Jobs Title": "Professional Experience",
   "Jobs.Responsabilities": "Responsibilities and Achievements",
   "Jobs Array": [
     {
       "id": 7,
       "job": "",
       "position": "Freelance",
-      "timeframe": "December 2024 - Present",
+      "timeframe": "January 2025 - Present",
       "awards": [
         {
-          "description": "Technical consultant for small businesses, helping digitize warehouse processes and improve online presence."
+          "description": "Managed the full software development life cycle for various clients, from functional requirements gathering to deployment, delivering optimized web solutions for small and medium enterprise growth."
         },
         {
-          "description": "Designed and coded 3 landing pages from scratch, handling everything from UX/UI prototyping to final deployment."
+          "description": "Executed the redesign and SEO optimization for the \"Pablo Marte\" artist platform, achieving visual improvements and superior organic ranking in Google search results."
         },
         {
-          "description": "Audited and improved technical SEO and page load speed for client websites."
-        },
-        {
-          "description": "Configured domains and deployed applications using Firebase Hosting and Google Cloud."
+          "description": "Provided technical consultancy to local businesses, evaluating software feasibility and proposing technology stacks to optimize operational and sales processes."
         }
       ],
       "tech_stack": [
         "Next.js",
         "React",
+        "Typescript",
         "HeroUI",
         "TailwindCSS",
         "Firebase",
-        "Docker",
         "Git"
       ]
     },
     {
       "id": 6,
-      "job": "Excite – Inbound Marketing México",
+      "job": "Excite - Inbound Marketing México",
       "position": "Full-Stack React Web Developer",
-      "timeframe": "April 2024 – December 2024",
+      "timeframe": "April 2024 - December 2024",
       "awards": [
         {
-          "description": "Built Menumatic.io platform from scratch using Next.js and Tailwind, implementing SSR for fast loading and better SEO."
+          "description": "Implemented and documented Stripe payment gateway integration for a SaaS platform, creating technical guides for future system scalability."
         },
         {
-          "description": "Integrated Stripe API to automate monthly and annual subscription payments."
+          "description": "Collaborated directly with the UX/UI team, translating Figma designs into reusable modular components that reduced development time for new projects by 30%."
         },
         {
-          "description": "Standardized the Figma-to-Code workflow, creating a reusable component library to speed up development."
-        },
-        {
-          "description": "Developed a Python script connecting Google Trends with OpenAI to generate real-time content ideas."
-        },
-        {
-          "description": "Upgraded legacy systems built with old React versions, migrating them to modern tech stacks and making them responsive."
-        },
-        {
-          "description": "Managed production deployments using Google Cloud Platform."
+          "description": "Developed a content automation system by integrating web scraping libraries for Google Trends and automating news publication across CMS platforms without human intervention."
         }
       ],
       "tech_stack": [
         "Next.js",
         "React",
-        "Tailwind CSS",
+        "TailwindCSS",
         "Stripe API",
         "Python",
         "Figma",
         "MUI",
         "MongoDB",
+        "Firebase",
+        "Docker",
         "Google Cloud Platform",
-        "Zapier"
+        "Zapier",
+        "Git"
       ]
     },
     {
@@ -86,28 +77,26 @@
       "timeframe": "February 2023 - April 2024",
       "awards": [
         {
-          "description": "Implemented the department's first version control system by setting up a GitLab server on Ubuntu."
+          "description": "Optimized server performance and stability through corrective maintenance and technical configuration adjustments, ensuring hosted systems could handle high workloads and maintain service continuity."
         },
         {
-          "description": "Created a staging environment that reduced production errors by 70%."
+          "description": "Proposed and implemented a Linux server with GitLab to improve team organization and workflow; also deployed an independent staging environment to mitigate production risks."
         },
         {
-          "description": "Fixed critical file upload and encryption modules in a JavaEE system, solving recurring issues with medical records."
+          "description": "Participated in the analysis, requirements gathering, development, maintenance, testing, and production deployment of assigned web systems."
         },
         {
-          "description": "Handled the full development cycle (Oracle DB, Java Backend, Frontend) for internal public security systems."
-        },
-        {
-          "description": "Wrote technical documentation and established a filter to prioritize real feature requests over basic support."
+          "description": "Authored technical documentation, flowcharts, process mapping, and entity-relationship diagrams ) for assigned systems."
         }
       ],
       "tech_stack": [
-        "JavaEE 7",
-        "JSF 2.2",
-        "Primefaces 5.2",
-        "Bootstrap 3.3.6/5.X",
+        "JavaEE",
+        "JSF",
+        "Primefaces",
+        "Bootstrap",
         "JQuery",
-        "Java 8",
+        "Java",
+        "Javascript",
         "MySQL",
         "Git"
       ]
@@ -119,30 +108,22 @@
       "timeframe": "March 2022 - February 2023",
       "awards": [
         {
-          "description": "Developed high-traffic landing pages for political campaigns, prioritizing Mobile First design."
+          "description": "Proposed and established a collaborative workflow using GitHub, enabling rigorous delivery tracking and version control."
         },
         {
-          "description": "Connected the Facebook API to display real-time social media updates on websites."
+          "description": "Performed maintenance, design, and development for various administrative systems and websites, prioritizing load times, SEO management, and responsive design for ad campaign sites."
         },
         {
-          "description": "Redesigned the Cablebús admin panel, simplifying forms and workflows for operators."
-        },
-        {
-          "description": "Coded modules for file management and dynamic image galleries in internal systems."
-        },
-        {
-          "description": "Introduced Git and GitHub to the team, improving code organization and delivery."
-        },
-        {
-          "description": "Researched and designed the architecture for a real-time chat, based on the WhatsApp Web interface."
+          "description": "Developed a real-time chat prototype based on the WhatsApp Web UI, incorporating a fully responsive design."
         }
       ],
       "tech_stack": [
-        "React 18.2.0",
-        "MUI 4.12.4/5.0.6",
-        "Tailwind 3.1.4",
-        "Nextjs 12",
-        "NextUI 1.0.0",
+        "Next.js",
+        "NextUI",
+        "React",
+        "Javascript",
+        "MUI",
+        "Tailwind",
         "Git"
       ]
     },
@@ -153,30 +134,21 @@
       "timeframe": "September 2021 - March 2022",
       "awards": [
         {
-          "description": "Coordinated development for E-commerce and rental platform projects, ensuring on-time delivery."
-        },
-        {
-          "description": "Trained new developers and gave internal workshops on coding best practices."
-        },
-        {
-          "description": "Built admin panels (CMS) and dashboards using Laravel and Vue.js."
-        },
-        {
-          "description": "Implemented secure login systems, password recovery, and sensitive data encryption."
-        },
-        {
-          "description": "Created custom solutions for real estate and sports clients, automating their inventories and records."
+          "description": "Led teams of up to 5 members in web system development, establishing workflows based on Agile methodologies and Scrumban boards, resulting in more predictable project delivery and measurable productivity gains."
+        }, {
+          "description": "Facilitated the onboarding of new developers through technical training and personalized mentorship, significantly reducing their learning curve and aligning them with company quality standards."
+        }, {
+          "description": "Participated in the continuous maintenance and development of 12 web projects, including landing pages, PWAs, admin panels, inventory systems, SaaS, and CMS."
         }
       ],
       "tech_stack": [
-        "React 16.14.0",
-        "Vue.js 2.6.14",
-        "Vuetify 2.6.0",
-        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "React",
+        "Vue.js",
+        "Vuetify",
+        "Laravel-Blade",
         "Bootstrap",
-        "3.X/4.X/5.X",
         "JQuery",
-        "PHP 7",
+        "PHP",
         "MySQL",
         "Git",
         "Adobe"
@@ -189,30 +161,22 @@
       "timeframe": "March 2021 - September 2021",
       "awards": [
         {
-          "description": "Developed websites and landing pages using PHP and Laravel."
+          "description": "Contributed to the full life cycle of 7 web projects, including landing pages, admin panels, and a social network. Contributions spanned from database modeling and RESTful API design to front- end development."
         },
         {
-          "description": "Collaborated with the design team using Adobe XD to ensure the final web product matched the prototype."
+          "description": "Designed and developed an internal administrative system prototype for project management, focused on tracking the company's applications in development."
         },
         {
-          "description": "Designed relational databases, ensuring they were well-structured to avoid future issues."
-        },
-        {
-          "description": "Worked under Scrum methodology, participating in weekly planning and sprint deliveries."
-        },
-        {
-          "description": "Used GitLab to track my tasks and code versions."
+          "description": "Standardized login creation for company web projects by developing a reusable authentication module including email validation and password recovery."
         }
       ],
       "tech_stack": [
-        "React 16.14.0",
-        "Vue.js 2.6.14",
-        "Vuetify 2.6.0",
-        "Laravel-Blade 5.5/6.X/7.X/8.X",
+        "Vue.js",
+        "Vuetify",
+        "Laravel-Blade",
         "Bootstrap",
-        "3.X/4.X/5.X",
-        "JQuery",
-        "PHP 7",
+        "jQuery",
+        "PHP",
         "MySQL",
         "Git",
         "Adobe"
@@ -224,26 +188,18 @@
       "position": "Trainee for Business Planning Systems Developer",
       "timeframe": "January 2019 - July 2019",
       "awards": [
-        {
-          "description": "Gathered requirements directly from UAEMex users."
-        },
-        {
-          "description": "Built user interfaces (UI) using HTML, CSS, and Bootstrap."
-        },
-        {
-          "description": "Handled basic queries and data management in SQL Server."
-        }
       ],
       "tech_stack": [
         "HTML",
         "CSS",
         "jQuery",
         "Bootstrap",
-        "SQL/MySQL"
+        "SQL"
       ]
     }
   ],
   "Education Title": "Education",
+  "Education.Goals": "Achievements",
   "Education Array": [
     {
       "id": 4,
@@ -359,7 +315,7 @@
   "Submit Button": "Send Message",
   "Email Title Success": "Message sent!",
   "Email Description Success": "Thanks for writing. I'll get back to you ASAP.",
-  "Email Title Error": "Something went wrong",
+  "Email Title Error": "Something went wrong.",
   "Email Description Error": "Couldn't send the message. Please try again later.",
   "Latest Project Title": "Latest Project",
   "Latest Project Array": [
@@ -368,11 +324,11 @@
       "name": "Pablo Marte - Website",
       "type": "landing page",
       "timeframe": "2025",
-      "description": "I developed this digital platform for musician and author Pablo Marte to centralize his literary, musical, and photographic work. The primary goal was to establish a clear and professional brand identity, organizing all his creative content in a single space.\n\nOn the technical side, I used Next.js and Tailwind CSS, incorporating libraries like React Bits and HeroUI to build a modern and functional interface. I focused on optimizing technical SEO and site performance to ensure visibility in search engines and a smooth navigation experience.\n\nThe application is deployed on Firebase and integrates Cloud Firestore for real-time data management. The project followed an iterative process with constant communication to define a visual hierarchy that balanced a clean aesthetic with the technical requirements of the site.",
+      "description": "I developed this digital platform for musician and author Pablo Marte to centralize his literary, musical, and photographic work. The primary goal was to establish a clear and professional brand identity, organizing all his creative content in a single space. On the technical side, I used Next.js and Tailwind CSS, incorporating libraries like React Bits and HeroUI to build a modern and functional interface. I focused on optimizing technical SEO and site performance to ensure visibility in search engines and a smooth navigation experience. The application is deployed on Firebase and integrates Cloud Firestore for real-time data management. The project followed an iterative process with constant communication to define a visual hierarchy that balanced a clean aesthetic with the technical requirements of the site.",
       "tech_stack": [
-        "React 18.3.1",
-        "MUI 5.15.19",
-        "Tailwind 4",
+        "React",
+        "MUI",
+        "TailwindCSS",
         "HeroUI",
         "React Bits",
         "Firebase"

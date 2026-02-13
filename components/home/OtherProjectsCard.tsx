@@ -19,14 +19,14 @@ const OtherProjectsCard = () => {
                 <h5 className="font-bold text-white uppercase">{t("Working On")}</h5>
             </CardHeader>
             <CardBody className="h-[10vh]" />
-            <CardFooter className="flex items-center justify-end gap-2 bg-black/40 backdrop-blur-sm">
+            <CardFooter className="flex items-center justify-end gap-2 ">
                 <Tooltip content={t("Preview Button")}>
                     <Button
                         as={Link}
                         href="https://pablo-marte.com/"
                         target="_blank"
                         rel="noreferrer"
-                        variant="flat"
+                        variant="light"
                         className="text-white font-bold hover:bg-white/20"
                         isIconOnly
                         aria-label={t("Preview Button")}

@@ -1,7 +1,7 @@
 'use client'
 
-import {Card, CardBody, CardHeader} from "@heroui/card";
 import {useTranslation} from "react-i18next";
+import {Card, CardBody, CardHeader} from "@heroui/react";
 
 const AboutMeCard = () => {
 

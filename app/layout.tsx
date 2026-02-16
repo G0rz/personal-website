@@ -60,10 +60,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
 
-    const currentYear = new Date().getFullYear();
-
     return (
-        <html lang="es" suppressHydrationWarning>
+        <html lang="es">
         <body
             className={`${customFont.variable} ${geistSans.variable} ${jetbrainsMono.variable} antialiased scroll-smooth`}
         >
@@ -73,7 +71,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
                 {children}
             </main>
             <footer className="w-full text-center text-sm text-muted-foreground py-4">
-                © {currentYear} <Link href="https://github.com/G0rz" target="_blank"
+                © 2026 <Link href="https://github.com/G0rz" target="_blank"
                                       rel="noreferrer"
                                       className="hover:text-primary transition-colors">G0rz</Link>. All
                 rights reserved.

@@ -18,6 +18,17 @@ self.addEventListener('activate', (event) => {
     self.clients.claim();
 });
 
+const cacheResponse = (request, response) => {
+    if (!response || response.status !== 200 || response.type !== 'basic') {
+        return response;
+    }
+    const responseClone = response.clone();
+    caches.open(CACHE_NAME).then((cache) => {
+        cache.put(request, responseClone);
+    });
+    return response;
+};
+
 self.addEventListener('fetch', (event) => {
     if (event.request.method !== 'GET') return;
 
@@ -29,31 +40,14 @@ self.addEventListener('fetch', (event) => {
         event.respondWith(caches.match(event.request).then((cachedResponse) => {
             if (cachedResponse) {
                 return cachedResponse;
+            } else {
+                return fetch(event.request).then((response) => cacheResponse(event.request, response));
             }
-            return fetch(event.request).then((response) => {
-                if (!response || response.status !== 200 || response.type !== 'basic') {
-                    return response;
-                }
-                const responseClone = response.clone();
-                caches.open(CACHE_NAME).then((cache) => {
-                    cache.put(event.request, responseClone);
-                });
-                return response;
-            });
         }));
         return;
     }
 
     event.respondWith(fetch(event.request)
-        .then((response) => {
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-                return response;
-            }
-            const responseClone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-                cache.put(event.request, responseClone);
-            });
-            return response;
-        })
+        .then((response) => cacheResponse(event.request, response))
         .catch(() => caches.match(event.request)));
 });

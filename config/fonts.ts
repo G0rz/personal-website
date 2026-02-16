@@ -21,7 +21,7 @@ export const vt323 = VT323({
 });
 
 export const customFont = CustomFont({
-    src: "/../public/fonts/NIS-JTC-Win-M9.ttf",
+    src: "/../public/fonts/NIS-JTC-Win-M9.woff2",
     variable: "--font-custom",
     display: "swap",
 });

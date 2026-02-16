@@ -74,6 +74,7 @@ const ContactCard = () => {
                         label={t("Input Label Email")}
                         labelPlacement="outside"
                         name="email"
+                        id="email"
                         placeholder={t("Placeholder Email")}
                         type="email"
                         autoComplete="email"
@@ -84,6 +85,7 @@ const ContactCard = () => {
                         label={t("Input Label Name")}
                         labelPlacement="outside"
                         name="name"
+                        id="name"
                         placeholder={t("Placeholder Name")}
                         type="text"
                         autoComplete="name"
@@ -94,11 +96,13 @@ const ContactCard = () => {
                         label={t("Input Label Subject")}
                         labelPlacement="outside"
                         name="subject"
+                        id="subject"
                         placeholder={t("Placeholder Subject")}
                         type="text"
                     />
                     <Textarea
                         isRequired
+                        id="message"
                         errorMessage={t("Error Message")}
                         label={t("Input Label Message")}
                         labelPlacement="outside"

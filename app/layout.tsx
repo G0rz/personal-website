@@ -1,4 +1,3 @@
-import {ViewTransition} from 'react'
 import {Metadata, Viewport} from "next";
 import "./globals.css"
 import {Providers} from "@/app/providers";
@@ -13,7 +12,8 @@ export const viewport: Viewport = {
     ],
     width: 'device-width',
     initialScale: 1,
-    maximumScale: 1,
+    maximumScale: 5,
+    userScalable: true,
 }
 
 export const metadata: Metadata = {
@@ -59,26 +59,27 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
+
+    const currentYear = new Date().getFullYear();
+
     return (
-        <ViewTransition>
-            <html lang="es" suppressHydrationWarning>
-            <body
-                className={`${customFont.variable} ${geistSans.variable} ${jetbrainsMono.variable} antialiased scroll-smooth`}
-            >
-            <Providers>
-                <RegisterSW/>
-                <main className="flex min-h-screen items-center justify-center font-sans">
-                    {children}
-                </main>
-                <footer className="w-full text-center text-sm text-muted-foreground py-4">
-                    © {new Date().getFullYear()} <Link href="https://github.com/G0rz" target="_blank"
-                                                       rel="noreferrer"
-                                                       className="hover:text-primary transition-colors">G0rz</Link>. All
-                    rights reserved.
-                </footer>
-            </Providers>
-            </body>
-            </html>
-        </ViewTransition>
+        <html lang="es" suppressHydrationWarning>
+        <body
+            className={`${customFont.variable} ${geistSans.variable} ${jetbrainsMono.variable} antialiased scroll-smooth`}
+        >
+        <Providers>
+            <RegisterSW/>
+            <main className="flex min-h-screen items-center justify-center font-sans">
+                {children}
+            </main>
+            <footer className="w-full text-center text-sm text-muted-foreground py-4">
+                © {currentYear} <Link href="https://github.com/G0rz" target="_blank"
+                                      rel="noreferrer"
+                                      className="hover:text-primary transition-colors">G0rz</Link>. All
+                rights reserved.
+            </footer>
+        </Providers>
+        </body>
+        </html>
     );
 }

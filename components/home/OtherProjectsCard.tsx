@@ -16,7 +16,7 @@ const OtherProjectsCard = () => {
             className="lg:col-span-2 lg:row-span-1 bg-[url('/images/latest_project.webp')] bg-cover bg-center bg-no-repeat group"
         >
             <CardHeader className="bg-black/60 backdrop-blur-sm">
-                <h5 className="font-bold text-white uppercase">{t("Working On")}</h5>
+                <h6 className="font-bold text-white uppercase">{t("Working On")}</h6>
             </CardHeader>
             <CardBody className="h-[10vh]" />
             <CardFooter className="flex items-center justify-end gap-2 ">

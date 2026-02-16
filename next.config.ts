@@ -3,17 +3,13 @@ import type {NextConfig} from "next";
 const nextConfig: NextConfig = {
     images: {
         unoptimized: true,
+        formats: ['image/avif', 'image/webp'],
         remotePatterns: [
             {
                 protocol: 'https',
                 hostname: 'avatars.githubusercontent.com',
                 pathname: '/**',
-            },
-            {
-                protocol: 'https',
-                hostname: 'heroui.com',
-                pathname: '/images/**',
-            },{
+            }, {
                 protocol: 'https',
                 hostname: 'leonardobecerril.dev',
                 pathname: '/**',
@@ -21,9 +17,7 @@ const nextConfig: NextConfig = {
         ],
     },
     experimental: {
-        viewTransition: true,
         optimizeCss: true,
-
     },
 };
 

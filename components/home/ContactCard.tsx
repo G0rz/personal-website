@@ -61,7 +61,7 @@ const ContactCard = () => {
     return (
         <Card className="lg:col-span-2 lg:row-span-2 p-4">
             <CardHeader>
-                <h3 className="font-bold uppercase">{t("Contact Title")}</h3>
+                <h4 className="font-bold uppercase">{t("Contact Title")}</h4>
             </CardHeader>
                 <CardBody className="flex flex-wrap justify-center items-center">
                 <Form id="contact-form"

@@ -23,12 +23,13 @@ const ExternalLinksCard = () => {
                     width={35}
                     src="/images/victini.gif"
                     unoptimized
+                    loading="lazy"
                 />
             </Card>
             <Card
                 className="relative w-[44%] min-h-20 h-[45%]"
             >
-                <Link href="https://github.com/G0rz" target="_blank" rel="noreferrer">
+                <Link href="https://github.com/G0rz" target="_blank" rel="noreferrer" aria-label="Github Link">
                     <FaGithub
                         className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-1/2 hover:scale-110 "/>
                 </Link>
@@ -36,13 +37,13 @@ const ExternalLinksCard = () => {
             <Card
                 className="relative w-[44%] min-h-20 h-[45%]"
             >
-                <Link href="https://www.linkedin.com/in/typenull/" target="_blank" rel="noreferrer">
+                <Link href="https://www.linkedin.com/in/typenull/" target="_blank" rel="noreferrer" aria-label="Linkedin Link">
                     <FaLinkedin
                         className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-1/2 hover:scale-110"/>
                 </Link>
             </Card>
             <Card className="relative w-[44%] min-h-20 h-[45%]">
-                <Link href="mailto:leonardo.becerril@hotmail.com" target="_blank" rel="noreferrer">
+                <Link href="mailto:leonardo.becerril@hotmail.com" target="_blank" rel="noreferrer" aria-label="Send Email Link">
                     <FaEnvelope
                         className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-1/2 hover:scale-110 "/>
                 </Link>

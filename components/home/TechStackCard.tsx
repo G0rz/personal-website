@@ -5,7 +5,7 @@ import Image from "next/image";
 import {useTranslation} from "react-i18next";
 import {Card, CardBody, CardHeader} from "@heroui/react";
 import useMeasure from 'react-use-measure'
-import {motion, animate, useMotionValue} from "framer-motion";
+import {motion, animate, useMotionValue, LazyMotion, domAnimation, m} from "framer-motion";
 
 export const techStackImages = [
     {src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", alt: "Next.js"},
@@ -68,24 +68,26 @@ const TechStackCard = () => {
                 <h3 className="text-xl font-extrabold uppercase">{t("Tech Stack Title")}</h3>
             </CardHeader>
             <CardBody className="relative overflow-hidden min-h-[70px] flex justify-center items-center">
-                <motion.div className="absolute left-0 gap-4 flex" ref={ref} style={{x: xTranslation}}>
-                    {[...techStackImages, ...techStackImages].map((item, index) => {
-                        return (
-                            <motion.div
-                                key={index}
-                                className="min-w-[70px] flex justify-center items-center hover:scale-110 transition-transform"
-                            >
-                                <Image
-                                    alt={item.alt}
-                                    width={50}
-                                    height={50}
-                                    loading="lazy"
-                                    src={item.src}
-                                />
-                            </motion.div>
-                        );
-                    })}
-                </motion.div>
+                <LazyMotion features={domAnimation}>
+                    <m.div className="absolute left-0 gap-4 flex" ref={ref} style={{x: xTranslation}}>
+                        {[...techStackImages, ...techStackImages].map((item, index) => {
+                            return (
+                                <m.div
+                                    key={index}
+                                    className="min-w-[70px] flex justify-center items-center hover:scale-110 transition-transform"
+                                >
+                                    <Image
+                                        alt={item.alt}
+                                        width={50}
+                                        height={50}
+                                        loading="lazy"
+                                        src={item.src}
+                                    />
+                                </m.div>
+                            );
+                        })}
+                    </m.div>
+                </LazyMotion>
             </CardBody>
         </Card>
     );

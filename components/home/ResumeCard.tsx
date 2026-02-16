@@ -40,6 +40,7 @@ const ResumeCard = () => {
                     className="rounded-full w-1/2 pointer-events-none self-center"
                     src="/images/profile.webp"
                     fetchPriority="high"
+                    loading="eager"
                 />
                 <h1 className="text-3xl font-extrabold">Leonardo Yael Bazan Becerril</h1>
                 <h2 className="text-xl font-bold">{t("Personal Title")}</h2>

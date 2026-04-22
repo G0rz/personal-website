@@ -341,5 +341,21 @@
     }
   ],
   "Working On": "Trabajando en",
-  "Other Projects": "Otros Proyectos"
+  "Other Projects": "Otros Proyectos",
+  "Other Projects Array": [
+    {
+      "id": 1,
+      "name": "CV Online",
+      "type": "landing page",
+      "timeframe": "2025",
+      "description": "",
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "url": "https://leonardobecerril.netlify.app/",
+      "repo": "https://github.com/G0rz/cv_online"
+    }
+  ]
 }

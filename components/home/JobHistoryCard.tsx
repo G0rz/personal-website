@@ -69,41 +69,45 @@ const JobHistoryCard = () => {
                     )}
                 </DrawerContent>
             </Drawer>
-            <Card className="lg:col-span-2 lg:row-span-3 p-4">
+            <Card as="section" className="lg:col-span-2 lg:row-span-3 p-4">
                 <CardHeader>
-                    <h3 className="text-xl font-extrabold uppercase">{t("Jobs Title")}</h3>
+                    <h2 className="text-xl font-extrabold uppercase">{t("Jobs Title")}</h2>
                 </CardHeader>
                 <CardBody className="gap-6">
-                    {jobs && Array.isArray(jobs) && jobs.map((element, index) => (
-                        <div key={index} className="flex flex-col">
-                            <div className="flex justify-between items-start">
-                                <div className="flex flex-col">
-                                    <p className="text-lg font-extrabold text-primary-500">{element.position}</p>
-                                    <p className="text-md font-semibold">{element.job}</p>
-                                    <p className="text-sm font-bold uppercase tracking-wider text-default-500">{element.timeframe}</p>
-                                </div>
-                                {element.awards && element.awards.length > 0 && (
-                                    <Tooltip content={t("Details Button")}>
-                                        <Button
-                                            color="primary"
-                                            variant="light"
-                                            isIconOnly
-                                            aria-label={t("Details Button")}
-                                            onPress={() => handleOpenDrawer(element.awards)}
-                                        >
-                                            <FaEye/>
-                                        </Button>
-                                    </Tooltip>
-                                )}
-                            </div>
-                            <div className="mt-2">
-                                <p className="text-sm">
-                                    <span className="font-bold">Tech Stack: </span>
-                                    {element.tech_stack.join(", ")}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                    <ul className="flex flex-col gap-6">
+                        {jobs && Array.isArray(jobs) && jobs.map((element, index) => (
+                            <li key={index}>
+                                <article className="flex flex-col">
+                                    <div className="flex justify-between items-start">
+                                        <div className="flex flex-col">
+                                            <p className="text-lg font-extrabold text-primary-500">{element.position}</p>
+                                            <p className="text-md font-semibold">{element.job}</p>
+                                            <p className="text-sm font-bold uppercase tracking-wider text-default-500">{element.timeframe}</p>
+                                        </div>
+                                        {element.awards && element.awards.length > 0 && (
+                                            <Tooltip content={t("Details Button")}>
+                                                <Button
+                                                    color="primary"
+                                                    variant="light"
+                                                    isIconOnly
+                                                    aria-label={t("Details Button")}
+                                                    onPress={() => handleOpenDrawer(element.awards)}
+                                                >
+                                                    <FaEye/>
+                                                </Button>
+                                            </Tooltip>
+                                        )}
+                                    </div>
+                                    <div className="mt-2">
+                                        <p className="text-sm">
+                                            <span className="font-bold">Tech Stack: </span>
+                                            {element.tech_stack.join(", ")}
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        ))}
+                    </ul>
                 </CardBody>
             </Card>
         </>

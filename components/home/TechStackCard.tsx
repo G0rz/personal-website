@@ -63,16 +63,16 @@ const TechStackCard = () => {
     }, [xTranslation, width]);
 
     return (
-        <Card className="lg:col-span-3 lg:row-span-1 p-4">
+        <Card as="section" className="lg:col-span-3 lg:row-span-1 p-4">
             <CardHeader>
-                <h3 className="text-xl font-extrabold uppercase">{t("Tech Stack Title")}</h3>
+                <h2 className="text-xl font-extrabold uppercase">{t("Tech Stack Title")}</h2>
             </CardHeader>
             <CardBody className="relative overflow-hidden min-h-[70px] flex justify-center items-center">
                 <LazyMotion features={domAnimation}>
-                    <m.div className="absolute left-0 gap-4 flex" ref={ref} style={{x: xTranslation}}>
+                    <m.ul className="absolute left-0 gap-4 flex" ref={ref} style={{x: xTranslation}}>
                         {[...techStackImages, ...techStackImages].map((item, index) => {
                             return (
-                                <m.div
+                                <m.li
                                     key={index}
                                     className="min-w-[70px] flex justify-center items-center hover:scale-110 transition-transform"
                                 >
@@ -83,10 +83,10 @@ const TechStackCard = () => {
                                         loading="lazy"
                                         src={item.src}
                                     />
-                                </m.div>
+                                </m.li>
                             );
                         })}
-                    </m.div>
+                    </m.ul>
                 </LazyMotion>
             </CardBody>
         </Card>

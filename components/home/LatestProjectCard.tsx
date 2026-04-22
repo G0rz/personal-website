@@ -46,13 +46,13 @@ const LatestProjectCard = () => {
                                        <p className="text-md">{element.description}</p>
                                         <div className="mt-4">
                                             <p className="text-sm italic font-bold mb-2">TECH STACK:</p>
-                                            <div className="flex flex-wrap gap-2">
+                                            <ul className="flex flex-wrap gap-2">
                                                 {element.tech_stack.map((tech, i) => (
-                                                    <span key={i} className="px-2 py-1 bg-primary-300 text-white rounded-md text-sm">
+                                                    <li key={i} className="px-2 py-1 bg-primary-300 text-white rounded-md text-sm">
                                                         {tech}
-                                                    </span>
+                                                    </li>
                                                 ))}
-                                            </div>
+                                            </ul>
                                         </div>
                                     </DrawerBody>
                                     <DrawerFooter>
@@ -67,10 +67,11 @@ const LatestProjectCard = () => {
                 </DrawerContent>
             </Drawer>
             <Card
+                as="section"
                 className="lg:col-span-2 lg:row-span-1 bg-[url('/images/latest_project.webp')] bg-cover bg-top bg-no-repeat group"
             >
                 <CardHeader className="bg-black/60 backdrop-blur-sm transition-colors">
-                    <h5 className="font-bold text-white uppercase">{t("Latest Project Title")}</h5>
+                    <h2 className="font-bold text-white uppercase">{t("Latest Project Title")}</h2>
                 </CardHeader>
                 <CardBody className="h-[10vh]" />
                 <CardFooter className="flex items-center justify-end gap-2">

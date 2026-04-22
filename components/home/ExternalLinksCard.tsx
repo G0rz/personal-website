@@ -11,7 +11,7 @@ const ExternalLinksCard = () => {
     const {theme, setTheme} = useTheme()
 
     return (
-        <div className="lg:col-span-1 lg:row-span-1 flex flex-wrap items-center justify-around gap-4">
+        <nav aria-label="Social and Contact Links" className="lg:col-span-1 lg:row-span-1 flex flex-wrap items-center justify-around gap-4">
             <Card
                 className="relative w-[44%] min-h-20 h-[45%] group transition-all duration-500 ease-in-out hover:bg-foreground"
             >
@@ -48,7 +48,7 @@ const ExternalLinksCard = () => {
                         className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 size-1/2 hover:scale-110 "/>
                 </Link>
             </Card>
-        </div>
+        </nav>
     );
 };
 

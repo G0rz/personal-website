@@ -18,7 +18,7 @@ const ResumeCard = () => {
     };
 
     return (
-        <Card className="lg:col-span-2 lg:row-span-2 p-4">
+        <Card as="section" className="lg:col-span-2 lg:row-span-2 p-4">
             <CardHeader className="flex justify-between items-center">
                 <button
                     className="py-1 font-bold uppercase cursor-pointer hover:opacity-70 transition-opacity"
@@ -34,13 +34,12 @@ const ResumeCard = () => {
             </CardHeader>
             <CardBody className="flex flex-wrap justify-center items-center gap-4 text-center">
                 <Image
-                    alt="Leonardo Becerril Profile Picture"
+                    alt="Profile Picture"
                     width={750}
                     height={750}
                     className="rounded-full w-1/2 pointer-events-none self-center"
                     src="/images/profile.webp"
-                    fetchPriority="high"
-                    loading="eager"
+                    priority={false}
                 />
                 <h1 className="text-3xl font-extrabold">Leonardo Yael Bazan Becerril</h1>
                 <h2 className="text-xl font-bold">{t("Personal Title")}</h2>

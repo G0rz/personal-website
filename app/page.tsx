@@ -12,7 +12,7 @@ import AttachmentsCard from "@/components/home/AttachmentsCard";
 export default function Home() {
 
     return (
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-6 p-4">
+        <section className="grid grid-cols-1 gap-4 lg:grid-cols-6 p-4">
             <ResumeCard/>
             <ExternalLinksCard/>
             <TechStackCard/>
@@ -23,6 +23,6 @@ export default function Home() {
             <ContactCard/>
             <LatestProjectCard/>
             <OtherProjectsCard/>
-        </div>
+        </section>
     );
 }

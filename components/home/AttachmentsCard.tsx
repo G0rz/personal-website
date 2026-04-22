@@ -80,32 +80,34 @@ const AttachmentsCard = () => {
                     )}
                 </ModalContent>
             </Modal>
-            <Card className="lg:col-span-2 lg:row-span-1 p-4">
+            <Card as="section" className="lg:col-span-2 lg:row-span-1 p-4">
                 <CardHeader>
-                    <h3 className="text-xl font-bold uppercase">{t("Attachments Title")}</h3>
+                    <h2 className="text-xl font-bold uppercase">{t("Attachments Title")}</h2>
                 </CardHeader>
                 <CardBody className="gap-4">
-                    {attachments && Array.isArray(attachments) && attachments.map((element, index) => (
-                        <div key={index} className="flex items-center justify-between">
-                            <div className="flex flex-col">
-                                <p className="text-lg font-bold">{element.name}</p>
-                                <p className="text-md text-default-500">{element.type}</p>
-                            </div>
-                            {element.assets && (
-                                <Tooltip content={t("Details Button")}>
-                                    <Button
-                                        color="primary"
-                                        variant="light"
-                                        isIconOnly
-                                        aria-label={t("Details Button")}
-                                        onPress={() => handleOpenModal(element.assets)}
-                                    >
-                                        <FaEye />
-                                    </Button>
-                                </Tooltip>
-                            )}
-                        </div>
-                    ))}
+                    <ul className="flex flex-col gap-4">
+                        {attachments && Array.isArray(attachments) && attachments.map((element, index) => (
+                            <li key={index} className="flex items-center justify-between">
+                                <div className="flex flex-col">
+                                    <p className="text-lg font-bold">{element.name}</p>
+                                    <p className="text-md text-default-500">{element.type}</p>
+                                </div>
+                                {element.assets && (
+                                    <Tooltip content={t("Details Button")}>
+                                        <Button
+                                            color="primary"
+                                            variant="light"
+                                            isIconOnly
+                                            aria-label={t("Details Button")}
+                                            onPress={() => handleOpenModal(element.assets)}
+                                        >
+                                            <FaEye />
+                                        </Button>
+                                    </Tooltip>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
                 </CardBody>
             </Card>
         </>

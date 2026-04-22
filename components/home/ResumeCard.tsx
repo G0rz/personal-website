@@ -39,6 +39,8 @@ const ResumeCard = () => {
                     height={750}
                     className="rounded-full w-1/2 pointer-events-none self-center"
                     src="/images/profile.webp"
+                    unoptimized
+                    loading="lazy"
                     priority={false}
                 />
                 <h1 className="text-3xl font-extrabold">Leonardo Yael Bazan Becerril</h1>

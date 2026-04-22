@@ -4,14 +4,16 @@ import { useEffect } from 'react';
 
 export function RegisterSW() {
   useEffect(() => {
-    if ('serviceWorker' in navigator && window.location.hostname !== 'localhost') {
+    const isProduction = process.env.NODE_ENV === 'production';
+    
+    if ('serviceWorker' in navigator && isProduction) {
       navigator.serviceWorker
         .register('/service-worker.js')
-        .then((registration) => {
-          console.log('Service Worker registered with scope:', registration.scope);
-        })
         .catch((error) => {
-          console.error('Service Worker registration failed:', error);
+          // Silent catch in production unless debugging is needed
+          if (process.env.NEXT_PUBLIC_DEBUG === 'true') {
+            console.error('Service Worker registration failed:', error);
+          }
         });
     }
   }, []);
